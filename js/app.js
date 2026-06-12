@@ -1,9 +1,10 @@
 import { CONFIG } from "./config.js";
 import { loadSheet } from "./sheets.js";
 import { fetchLive, matchLiveToSheet } from "./live.js";
-import { renderStandings, renderMatches, renderPerson, renderStats } from "./render.js";
+import { renderStandings, renderMatches, renderPerson, renderStats, renderHero } from "./render.js";
 
 const view = document.getElementById("view");
+const heroEl = document.getElementById("hero");
 const statusEl = document.getElementById("status");
 const tabs = [...document.querySelectorAll(".tab")];
 
@@ -51,6 +52,7 @@ async function refresh() {
     setStatus(liveCount
       ? `🔴 ${liveCount} match${liveCount === 1 ? "" : "er"} live · uppdaterad ${time()}`
       : `Uppdaterad ${time()}`);
+    renderHero(heroEl, state.liveEnriched, data.people);
     render();
   } catch (err) {
     setStatus("Kunde inte hämta data: " + err.message, true);

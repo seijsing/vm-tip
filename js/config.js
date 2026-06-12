@@ -16,62 +16,72 @@ export const CONFIG = {
 
   live: { file: "data/live.json" },
 
-  // Svensk 3-bokstavskod -> { sv: visningsnamn, en: namn som live-API:t använder }.
-  // sv används för rendering, en för att para ihop arkets match med live-matchen.
-  // Osäkra (IRA, KON) är markerade — verifiera mot vald API innan live-säsong.
+  // Svensk 3-bokstavskod -> { sv, en, iso }.
+  // iso = 2-bokstavs ISO 3166-1 alpha-2, används för att rendera flagg-emoji.
   teamCodes: {
-    ALG: { sv: "Algeriet", en: "Algeria" },
-    ARG: { sv: "Argentina", en: "Argentina" },
-    AUS: { sv: "Australien", en: "Australia" },
-    BEL: { sv: "Belgien", en: "Belgium" },
-    BOS: { sv: "Bosnien", en: "Bosnia and Herzegovina" },
-    BRA: { sv: "Brasilien", en: "Brazil" },
-    COL: { sv: "Colombia", en: "Colombia" },
-    CUR: { sv: "Curaçao", en: "Curaçao" },
-    ECU: { sv: "Ecuador", en: "Ecuador" },
-    EGY: { sv: "Egypten", en: "Egypt" },
-    ELF: { sv: "Elfenbenskusten", en: "Côte d'Ivoire" },
-    ENG: { sv: "England", en: "England" },
-    FRA: { sv: "Frankrike", en: "France" },
-    GHA: { sv: "Ghana", en: "Ghana" },
-    HAI: { sv: "Haiti", en: "Haiti" },
-    IRA: { sv: "Irak", en: "Iraq" }, // osäker kod – kan vara Irland
-    IRN: { sv: "Iran", en: "Iran" },
-    JOR: { sv: "Jordanien", en: "Jordan" },
-    JPN: { sv: "Japan", en: "Japan" },
-    KAN: { sv: "Kanada", en: "Canada" },
-    KAP: { sv: "Kap Verde", en: "Cape Verde" },
-    KON: { sv: "Kongo", en: "DR Congo" }, // osäker – Kongo-Kinshasa vs Brazzaville
-    KOR: { sv: "Sydkorea", en: "South Korea" },
-    KRO: { sv: "Kroatien", en: "Croatia" },
-    MAR: { sv: "Marocko", en: "Morocco" },
-    MEX: { sv: "Mexiko", en: "Mexico" },
-    NED: { sv: "Nederländerna", en: "Netherlands" },
-    NOR: { sv: "Norge", en: "Norway" },
-    NZL: { sv: "Nya Zeeland", en: "New Zealand" },
-    PAN: { sv: "Panama", en: "Panama" },
-    PAR: { sv: "Paraguay", en: "Paraguay" },
-    POR: { sv: "Portugal", en: "Portugal" },
-    QAT: { sv: "Qatar", en: "Qatar" },
-    SAF: { sv: "Sydafrika", en: "South Africa" },
-    SAU: { sv: "Saudiarabien", en: "Saudi Arabia" },
-    SCO: { sv: "Skottland", en: "Scotland" },
-    SEN: { sv: "Senegal", en: "Senegal" },
-    SPA: { sv: "Spanien", en: "Spain" },
-    SWE: { sv: "Sverige", en: "Sweden" },
-    SWZ: { sv: "Schweiz", en: "Switzerland" },
-    TJE: { sv: "Tjeckien", en: "Czechia" },
-    TUN: { sv: "Tunisien", en: "Tunisia" },
-    TUR: { sv: "Turkiet", en: "Türkiye" },
-    TYS: { sv: "Tyskland", en: "Germany" },
-    URU: { sv: "Uruguay", en: "Uruguay" },
-    USA: { sv: "USA", en: "United States" },
-    UZB: { sv: "Uzbekistan", en: "Uzbekistan" },
-    ÖST: { sv: "Österrike", en: "Austria" },
+    ALG: { sv: "Algeriet",        en: "Algeria",               iso: "DZ" },
+    ARG: { sv: "Argentina",       en: "Argentina",             iso: "AR" },
+    AUS: { sv: "Australien",      en: "Australia",             iso: "AU" },
+    BEL: { sv: "Belgien",         en: "Belgium",               iso: "BE" },
+    BOS: { sv: "Bosnien",         en: "Bosnia-Herzegovina",    iso: "BA" },
+    BRA: { sv: "Brasilien",       en: "Brazil",                iso: "BR" },
+    COL: { sv: "Colombia",        en: "Colombia",              iso: "CO" },
+    CUR: { sv: "Curaçao",         en: "Curaçao",               iso: "CW" },
+    ECU: { sv: "Ecuador",         en: "Ecuador",               iso: "EC" },
+    EGY: { sv: "Egypten",         en: "Egypt",                 iso: "EG" },
+    ELF: { sv: "Elfenbenskusten", en: "Côte d'Ivoire",         iso: "CI" },
+    ENG: { sv: "England",         en: "England",               iso: "GB" },
+    FRA: { sv: "Frankrike",       en: "France",                iso: "FR" },
+    GHA: { sv: "Ghana",           en: "Ghana",                 iso: "GH" },
+    HAI: { sv: "Haiti",           en: "Haiti",                 iso: "HT" },
+    IRA: { sv: "Irak",            en: "Iraq",                  iso: "IQ" },
+    IRN: { sv: "Iran",            en: "Iran",                  iso: "IR" },
+    JOR: { sv: "Jordanien",       en: "Jordan",                iso: "JO" },
+    JPN: { sv: "Japan",           en: "Japan",                 iso: "JP" },
+    KAN: { sv: "Kanada",          en: "Canada",                iso: "CA" },
+    KAP: { sv: "Kap Verde",       en: "Cape Verde",            iso: "CV" },
+    KON: { sv: "Kongo",           en: "DR Congo",              iso: "CD" },
+    KOR: { sv: "Sydkorea",        en: "South Korea",           iso: "KR" },
+    KRO: { sv: "Kroatien",        en: "Croatia",               iso: "HR" },
+    MAR: { sv: "Marocko",         en: "Morocco",               iso: "MA" },
+    MEX: { sv: "Mexiko",          en: "Mexico",                iso: "MX" },
+    NED: { sv: "Nederländerna",   en: "Netherlands",           iso: "NL" },
+    NOR: { sv: "Norge",           en: "Norway",                iso: "NO" },
+    NZL: { sv: "Nya Zeeland",     en: "New Zealand",           iso: "NZ" },
+    PAN: { sv: "Panama",          en: "Panama",                iso: "PA" },
+    PAR: { sv: "Paraguay",        en: "Paraguay",              iso: "PY" },
+    POR: { sv: "Portugal",        en: "Portugal",              iso: "PT" },
+    QAT: { sv: "Qatar",           en: "Qatar",                 iso: "QA" },
+    SAF: { sv: "Sydafrika",       en: "South Africa",          iso: "ZA" },
+    SAU: { sv: "Saudiarabien",    en: "Saudi Arabia",          iso: "SA" },
+    SCO: { sv: "Skottland",       en: "Scotland",              iso: "GB" },
+    SEN: { sv: "Senegal",         en: "Senegal",               iso: "SN" },
+    SPA: { sv: "Spanien",         en: "Spain",                 iso: "ES" },
+    SWE: { sv: "Sverige",         en: "Sweden",                iso: "SE" },
+    SWZ: { sv: "Schweiz",         en: "Switzerland",           iso: "CH" },
+    TJE: { sv: "Tjeckien",        en: "Czechia",               iso: "CZ" },
+    TUN: { sv: "Tunisien",        en: "Tunisia",               iso: "TN" },
+    TUR: { sv: "Turkiet",         en: "Türkiye",               iso: "TR" },
+    TYS: { sv: "Tyskland",        en: "Germany",               iso: "DE" },
+    URU: { sv: "Uruguay",         en: "Uruguay",               iso: "UY" },
+    USA: { sv: "USA",             en: "United States",         iso: "US" },
+    UZB: { sv: "Uzbekistan",      en: "Uzbekistan",            iso: "UZ" },
+    ÖST: { sv: "Österrike",       en: "Austria",               iso: "AT" },
   },
 };
 
 // Slå upp svenskt visningsnamn för en lagkod (faller tillbaka på koden).
 export function teamSv(code) {
   return CONFIG.teamCodes[code]?.sv ?? code;
+}
+
+// Returnerar flagg-emoji för en 3-bokstavs lagkod (via ISO 2-bokstavskod).
+export function flagEmoji(code) {
+  const iso = CONFIG.teamCodes[code]?.iso;
+  if (!iso || iso.length !== 2) return "🏳";
+  const base = 0x1F1E6; // Regional Indicator A
+  return String.fromCodePoint(
+    base + iso.charCodeAt(0) - 65,
+    base + iso.charCodeAt(1) - 65
+  );
 }

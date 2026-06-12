@@ -1,4 +1,5 @@
 import { whoTipped } from "./live.js";
+import { flagEmoji } from "./config.js";
 
 // Liten DOM-hjälpare.
 function el(tag, props = {}, children = []) {
@@ -24,6 +25,57 @@ function outcome(score) {
   if (!score) return null;
   const [a, b] = score.split("-").map(Number);
   return a > b ? "1" : a < b ? "2" : "X";
+}
+
+/* ---------- Hero (live-match ovanför tabsarna) ---------- */
+export function renderHero(container, liveEnriched, people) {
+  container.replaceChildren();
+  const live = liveEnriched.filter((l) => l.isLive);
+  container.hidden = live.length === 0;
+  if (!live.length) return;
+  const inner = el("div", { class: "hero-inner" });
+  for (const l of live) inner.appendChild(heroCard(l, people));
+  container.appendChild(inner);
+}
+
+function heroCard(l, people) {
+  const m = l.match;
+  const tippers = whoTipped(m, l.scoreStr, people);
+  const timeLabel = l.status === "PAUSED" ? "Paus"
+    : l.minute != null ? `${l.minute}'` : "Live";
+
+  return el("div", {}, [
+    el("div", { class: "hero-meta" }, [
+      el("span", { text: m.group ? `Grupp ${m.group}` : "" }),
+      el("span", { class: "hero-pulse" }, [
+        el("span", { class: "hero-dot" }),
+        "LIVE",
+      ]),
+    ]),
+    el("div", { class: "hero-match" }, [
+      el("div", { class: "hero-team" }, [
+        el("span", { class: "hero-flag", text: flagEmoji(m.home) }),
+        el("span", { class: "hero-name", text: m.homeSv }),
+      ]),
+      el("div", { class: "hero-center" }, [
+        el("div", { class: "hero-score", text: `${l.homeScore} – ${l.awayScore}` }),
+        el("span", { class: "hero-time" }, [
+          el("span", { class: "hero-dot" }),
+          timeLabel,
+        ]),
+      ]),
+      el("div", { class: "hero-team" }, [
+        el("span", { class: "hero-flag", text: flagEmoji(m.away) }),
+        el("span", { class: "hero-name", text: m.awaySv }),
+      ]),
+    ]),
+    el("div", { class: "hero-tippers" }, [
+      el("span", { class: "tippers-label", text: `Tippade ${l.scoreStr}: ` }),
+      tippers.length
+        ? el("span", { class: "tippers-names", text: tippers.join(", ") })
+        : el("span", { class: "muted", text: "ingen" }),
+    ]),
+  ]);
 }
 
 /* ---------- Topplista ---------- */
