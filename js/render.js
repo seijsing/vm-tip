@@ -27,11 +27,12 @@ function outcome(score) {
   return a > b ? "1" : a < b ? "2" : "X";
 }
 
-/* ---------- Hero (live-match eller nästa kommande match) ---------- */
+/* ---------- Hero (live → nyss färdig → nästa kommande) ---------- */
 export function renderHero(container, liveEnriched, data) {
   container.replaceChildren();
-  const live = liveEnriched.filter((l) => l.isLive);
 
+  // 1. Pågående match
+  const live = liveEnriched.filter((l) => l.isLive);
   if (live.length) {
     container.hidden = false;
     const inner = el("div", { class: "hero-inner" });
@@ -40,15 +41,53 @@ export function renderHero(container, liveEnriched, data) {
     return;
   }
 
-  // Ingen live-match: visa nästa kommande match
-  const liveMatchCols = new Set(liveEnriched.map((l) => l.match.col));
-  const next = data.matches.find((m) => !m.result && !liveMatchCols.has(m.col));
+  // 2. Nyss avslutad match (FINISHED i live.json) – visa tills nästa börjar
+  const finished = liveEnriched.filter((l) => l.status === "FINISHED");
+  if (finished.length) {
+    container.hidden = false;
+    const inner = el("div", { class: "hero-inner" });
+    for (const l of finished) inner.appendChild(finishedMatchCard(l, data.people));
+    container.appendChild(inner);
+    return;
+  }
+
+  // 3. Ingen aktivitet – visa nästa kommande match med tipsdistribution
+  const knownCols = new Set(liveEnriched.map((l) => l.match.col));
+  const next = data.matches.find((m) => !m.result && !knownCols.has(m.col));
   if (!next) { container.hidden = true; return; }
 
   container.hidden = false;
   const inner = el("div", { class: "hero-inner" });
   inner.appendChild(nextMatchCard(next, data.people));
   container.appendChild(inner);
+}
+
+function finishedMatchCard(l, people) {
+  const m = l.match;
+  const exact = people.filter((p) => p.tips[m.col] === l.scoreStr).map((p) => p.name);
+  return el("div", {}, [
+    el("div", { class: "hero-meta" }, [
+      el("span", { text: m.group ? `Grupp ${m.group}` : "" }),
+      el("span", { class: "hero-finished-badge", text: "SLUTRESULTAT" }),
+    ]),
+    el("div", { class: "hero-match" }, [
+      el("div", { class: "hero-team" }, [
+        el("span", { class: "hero-flag", text: flagEmoji(m.home) }),
+        el("span", { class: "hero-name", text: m.homeSv }),
+      ]),
+      el("div", { class: "hero-center" }, [
+        el("div", { class: "hero-score", text: `${l.homeScore} – ${l.awayScore}` }),
+      ]),
+      el("div", { class: "hero-team" }, [
+        el("span", { class: "hero-flag", text: flagEmoji(m.away) }),
+        el("span", { class: "hero-name", text: m.awaySv }),
+      ]),
+    ]),
+    el("div", { class: "hero-tippers" }, [
+      el("span", { class: "tippers-label", text: exact.length ? `Prickade ${l.scoreStr}: ` : `Ingen prickade ${l.scoreStr}` }),
+      exact.length ? el("span", { class: "tippers-names", text: exact.join(", ") }) : null,
+    ]),
+  ]);
 }
 
 function nextMatchCard(match, people) {
