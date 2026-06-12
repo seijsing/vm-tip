@@ -2,7 +2,7 @@ name: Uppdatera live-resultat
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # var 5:e minut (GitHub kan fördröja vid hög last)
+    - cron: "*/2 * * * *"   # var 2:e minut (GitHub tillåter minst var 5:e minut i praktiken)
   workflow_dispatch: {}       # tillåt manuell körning via Actions-fliken
 
 permissions:

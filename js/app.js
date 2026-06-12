@@ -52,7 +52,7 @@ async function refresh() {
     setStatus(liveCount
       ? `🔴 ${liveCount} match${liveCount === 1 ? "" : "er"} live · uppdaterad ${time()}`
       : `Uppdaterad ${time()}`);
-    renderHero(heroEl, state.liveEnriched, data.people);
+    renderHero(heroEl, state.liveEnriched, data);
     render();
   } catch (err) {
     setStatus("Kunde inte hämta data: " + err.message, true);

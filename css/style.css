@@ -129,9 +129,68 @@ body {
   font-size: 14px;
 }
 
+/* Hero – nästa match (ingen live pågår) */
+.hero-next-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--accent-2);
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: .3px;
+}
+.hero-score-upcoming {
+  font-size: 42px;
+  font-weight: 900;
+  color: var(--line);
+  letter-spacing: 6px;
+}
+.hero-tip-dist {
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.hero-tip-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 13.5px;
+}
+.tip-score {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  min-width: 34px;
+  color: var(--text);
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 2px 8px;
+  text-align: center;
+  font-size: 12.5px;
+}
+.tip-count {
+  color: var(--muted);
+  font-size: 12px;
+  min-width: 22px;
+}
+.tip-names {
+  color: var(--muted);
+  font-size: 13px;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 /* Tabs */
 .tabs {
-  display: flex; gap: 6px; padding: 10px 14px;
+  display: flex; justify-content: center; gap: 6px; padding: 10px 14px;
   position: sticky; top: 57px; z-index: 9;
   background: var(--bg); border-bottom: 1px solid var(--line);
 }

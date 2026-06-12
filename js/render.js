@@ -27,15 +27,75 @@ function outcome(score) {
   return a > b ? "1" : a < b ? "2" : "X";
 }
 
-/* ---------- Hero (live-match ovanför tabsarna) ---------- */
-export function renderHero(container, liveEnriched, people) {
+/* ---------- Hero (live-match eller nästa kommande match) ---------- */
+export function renderHero(container, liveEnriched, data) {
   container.replaceChildren();
   const live = liveEnriched.filter((l) => l.isLive);
-  container.hidden = live.length === 0;
-  if (!live.length) return;
+
+  if (live.length) {
+    container.hidden = false;
+    const inner = el("div", { class: "hero-inner" });
+    for (const l of live) inner.appendChild(heroCard(l, data.people));
+    container.appendChild(inner);
+    return;
+  }
+
+  // Ingen live-match: visa nästa kommande match
+  const liveMatchCols = new Set(liveEnriched.map((l) => l.match.col));
+  const next = data.matches.find((m) => !m.result && !liveMatchCols.has(m.col));
+  if (!next) { container.hidden = true; return; }
+
+  container.hidden = false;
   const inner = el("div", { class: "hero-inner" });
-  for (const l of live) inner.appendChild(heroCard(l, people));
+  inner.appendChild(nextMatchCard(next, data.people));
   container.appendChild(inner);
+}
+
+function nextMatchCard(match, people) {
+  const dist = tipDistribution(match, people);
+  const dateLabel = [match.datum, match.tid].filter(Boolean).join(" · ");
+  return el("div", {}, [
+    el("div", { class: "hero-meta" }, [
+      el("span", { text: match.group ? `Grupp ${match.group}` : "" }),
+      el("span", { class: "hero-next-badge" },
+        [`NÄSTA MATCH${dateLabel ? " · " + dateLabel : ""}`]),
+    ]),
+    el("div", { class: "hero-match" }, [
+      el("div", { class: "hero-team" }, [
+        el("span", { class: "hero-flag", text: flagEmoji(match.home) }),
+        el("span", { class: "hero-name", text: match.homeSv }),
+      ]),
+      el("div", { class: "hero-center" }, [
+        el("div", { class: "hero-score hero-score-upcoming", text: "–" }),
+      ]),
+      el("div", { class: "hero-team" }, [
+        el("span", { class: "hero-flag", text: flagEmoji(match.away) }),
+        el("span", { class: "hero-name", text: match.awaySv }),
+      ]),
+    ]),
+    dist.length
+      ? el("div", { class: "hero-tip-dist" },
+          dist.slice(0, 6).map(([score, names]) =>
+            el("div", { class: "hero-tip-row" }, [
+              el("span", { class: "tip-score", text: score }),
+              el("span", { class: "tip-count", text: `${names.length}×` }),
+              el("span", { class: "tip-names", text: names.join(", ") }),
+            ])
+          ))
+      : el("div", { class: "hero-tippers" },
+          [el("span", { class: "muted", text: "Inga tips inlagda ännu" })]),
+  ]);
+}
+
+function tipDistribution(match, people) {
+  const counts = new Map();
+  for (const p of people) {
+    const tip = p.tips[match.col];
+    if (!tip) continue;
+    if (!counts.has(tip)) counts.set(tip, []);
+    counts.get(tip).push(p.name);
+  }
+  return [...counts.entries()].sort((a, b) => b[1].length - a[1].length);
 }
 
 function heroCard(l, people) {
