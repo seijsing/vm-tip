@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VM-tips 2026</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">⚽</span>
+      <h1>VM-tips 2026</h1>
+    </div>
+    <div id="status" class="status">Hämtar …</div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-view="standings">Topplista</button>
+    <button class="tab" data-view="matches">Matcher</button>
+    <button class="tab" data-view="stats">Statistik</button>
+  </nav>
+
+  <main id="view" class="view">
+    <p class="muted">Laddar …</p>
+  </main>
+
+  <footer class="foot">
+    <span>Data från gänget Google Sheets · live-resultat uppdateras automatiskt</span>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
