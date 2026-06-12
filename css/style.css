@@ -251,6 +251,25 @@ body {
 .match-row .teams { font-weight: 500; }
 .match-row .grp   { font-size: 12px; color: var(--muted); }
 .match-row.played { grid-template-columns: 70px 1fr auto auto; }
+.match-row--expand {
+  grid-template-columns: 88px 1fr auto auto;
+  cursor: pointer;
+}
+.match-row--expand:hover { background: var(--panel-2); }
+.match-row--expand.expanded { border-radius: 10px 10px 0 0; }
+.chevron {
+  color: var(--muted); font-size: 17px; line-height: 1;
+  display: inline-block; transition: transform .18s;
+}
+.chevron.open { transform: rotate(90deg); }
+.match-row-wrap { display: flex; flex-direction: column; }
+.match-tips {
+  background: var(--panel-2);
+  border: 1px solid var(--line); border-top: none;
+  border-radius: 0 0 10px 10px;
+  padding: 10px 14px;
+  display: flex; flex-direction: column; gap: 5px;
+}
 .match-row .res   { font-weight: 700; font-variant-numeric: tabular-nums; color: var(--accent); }
 .match-row .exact { font-size: 12px; color: var(--accent); white-space: nowrap; }
 

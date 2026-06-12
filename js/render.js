@@ -224,7 +224,7 @@ export function renderMatches(container, data, liveEnriched) {
   container.appendChild(el("h3", { class: "section-h", text: "Kommande" }));
   if (upcoming.length) {
     const list = el("div", { class: "match-list" });
-    for (const m of upcoming.slice(0, 24)) list.appendChild(upcomingRow(m));
+    for (const m of upcoming.slice(0, 24)) list.appendChild(upcomingRow(m, people));
     container.appendChild(list);
   } else container.appendChild(el("p", { class: "muted", text: "Inga kommande matcher." }));
 
@@ -256,12 +256,36 @@ function liveCard(l, people) {
   ]);
 }
 
-function upcomingRow(m) {
-  return el("div", { class: "match-row" }, [
+function upcomingRow(m, people) {
+  const dist = tipDistribution(m, people);
+  const chevron = el("span", { class: "chevron", text: "›" });
+
+  const detailEl = el("div", { class: "match-tips" },
+    dist.length
+      ? dist.map(([score, names]) =>
+          el("div", { class: "hero-tip-row" }, [
+            el("span", { class: "tip-score", text: score }),
+            el("span", { class: "tip-count", text: `${names.length}×` }),
+            el("span", { class: "tip-names", text: names.join(", ") }),
+          ]))
+      : [el("span", { class: "muted", text: "Inga tips ännu" })]
+  );
+  detailEl.hidden = true;
+
+  const row = el("div", { class: "match-row match-row--expand" }, [
     el("span", { class: "when", text: `${m.datum} ${m.tid}` }),
     el("span", { class: "teams", text: `${m.homeSv} – ${m.awaySv}` }),
     el("span", { class: "grp", text: m.group }),
+    chevron,
   ]);
+  row.addEventListener("click", () => {
+    const open = !detailEl.hidden;
+    detailEl.hidden = open;
+    chevron.classList.toggle("open", !open);
+    row.classList.toggle("expanded", !open);
+  });
+
+  return el("div", { class: "match-row-wrap" }, [row, detailEl]);
 }
 
 function playedRow(m, people) {
