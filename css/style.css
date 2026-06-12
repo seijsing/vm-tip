@@ -270,6 +270,7 @@ body {
   padding: 10px 14px;
   display: flex; flex-direction: column; gap: 5px;
 }
+.match-tips[hidden] { display: none; }
 .match-row .res   { font-weight: 700; font-variant-numeric: tabular-nums; color: var(--accent); }
 .match-row .exact { font-size: 12px; color: var(--accent); white-space: nowrap; }
 
