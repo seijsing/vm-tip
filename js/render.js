@@ -161,13 +161,18 @@ function upcomingBody(m, people) {
 
 // Tipsdistribution som rader; markerar ev. raden som matchar slutresultatet.
 function distBlock(dist, highlight) {
+  const hlOut = outcome(highlight);
   return el("div", { class: "hero-tip-dist" },
-    dist.map(([score, names]) =>
-      el("div", { class: "hero-tip-row" + (score === highlight ? " hit" : "") }, [
+    dist.map(([score, names]) => {
+      const exact = score === highlight;
+      const outMatch = !exact && hlOut != null && outcome(score) === hlOut;
+      const cls = "hero-tip-row" + (exact ? " hit" : outMatch ? " hit-out" : "");
+      return el("div", { class: cls }, [
         el("span", { class: "tip-score", text: score }),
         el("span", { class: "tip-count", text: `${names.length}×` }),
         el("span", { class: "tip-names", text: names.join(", ") }),
-      ])));
+      ]);
+    }));
 }
 
 // Navigering: föregående · (till live) · nästa.

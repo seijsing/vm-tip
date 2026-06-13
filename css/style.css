@@ -213,6 +213,12 @@ body {
   color: var(--accent);
 }
 .hero-tip-row.hit .tip-names { color: var(--text); font-weight: 600; }
+.hero-tip-row.hit-out .tip-score {
+  background: var(--hit-out-bg);
+  border-color: #fde68a;
+  color: #92400e;
+}
+.hero-tip-row.hit-out .tip-names { color: var(--text); font-weight: 600; }
 
 /* Hero – navigering föregående/nästa */
 .hero-nav {
