@@ -162,7 +162,7 @@ function upcomingBody(m, people) {
 // Tipsdistribution som rader; markerar ev. raden som matchar slutresultatet.
 function distBlock(dist, highlight) {
   return el("div", { class: "hero-tip-dist" },
-    dist.slice(0, 6).map(([score, names]) =>
+    dist.map(([score, names]) =>
       el("div", { class: "hero-tip-row" + (score === highlight ? " hit" : "") }, [
         el("span", { class: "tip-score", text: score }),
         el("span", { class: "tip-count", text: `${names.length}×` }),
