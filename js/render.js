@@ -27,102 +27,176 @@ function outcome(score) {
   return a > b ? "1" : a < b ? "2" : "X";
 }
 
-/* ---------- Hero (live → nyss färdig → nästa kommande) ---------- */
+/* ---------- Hero – navigerbar: föregående ↔ aktuell ↔ nästa ---------- */
+// Vilken matchkolumn heron visar. null = följ ankaret automatiskt.
+let heroFocusCol = null;
+let heroPrevLive = new Set();
+
 export function renderHero(container, liveEnriched, data) {
-  container.replaceChildren();
-
-  // 1. Pågående match
-  const live = liveEnriched.filter((l) => l.isLive);
-  if (live.length) {
-    container.hidden = false;
-    const inner = el("div", { class: "hero-inner" });
-    for (const l of live) inner.appendChild(heroCard(l, data.people));
-    container.appendChild(inner);
-    return;
-  }
-
-  // 2. Nyss avslutad match (FINISHED i live.json) – visa tills nästa börjar
-  const finished = liveEnriched.filter((l) => l.status === "FINISHED");
-  if (finished.length) {
-    container.hidden = false;
-    const inner = el("div", { class: "hero-inner" });
-    for (const l of finished) inner.appendChild(finishedMatchCard(l, data.people));
-    container.appendChild(inner);
-    return;
-  }
-
-  // 3. Ingen aktivitet – visa nästa kommande match med tipsdistribution
-  const knownCols = new Set(liveEnriched.map((l) => l.match.col));
-  const next = data.matches.find((m) => !m.result && !knownCols.has(m.col));
-  if (!next) { container.hidden = true; return; }
-
+  const matches = data.matches;
+  if (!matches.length) { container.hidden = true; return; }
   container.hidden = false;
-  const inner = el("div", { class: "hero-inner" });
-  inner.appendChild(nextMatchCard(next, data.people));
-  container.appendChild(inner);
+
+  const liveByCol = new Map(liveEnriched.map((l) => [l.match.col, l]));
+
+  // En match som just gått live ska alltid synas – snäpp tillbaka till ankaret.
+  const liveSet = new Set(liveEnriched.filter((l) => l.isLive).map((l) => l.match.col));
+  if ([...liveSet].some((c) => !heroPrevLive.has(c))) heroFocusCol = null;
+  heroPrevLive = liveSet;
+
+  // Ankaret: live → senast spelade (ligger kvar tills nästa går live) → nästa kommande.
+  const anchorCol = () => {
+    const live = liveEnriched.find((l) => l.isLive);
+    if (live) return live.match.col;
+    let played = null;
+    for (const mm of matches) {
+      const li = liveByCol.get(mm.col);
+      if (mm.result || li?.status === "FINISHED") played = mm.col;
+    }
+    if (played != null) return played;
+    const up = matches.find((mm) => !mm.result);
+    return up ? up.col : matches[matches.length - 1].col;
+  };
+
+  const focusCol = heroFocusCol ?? anchorCol();
+  let idx = matches.findIndex((mm) => mm.col === focusCol);
+  if (idx < 0) idx = matches.findIndex((mm) => mm.col === anchorCol());
+
+  const m = matches[idx];
+  const li = liveByCol.get(m.col);
+
+  // Bläddra: lämna heroFocusCol = null om man landar på ankaret (resumera auto-följning).
+  const go = (delta) => {
+    const t = matches[idx + delta];
+    if (!t) return;
+    heroFocusCol = t.col === anchorCol() ? null : t.col;
+    renderHero(container, liveEnriched, data);
+  };
+  const toLive = () => { heroFocusCol = null; renderHero(container, liveEnriched, data); };
+
+  const inner = el("div", { class: "hero-inner" }, [
+    heroBody(m, li, data.people),
+    heroNav(matches, idx, liveEnriched, go, toLive),
+  ]);
+  container.replaceChildren(inner);
 }
 
-function finishedMatchCard(l, people) {
-  const m = l.match;
-  const exact = people.filter((p) => p.tips[m.col] === l.scoreStr).map((p) => p.name);
+// Väljer rätt kortinnehåll utifrån matchens läge.
+function heroBody(m, li, people) {
+  if (li && li.isLive) return liveBody(m, li, people);
+  const resStr = li?.status === "FINISHED" ? li.scoreStr : m.result;
+  if (resStr) return resultBody(m, resStr, people);
+  return upcomingBody(m, people);
+}
+
+function heroHead(m, badge) {
+  return el("div", { class: "hero-meta" }, [
+    el("span", { text: m.group ? `Grupp ${m.group}` : "" }),
+    badge,
+  ]);
+}
+
+function teamCol(code, name) {
+  return el("div", { class: "hero-team" }, [
+    el("span", { class: "hero-flag", text: flagEmoji(code) }),
+    el("span", { class: "hero-name", text: name }),
+  ]);
+}
+
+function liveBody(m, l, people) {
+  const tippers = whoTipped(m, l.scoreStr, people);
+  const timeLabel = l.status === "PAUSED" ? "Paus"
+    : l.minute != null ? `${l.minute}'` : "Live";
   return el("div", {}, [
-    el("div", { class: "hero-meta" }, [
-      el("span", { text: m.group ? `Grupp ${m.group}` : "" }),
-      el("span", { class: "hero-finished-badge", text: "SLUTRESULTAT" }),
-    ]),
+    heroHead(m, el("span", { class: "hero-pulse" }, [el("span", { class: "hero-dot" }), "LIVE"])),
     el("div", { class: "hero-match" }, [
-      el("div", { class: "hero-team" }, [
-        el("span", { class: "hero-flag", text: flagEmoji(m.home) }),
-        el("span", { class: "hero-name", text: m.homeSv }),
-      ]),
+      teamCol(m.home, m.homeSv),
       el("div", { class: "hero-center" }, [
         el("div", { class: "hero-score", text: `${l.homeScore} – ${l.awayScore}` }),
+        el("span", { class: "hero-time" }, [el("span", { class: "hero-dot" }), timeLabel]),
       ]),
-      el("div", { class: "hero-team" }, [
-        el("span", { class: "hero-flag", text: flagEmoji(m.away) }),
-        el("span", { class: "hero-name", text: m.awaySv }),
-      ]),
+      teamCol(m.away, m.awaySv),
     ]),
     el("div", { class: "hero-tippers" }, [
-      el("span", { class: "tippers-label", text: exact.length ? `Prickade ${l.scoreStr}: ` : `Ingen prickade ${l.scoreStr}` }),
-      exact.length ? el("span", { class: "tippers-names", text: exact.join(", ") }) : null,
+      el("span", { class: "tippers-label", text: `Tippade ${l.scoreStr}: ` }),
+      tippers.length
+        ? el("span", { class: "tippers-names", text: tippers.join(", ") })
+        : el("span", { class: "muted", text: "ingen" }),
     ]),
   ]);
 }
 
-function nextMatchCard(match, people) {
-  const dist = tipDistribution(match, people);
-  const dateLabel = [match.datum, match.tid].filter(Boolean).join(" · ");
+function resultBody(m, resStr, people) {
+  const [hs, as] = resStr.split("-");
+  const dist = tipDistribution(m, people);
+  const exact = (dist.find(([s]) => s === resStr) || [null, []])[1];
   return el("div", {}, [
-    el("div", { class: "hero-meta" }, [
-      el("span", { text: match.group ? `Grupp ${match.group}` : "" }),
-      el("span", { class: "hero-next-badge" },
-        [`NÄSTA MATCH${dateLabel ? " · " + dateLabel : ""}`]),
-    ]),
+    heroHead(m, el("span", { class: "hero-finished-badge", text: "SLUTRESULTAT" })),
     el("div", { class: "hero-match" }, [
-      el("div", { class: "hero-team" }, [
-        el("span", { class: "hero-flag", text: flagEmoji(match.home) }),
-        el("span", { class: "hero-name", text: match.homeSv }),
+      teamCol(m.home, m.homeSv),
+      el("div", { class: "hero-center" }, [
+        el("div", { class: "hero-score", text: `${hs} – ${as}` }),
       ]),
+      teamCol(m.away, m.awaySv),
+    ]),
+    el("div", { class: "hero-result-line", text:
+      exact.length ? `Prickade slutresultatet: ${exact.join(", ")}` : "Ingen prickade slutresultatet" }),
+    dist.length ? distBlock(dist, resStr) : null,
+  ]);
+}
+
+function upcomingBody(m, people) {
+  const dist = tipDistribution(m, people);
+  const dateLabel = [m.datum, m.tid].filter(Boolean).join(" · ");
+  return el("div", {}, [
+    heroHead(m, el("span", { class: "hero-next-badge" },
+      [`KOMMANDE${dateLabel ? " · " + dateLabel : ""}`])),
+    el("div", { class: "hero-match" }, [
+      teamCol(m.home, m.homeSv),
       el("div", { class: "hero-center" }, [
         el("div", { class: "hero-score hero-score-upcoming", text: "–" }),
       ]),
-      el("div", { class: "hero-team" }, [
-        el("span", { class: "hero-flag", text: flagEmoji(match.away) }),
-        el("span", { class: "hero-name", text: match.awaySv }),
-      ]),
+      teamCol(m.away, m.awaySv),
     ]),
     dist.length
-      ? el("div", { class: "hero-tip-dist" },
-          dist.slice(0, 6).map(([score, names]) =>
-            el("div", { class: "hero-tip-row" }, [
-              el("span", { class: "tip-score", text: score }),
-              el("span", { class: "tip-count", text: `${names.length}×` }),
-              el("span", { class: "tip-names", text: names.join(", ") }),
-            ])
-          ))
-      : el("div", { class: "hero-tippers" },
-          [el("span", { class: "muted", text: "Inga tips inlagda ännu" })]),
+      ? distBlock(dist, null)
+      : el("div", { class: "hero-tippers" }, [el("span", { class: "muted", text: "Inga tips inlagda ännu" })]),
+  ]);
+}
+
+// Tipsdistribution som rader; markerar ev. raden som matchar slutresultatet.
+function distBlock(dist, highlight) {
+  return el("div", { class: "hero-tip-dist" },
+    dist.slice(0, 6).map(([score, names]) =>
+      el("div", { class: "hero-tip-row" + (score === highlight ? " hit" : "") }, [
+        el("span", { class: "tip-score", text: score }),
+        el("span", { class: "tip-count", text: `${names.length}×` }),
+        el("span", { class: "tip-names", text: names.join(", ") }),
+      ])));
+}
+
+// Navigering: föregående · (till live) · nästa.
+function heroNav(matches, idx, liveEnriched, go, toLive) {
+  const prev = matches[idx - 1];
+  const next = matches[idx + 1];
+  const liveMatch = liveEnriched.find((l) => l.isLive);
+  const offLive = liveMatch && liveMatch.match.col !== matches[idx].col;
+
+  const btn = (m2, dir, onClick) =>
+    m2
+      ? el("button", { class: `hero-nav-btn ${dir}`, onclick: onClick }, dir === "prev"
+          ? [el("span", { class: "hn-arrow", text: "‹" }), el("span", { class: "hn-label", text: `${m2.home}–${m2.away}` })]
+          : [el("span", { class: "hn-label", text: `${m2.home}–${m2.away}` }), el("span", { class: "hn-arrow", text: "›" })])
+      : el("span", { class: "hero-nav-btn empty" });
+
+  const center = offLive
+    ? el("button", { class: "hero-nav-live", onclick: toLive }, [el("span", { class: "hero-dot" }), "Till live"])
+    : el("span", { class: "hero-nav-spacer" });
+
+  return el("div", { class: "hero-nav" }, [
+    btn(prev, "prev", () => go(-1)),
+    center,
+    btn(next, "next", () => go(1)),
   ]);
 }
 
@@ -135,46 +209,6 @@ function tipDistribution(match, people) {
     counts.get(tip).push(p.name);
   }
   return [...counts.entries()].sort((a, b) => b[1].length - a[1].length);
-}
-
-function heroCard(l, people) {
-  const m = l.match;
-  const tippers = whoTipped(m, l.scoreStr, people);
-  const timeLabel = l.status === "PAUSED" ? "Paus"
-    : l.minute != null ? `${l.minute}'` : "Live";
-
-  return el("div", {}, [
-    el("div", { class: "hero-meta" }, [
-      el("span", { text: m.group ? `Grupp ${m.group}` : "" }),
-      el("span", { class: "hero-pulse" }, [
-        el("span", { class: "hero-dot" }),
-        "LIVE",
-      ]),
-    ]),
-    el("div", { class: "hero-match" }, [
-      el("div", { class: "hero-team" }, [
-        el("span", { class: "hero-flag", text: flagEmoji(m.home) }),
-        el("span", { class: "hero-name", text: m.homeSv }),
-      ]),
-      el("div", { class: "hero-center" }, [
-        el("div", { class: "hero-score", text: `${l.homeScore} – ${l.awayScore}` }),
-        el("span", { class: "hero-time" }, [
-          el("span", { class: "hero-dot" }),
-          timeLabel,
-        ]),
-      ]),
-      el("div", { class: "hero-team" }, [
-        el("span", { class: "hero-flag", text: flagEmoji(m.away) }),
-        el("span", { class: "hero-name", text: m.awaySv }),
-      ]),
-    ]),
-    el("div", { class: "hero-tippers" }, [
-      el("span", { class: "tippers-label", text: `Tippade ${l.scoreStr}: ` }),
-      tippers.length
-        ? el("span", { class: "tippers-names", text: tippers.join(", ") })
-        : el("span", { class: "muted", text: "ingen" }),
-    ]),
-  ]);
 }
 
 /* ---------- Topplista ---------- */
@@ -273,7 +307,10 @@ function upcomingRow(m, people) {
   detailEl.hidden = true;
 
   const row = el("div", { class: "match-row match-row--expand" }, [
-    el("span", { class: "when", text: `${m.datum} ${m.tid}` }),
+    el("div", { class: "when" }, [
+      el("span", { class: "when-date", text: m.datum }),
+      el("span", { class: "when-time", text: m.tid }),
+    ]),
     el("span", { class: "teams", text: `${m.homeSv} – ${m.awaySv}` }),
     el("span", { class: "grp", text: m.group }),
     chevron,
@@ -289,13 +326,39 @@ function upcomingRow(m, people) {
 }
 
 function playedRow(m, people) {
-  const exact = people.filter((p) => p.tips[m.col] === m.result).length;
-  return el("div", { class: "match-row played" }, [
+  const dist = tipDistribution(m, people);
+  const exact = (dist.find(([s]) => s === m.result) || [null, []])[1].length;
+  const chevron = el("span", { class: "chevron", text: "›" });
+
+  const detailEl = el("div", { class: "match-tips" },
+    dist.length
+      ? dist.map(([score, names]) =>
+          el("div", { class: "hero-tip-row" + (score === m.result ? " hit" : "") }, [
+            el("span", { class: "tip-score", text: score }),
+            el("span", { class: "tip-count", text: `${names.length}×` }),
+            el("span", { class: "tip-names", text: names.join(", ") }),
+          ]))
+      : [el("span", { class: "muted", text: "Inga tips" })]
+  );
+  detailEl.hidden = true;
+
+  const row = el("div", { class: "match-row played" }, [
     el("span", { class: "when", text: m.datum }),
     el("span", { class: "teams", text: `${m.homeSv} – ${m.awaySv}` }),
-    el("span", { class: "res", text: m.result }),
-    el("span", { class: "exact", text: `${exact} prick` }),
+    el("div", { class: "res-group" }, [
+      el("span", { class: "res", text: m.result }),
+      el("span", { class: "exact", text: `${exact} prick` }),
+    ]),
+    chevron,
   ]);
+  row.addEventListener("click", () => {
+    const open = !detailEl.hidden;
+    detailEl.hidden = open;
+    chevron.classList.toggle("open", !open);
+    row.classList.toggle("expanded", !open);
+  });
+
+  return el("div", { class: "match-row-wrap" }, [row, detailEl]);
 }
 
 /* ---------- Per-person ---------- */
@@ -345,6 +408,23 @@ export function renderPerson(container, person, matches, onBack) {
       ))
     );
   }
+}
+
+/* ---------- Tippare (alfabetisk lista → person-vy) ---------- */
+export function renderTippers(container, people, onSelect) {
+  clear(container);
+  const sorted = [...people].sort((a, b) => a.name.localeCompare(b.name, "sv"));
+  container.appendChild(
+    el("div", { class: "tippers-list" },
+      sorted.map((p) =>
+        el("button", { class: "tipper-btn", onclick: () => onSelect(p.name) }, [
+          el("span", { class: "tipper-name", text: p.name }),
+          el("span", { class: "tipper-pts", text: `${p.points} p` }),
+          el("span", { class: "tipper-arrow", text: "›" }),
+        ])
+      )
+    )
+  );
 }
 
 /* ---------- Statistik / kuriosa ---------- */

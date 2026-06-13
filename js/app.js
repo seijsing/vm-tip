@@ -1,7 +1,7 @@
 import { CONFIG } from "./config.js";
 import { loadSheet } from "./sheets.js";
 import { fetchLive, matchLiveToSheet } from "./live.js";
-import { renderStandings, renderMatches, renderPerson, renderStats, renderHero } from "./render.js";
+import { renderStandings, renderMatches, renderPerson, renderStats, renderHero, renderTippers } from "./render.js";
 
 const view = document.getElementById("view");
 const heroEl = document.getElementById("hero");
@@ -38,6 +38,8 @@ function render() {
       const person = data.people.find((p) => p.name === state.selected) || null;
       renderPerson(view, person, data.matches, () => setActive("standings")); break;
     }
+    case "tippers":
+      renderTippers(view, data.people, selectPerson); break;
     case "stats":
       renderStats(view, data); break;
   }

@@ -8,13 +8,19 @@ import socketserver
 ROOT = "/Users/seijsing/Documents/Github/vm-tip"
 PORT = 8000
 
-Handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=ROOT)
+class NoCacheHandler(http.server.SimpleHTTPRequestHandler):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, directory=ROOT, **kwargs)
+
+    def end_headers(self):
+        self.send_header("Cache-Control", "no-store")
+        super().end_headers()
 
 
 class Server(socketserver.TCPServer):
     allow_reuse_address = True
 
 
-with Server(("127.0.0.1", PORT), Handler) as httpd:
+with Server(("127.0.0.1", PORT), NoCacheHandler) as httpd:
     print(f"Serving {ROOT} at http://127.0.0.1:{PORT}")
     httpd.serve_forever()
