@@ -183,7 +183,7 @@ function heroNav(matches, idx, liveEnriched, go, toLive) {
   const offLive = liveMatch && liveMatch.match.col !== matches[idx].col;
 
   const navLabel = (m2) =>
-    el("span", { class: "hn-label", text: `${flagEmoji(m2.home)} ${m2.homeSv} – ${flagEmoji(m2.away)} ${m2.awaySv}` });
+    el("span", { class: "hn-label", text: `${flagEmoji(m2.home)} ${m2.home} – ${flagEmoji(m2.away)} ${m2.away}` });
 
   const btn = (m2, dir, onClick) =>
     m2
