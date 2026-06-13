@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-13T22:45:36.850Z",
+  "updated": "2026-06-13T23:00:54.077Z",
   "matches": [
     {
       "home": "Brazil",
       "away": "Morocco",
       "homeScore": 1,
       "awayScore": 1,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "minute": null,
       "utcDate": "2026-06-13T22:00:00Z"
     },
