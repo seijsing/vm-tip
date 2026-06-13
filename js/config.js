@@ -11,7 +11,7 @@ export const CONFIG = {
     // urskiljer riktiga matchkolumner (MEX-SAF) från Vidare/Brons/Silver/Guld/Skyttekung
     matchLabelRegex: /^[A-ZÅÄÖ]{2,4}-[A-ZÅÄÖ]{2,4}$/,
     // namn som inte ska visas som deltagare
-    excludeNames: [/exempel/i],
+    excludeNames: [],
   },
 
   live: { file: "data/live.json" },
