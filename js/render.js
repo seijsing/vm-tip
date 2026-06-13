@@ -104,9 +104,9 @@ function teamCol(code, name) {
 }
 
 function liveBody(m, l, people) {
-  const tippers = whoTipped(m, l.scoreStr, people);
   const timeLabel = l.status === "PAUSED" ? "Paus"
     : l.minute != null ? `${l.minute}'` : "Live";
+  const dist = tipDistribution(m, people);
   return el("div", {}, [
     heroHead(m, el("span", { class: "hero-pulse" }, [el("span", { class: "hero-dot" }), "LIVE"])),
     el("div", { class: "hero-match" }, [
@@ -117,12 +117,7 @@ function liveBody(m, l, people) {
       ]),
       teamCol(m.away, m.awaySv),
     ]),
-    el("div", { class: "hero-tippers" }, [
-      el("span", { class: "tippers-label", text: `Tippade ${l.scoreStr}: ` }),
-      tippers.length
-        ? el("span", { class: "tippers-names", text: tippers.join(", ") })
-        : el("span", { class: "muted", text: "ingen" }),
-    ]),
+    dist.length ? distBlock(dist, l.scoreStr) : null,
   ]);
 }
 
