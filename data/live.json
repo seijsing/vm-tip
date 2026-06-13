@@ -1,6 +1,15 @@
 {
-  "updated": "2026-06-13T04:43:16.355Z",
+  "updated": "2026-06-13T19:23:47.085Z",
   "matches": [
+    {
+      "home": "Qatar",
+      "away": "Switzerland",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "IN_PLAY",
+      "minute": null,
+      "utcDate": "2026-06-13T19:00:00Z"
+    },
     {
       "home": "United States",
       "away": "Paraguay",
@@ -9,15 +18,6 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-13T01:00:00Z"
-    },
-    {
-      "home": "Qatar",
-      "away": "Switzerland",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-06-13T19:00:00Z"
     },
     {
       "home": "Brazil",
