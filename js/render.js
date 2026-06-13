@@ -182,11 +182,14 @@ function heroNav(matches, idx, liveEnriched, go, toLive) {
   const liveMatch = liveEnriched.find((l) => l.isLive);
   const offLive = liveMatch && liveMatch.match.col !== matches[idx].col;
 
+  const navLabel = (m2) =>
+    el("span", { class: "hn-label", text: `${flagEmoji(m2.home)} ${m2.homeSv} – ${flagEmoji(m2.away)} ${m2.awaySv}` });
+
   const btn = (m2, dir, onClick) =>
     m2
       ? el("button", { class: `hero-nav-btn ${dir}`, onclick: onClick }, dir === "prev"
-          ? [el("span", { class: "hn-arrow", text: "‹" }), el("span", { class: "hn-label", text: `${m2.home}–${m2.away}` })]
-          : [el("span", { class: "hn-label", text: `${m2.home}–${m2.away}` }), el("span", { class: "hn-arrow", text: "›" })])
+          ? [el("span", { class: "hn-arrow", text: "‹" }), navLabel(m2)]
+          : [navLabel(m2), el("span", { class: "hn-arrow", text: "›" })])
       : el("span", { class: "hero-nav-btn empty" });
 
   const center = offLive

@@ -244,7 +244,6 @@ body {
 .hn-arrow { font-size: 17px; line-height: 1; color: var(--accent); }
 .hn-label {
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-  font-variant-numeric: tabular-nums;
 }
 .hero-nav-spacer { flex: 0 1 auto; }
 .hero-nav-live {
