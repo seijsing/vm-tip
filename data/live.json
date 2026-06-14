@@ -1,32 +1,50 @@
 {
-  "updated": "2026-06-13T23:20:44.208Z",
+  "updated": "2026-06-14T00:01:01.171Z",
   "matches": [
     {
-      "home": "Brazil",
-      "away": "Morocco",
-      "homeScore": 1,
-      "awayScore": 1,
-      "status": "IN_PLAY",
+      "home": "Haiti",
+      "away": "Scotland",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
       "minute": null,
-      "utcDate": "2026-06-13T22:00:00Z"
+      "utcDate": "2026-06-14T01:00:00Z"
     },
     {
-      "home": "United States",
-      "away": "Paraguay",
-      "homeScore": 4,
-      "awayScore": 1,
-      "status": "FINISHED",
+      "home": "Australia",
+      "away": "Turkey",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
       "minute": null,
-      "utcDate": "2026-06-13T01:00:00Z"
+      "utcDate": "2026-06-14T04:00:00Z"
     },
     {
-      "home": "Qatar",
-      "away": "Switzerland",
-      "homeScore": 1,
-      "awayScore": 1,
-      "status": "FINISHED",
+      "home": "Germany",
+      "away": "Curaçao",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
       "minute": null,
-      "utcDate": "2026-06-13T19:00:00Z"
+      "utcDate": "2026-06-14T17:00:00Z"
+    },
+    {
+      "home": "Netherlands",
+      "away": "Japan",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-06-14T20:00:00Z"
+    },
+    {
+      "home": "Ivory Coast",
+      "away": "Ecuador",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "SCHEDULED",
+      "minute": null,
+      "utcDate": "2026-06-14T23:00:00Z"
     }
   ]
 }
