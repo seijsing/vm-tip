@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-14T12:25:31.347Z",
+  "updated": "2026-06-14T12:40:44.149Z",
   "matches": [
     {
       "home": "Haiti",
@@ -42,7 +42,7 @@
       "away": "Ecuador",
       "homeScore": null,
       "awayScore": null,
-      "status": "TIMED",
+      "status": "SCHEDULED",
       "minute": null,
       "utcDate": "2026-06-14T23:00:00Z"
     }
