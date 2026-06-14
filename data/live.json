@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-14T01:40:42.015Z",
+  "updated": "2026-06-14T01:55:33.174Z",
   "matches": [
     {
       "home": "Haiti",
       "away": "Scotland",
       "homeScore": 0,
       "awayScore": 1,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-14T01:00:00Z"
     },
