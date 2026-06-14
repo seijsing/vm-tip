@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-14T05:40:40.724Z",
+  "updated": "2026-06-14T05:45:38.824Z",
   "matches": [
     {
       "home": "Australia",
       "away": "Turkey",
-      "homeScore": 1,
+      "homeScore": 2,
       "awayScore": 0,
       "status": "IN_PLAY",
       "minute": null,
@@ -42,7 +42,7 @@
       "away": "Ecuador",
       "homeScore": null,
       "awayScore": null,
-      "status": "SCHEDULED",
+      "status": "TIMED",
       "minute": null,
       "utcDate": "2026-06-14T23:00:00Z"
     }
