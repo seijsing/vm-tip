@@ -1,15 +1,6 @@
 {
-  "updated": "2026-06-14T19:01:01.087Z",
+  "updated": "2026-06-14T19:05:36.998Z",
   "matches": [
-    {
-      "home": "Germany",
-      "away": "Curaçao",
-      "homeScore": 7,
-      "awayScore": 1,
-      "status": "IN_PLAY",
-      "minute": null,
-      "utcDate": "2026-06-14T17:00:00Z"
-    },
     {
       "home": "Haiti",
       "away": "Scotland",
@@ -29,6 +20,15 @@
       "utcDate": "2026-06-14T04:00:00Z"
     },
     {
+      "home": "Germany",
+      "away": "Curaçao",
+      "homeScore": 7,
+      "awayScore": 1,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-06-14T17:00:00Z"
+    },
+    {
       "home": "Netherlands",
       "away": "Japan",
       "homeScore": null,
@@ -42,7 +42,7 @@
       "away": "Ecuador",
       "homeScore": null,
       "awayScore": null,
-      "status": "SCHEDULED",
+      "status": "TIMED",
       "minute": null,
       "utcDate": "2026-06-14T23:00:00Z"
     }
