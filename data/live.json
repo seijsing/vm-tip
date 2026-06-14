@@ -1,15 +1,6 @@
 {
-  "updated": "2026-06-14T21:54:29.914Z",
+  "updated": "2026-06-14T22:02:30.157Z",
   "matches": [
-    {
-      "home": "Netherlands",
-      "away": "Japan",
-      "homeScore": 2,
-      "awayScore": 2,
-      "status": "IN_PLAY",
-      "minute": null,
-      "utcDate": "2026-06-14T20:00:00Z"
-    },
     {
       "home": "Haiti",
       "away": "Scotland",
@@ -36,6 +27,15 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-14T17:00:00Z"
+    },
+    {
+      "home": "Netherlands",
+      "away": "Japan",
+      "homeScore": 2,
+      "awayScore": 2,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-06-14T20:00:00Z"
     },
     {
       "home": "Ivory Coast",
