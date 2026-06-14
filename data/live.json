@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-14T17:50:37.863Z",
+  "updated": "2026-06-14T18:00:59.687Z",
   "matches": [
     {
       "home": "Germany",
       "away": "Curaçao",
-      "homeScore": 2,
+      "homeScore": 3,
       "awayScore": 1,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "minute": null,
       "utcDate": "2026-06-14T17:00:00Z"
     },
