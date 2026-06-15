@@ -1,15 +1,6 @@
 {
-  "updated": "2026-06-15T20:34:28.785Z",
+  "updated": "2026-06-15T21:04:34.469Z",
   "matches": [
-    {
-      "home": "Belgium",
-      "away": "Egypt",
-      "homeScore": 1,
-      "awayScore": 1,
-      "status": "IN_PLAY",
-      "minute": null,
-      "utcDate": "2026-06-15T19:00:00Z"
-    },
     {
       "home": "Sweden",
       "away": "Tunisia",
@@ -27,6 +18,15 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-15T16:00:00Z"
+    },
+    {
+      "home": "Belgium",
+      "away": "Egypt",
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-06-15T19:00:00Z"
     },
     {
       "home": "Saudi Arabia",
