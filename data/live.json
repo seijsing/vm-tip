@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-15T19:06:30.444Z",
+  "updated": "2026-06-15T19:26:35.157Z",
   "matches": [
     {
       "home": "Belgium",
       "away": "Egypt",
       "homeScore": 0,
-      "awayScore": 0,
+      "awayScore": 1,
       "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-15T19:00:00Z"
