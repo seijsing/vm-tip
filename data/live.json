@@ -1,6 +1,15 @@
 {
-  "updated": "2026-06-16T21:10:47.137Z",
+  "updated": "2026-06-16T22:06:29.886Z",
   "matches": [
+    {
+      "home": "Iraq",
+      "away": "Norway",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "IN_PLAY",
+      "minute": null,
+      "utcDate": "2026-06-16T22:00:00Z"
+    },
     {
       "home": "Iran",
       "away": "New Zealand",
@@ -18,15 +27,6 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-16T19:00:00Z"
-    },
-    {
-      "home": "Iraq",
-      "away": "Norway",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-06-16T22:00:00Z"
     }
   ]
 }
