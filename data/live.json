@@ -1,6 +1,15 @@
 {
-  "updated": "2026-06-16T03:10:39.317Z",
+  "updated": "2026-06-16T19:06:34.844Z",
   "matches": [
+    {
+      "home": "France",
+      "away": "Senegal",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "IN_PLAY",
+      "minute": null,
+      "utcDate": "2026-06-16T19:00:00Z"
+    },
     {
       "home": "Iran",
       "away": "New Zealand",
@@ -9,15 +18,6 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-16T01:00:00Z"
-    },
-    {
-      "home": "France",
-      "away": "Senegal",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-06-16T19:00:00Z"
     },
     {
       "home": "Iraq",
