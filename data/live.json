@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-16T23:01:07.547Z",
+  "updated": "2026-06-16T23:16:31.385Z",
   "matches": [
     {
       "home": "Iraq",
       "away": "Norway",
       "homeScore": 1,
       "awayScore": 2,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-16T22:00:00Z"
     },
