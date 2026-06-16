@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-16T20:00:57.644Z",
+  "updated": "2026-06-16T20:16:37.190Z",
   "matches": [
     {
       "home": "France",
       "away": "Senegal",
       "homeScore": 0,
       "awayScore": 0,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-16T19:00:00Z"
     },
