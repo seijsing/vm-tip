@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-16T01:24:22.807Z",
+  "updated": "2026-06-16T01:26:24.683Z",
   "matches": [
     {
       "home": "Iran",
       "away": "New Zealand",
       "homeScore": 0,
       "awayScore": 1,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-16T01:00:00Z"
     },
