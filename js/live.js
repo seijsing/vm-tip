@@ -22,10 +22,13 @@ function normName(s) {
     .trim();
 }
 
-// Bygger uppslagstabell engelska API-namn -> svensk lagkod.
+// Bygger uppslagstabell engelska API-namn -> svensk lagkod (inkl. aliases).
 function enToCode() {
   const map = new Map();
-  for (const [code, t] of Object.entries(CONFIG.teamCodes)) map.set(normName(t.en), code);
+  for (const [code, t] of Object.entries(CONFIG.teamCodes)) {
+    map.set(normName(t.en), code);
+    for (const a of t.aliases ?? []) map.set(normName(a), code);
+  }
   return map;
 }
 
@@ -41,7 +44,10 @@ export function matchLiveToSheet(liveMatches, sheetMatches) {
   for (const lm of liveMatches) {
     const hc = en2code.get(normName(lm.home));
     const ac = en2code.get(normName(lm.away));
-    if (!hc || !ac) continue;
+    if (!hc || !ac) {
+      console.warn(`live.js: okänt lagnamn – "${lm.home}" (${hc ?? "?"}) / "${lm.away}" (${ac ?? "?"})`);
+      continue;
+    }
     const match = byPair.get([hc, ac].sort().join("|"));
     if (!match) continue;
 
