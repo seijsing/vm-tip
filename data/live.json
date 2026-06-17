@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-17T04:58:23.063Z",
+  "updated": "2026-06-17T05:16:23.960Z",
   "matches": [
     {
       "home": "Austria",
       "away": "Jordan",
       "homeScore": 1,
       "awayScore": 0,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-17T04:00:00Z"
     },
