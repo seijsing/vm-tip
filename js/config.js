@@ -40,7 +40,7 @@ export const CONFIG = {
     JPN: { sv: "Japan",           en: "Japan",                 iso: "JP" },
     KAN: { sv: "Kanada",          en: "Canada",                iso: "CA" },
     KAP: { sv: "Kap Verde",       en: "Cape Verde Islands",    iso: "CV" },
-    KON: { sv: "Kongo",           en: "DR Congo",              iso: "CD" },
+    KON: { sv: "Kongo",           en: "Congo DR",              iso: "CD" },
     KOR: { sv: "Sydkorea",        en: "Korea Republic",        iso: "KR" },
     KRO: { sv: "Kroatien",        en: "Croatia",               iso: "HR" },
     MAR: { sv: "Marocko",         en: "Morocco",               iso: "MA" },
