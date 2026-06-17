@@ -1,6 +1,15 @@
 {
-  "updated": "2026-06-17T22:06:21.610Z",
+  "updated": "2026-06-17T23:06:22.369Z",
   "matches": [
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "IN_PLAY",
+      "minute": null,
+      "utcDate": "2026-06-17T23:00:00Z"
+    },
     {
       "home": "Argentina",
       "away": "Algeria",
@@ -36,15 +45,6 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-17T20:00:00Z"
-    },
-    {
-      "home": "Ghana",
-      "away": "Panama",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-06-17T23:00:00Z"
     }
   ]
 }
