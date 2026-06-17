@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-17T01:32:22.968Z",
+  "updated": "2026-06-17T01:34:23.254Z",
   "matches": [
     {
       "home": "Argentina",
       "away": "Algeria",
       "homeScore": 1,
       "awayScore": 0,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-17T01:00:00Z"
     },
