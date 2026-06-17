@@ -1,6 +1,15 @@
 {
-  "updated": "2026-06-17T19:04:29.954Z",
+  "updated": "2026-06-17T20:06:35.087Z",
   "matches": [
+    {
+      "home": "England",
+      "away": "Croatia",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "IN_PLAY",
+      "minute": null,
+      "utcDate": "2026-06-17T20:00:00Z"
+    },
     {
       "home": "Argentina",
       "away": "Algeria",
@@ -27,15 +36,6 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-17T17:00:00Z"
-    },
-    {
-      "home": "England",
-      "away": "Croatia",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-06-17T20:00:00Z"
     },
     {
       "home": "Ghana",
