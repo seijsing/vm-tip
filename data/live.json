@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-18T16:55:27.923Z",
+  "updated": "2026-06-18T17:11:47.941Z",
   "matches": [
     {
       "home": "Czechia",
       "away": "South Africa",
       "homeScore": 1,
       "awayScore": 0,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-18T16:00:00Z"
     },
