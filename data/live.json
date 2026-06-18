@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-18T20:38:22.091Z",
+  "updated": "2026-06-18T21:01:20.248Z",
   "matches": [
     {
       "home": "Switzerland",
       "away": "Bosnia-Herzegovina",
-      "homeScore": 1,
-      "awayScore": 0,
+      "homeScore": 4,
+      "awayScore": 1,
       "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-18T19:00:00Z"
