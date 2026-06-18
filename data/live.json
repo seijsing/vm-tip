@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-18T02:57:24.500Z",
+  "updated": "2026-06-18T03:12:24.073Z",
   "matches": [
     {
       "home": "Uzbekistan",
       "away": "Colombia",
       "homeScore": 0,
       "awayScore": 1,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-18T02:00:00Z"
     },
