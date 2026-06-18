@@ -1,6 +1,15 @@
 {
-  "updated": "2026-06-18T21:02:20.736Z",
+  "updated": "2026-06-18T22:06:21.684Z",
   "matches": [
+    {
+      "home": "Canada",
+      "away": "Qatar",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "IN_PLAY",
+      "minute": null,
+      "utcDate": "2026-06-18T22:00:00Z"
+    },
     {
       "home": "Uzbekistan",
       "away": "Colombia",
@@ -27,15 +36,6 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-18T19:00:00Z"
-    },
-    {
-      "home": "Canada",
-      "away": "Qatar",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-06-18T22:00:00Z"
     }
   ]
 }
