@@ -1,15 +1,6 @@
 {
-  "updated": "2026-06-18T21:01:20.248Z",
+  "updated": "2026-06-18T21:02:20.736Z",
   "matches": [
-    {
-      "home": "Switzerland",
-      "away": "Bosnia-Herzegovina",
-      "homeScore": 4,
-      "awayScore": 1,
-      "status": "IN_PLAY",
-      "minute": null,
-      "utcDate": "2026-06-18T19:00:00Z"
-    },
     {
       "home": "Uzbekistan",
       "away": "Colombia",
@@ -27,6 +18,15 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-18T16:00:00Z"
+    },
+    {
+      "home": "Switzerland",
+      "away": "Bosnia-Herzegovina",
+      "homeScore": 4,
+      "awayScore": 1,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-06-18T19:00:00Z"
     },
     {
       "home": "Canada",
