@@ -1,6 +1,15 @@
 {
-  "updated": "2026-06-19T03:03:19.797Z",
+  "updated": "2026-06-19T19:06:24.035Z",
   "matches": [
+    {
+      "home": "United States",
+      "away": "Australia",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "IN_PLAY",
+      "minute": null,
+      "utcDate": "2026-06-19T19:00:00Z"
+    },
     {
       "home": "Mexico",
       "away": "South Korea",
@@ -9,15 +18,6 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-19T01:00:00Z"
-    },
-    {
-      "home": "United States",
-      "away": "Australia",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-06-19T19:00:00Z"
     },
     {
       "home": "Scotland",
