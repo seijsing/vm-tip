@@ -1,6 +1,15 @@
 {
-  "updated": "2026-06-20T19:02:21.459Z",
+  "updated": "2026-06-20T20:05:30.908Z",
   "matches": [
+    {
+      "home": "Germany",
+      "away": "Ivory Coast",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "IN_PLAY",
+      "minute": null,
+      "utcDate": "2026-06-20T20:00:00Z"
+    },
     {
       "home": "Brazil",
       "away": "Haiti",
@@ -27,15 +36,6 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-20T17:00:00Z"
-    },
-    {
-      "home": "Germany",
-      "away": "Ivory Coast",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-06-20T20:00:00Z"
     },
     {
       "home": "Ecuador",
