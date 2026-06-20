@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-20T20:05:30.908Z",
+  "updated": "2026-06-20T20:35:30.881Z",
   "matches": [
     {
       "home": "Germany",
       "away": "Ivory Coast",
       "homeScore": 0,
-      "awayScore": 0,
+      "awayScore": 1,
       "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-20T20:00:00Z"
