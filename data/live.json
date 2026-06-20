@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-20T01:30:49.854Z",
+  "updated": "2026-06-20T01:47:21.023Z",
   "matches": [
     {
       "home": "Brazil",
       "away": "Haiti",
       "homeScore": 3,
       "awayScore": 0,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-20T00:30:00Z"
     },
