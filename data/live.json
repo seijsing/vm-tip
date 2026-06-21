@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-21T04:06:20.989Z",
+  "updated": "2026-06-21T04:11:17.114Z",
   "matches": [
     {
       "home": "Tunisia",
       "away": "Japan",
       "homeScore": 0,
-      "awayScore": 0,
+      "awayScore": 1,
       "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-21T04:00:00Z"
