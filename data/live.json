@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-21T23:00:52.530Z",
+  "updated": "2026-06-21T23:17:18.000Z",
   "matches": [
     {
       "home": "Uruguay",
       "away": "Cape Verde Islands",
       "homeScore": 2,
       "awayScore": 1,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-21T22:00:00Z"
     },
