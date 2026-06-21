@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-21T01:13:20.565Z",
+  "updated": "2026-06-21T01:14:22.227Z",
   "matches": [
     {
       "home": "Ecuador",
       "away": "Curaçao",
       "homeScore": 0,
       "awayScore": 0,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-21T00:00:00Z"
     },
