@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-21T19:06:21.182Z",
+  "updated": "2026-06-21T19:10:34.823Z",
   "matches": [
     {
       "home": "Belgium",
@@ -31,7 +31,7 @@
     {
       "home": "Spain",
       "away": "Saudi Arabia",
-      "homeScore": 4,
+      "homeScore": 5,
       "awayScore": 0,
       "status": "FINISHED",
       "minute": null,
