@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-21T16:32:20.778Z",
+  "updated": "2026-06-21T16:58:20.516Z",
   "matches": [
     {
       "home": "Spain",
       "away": "Saudi Arabia",
       "homeScore": 3,
       "awayScore": 0,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "minute": null,
       "utcDate": "2026-06-21T16:00:00Z"
     },
