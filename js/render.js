@@ -84,7 +84,7 @@ export function renderHero(container, liveEnriched, data) {
 // Väljer rätt kortinnehåll utifrån matchens läge.
 function heroBody(m, li, people) {
   if (li && li.isLive) return liveBody(m, li, people);
-  const resStr = li?.status === "FINISHED" ? li.scoreStr : m.result;
+  const resStr = m.result ?? (li?.status === "FINISHED" ? li.scoreStr : null);
   if (resStr) return resultBody(m, resStr, people);
   return upcomingBody(m, people);
 }
