@@ -1,15 +1,6 @@
 {
-  "updated": "2026-06-21T20:37:21.801Z",
+  "updated": "2026-06-21T21:07:16.906Z",
   "matches": [
-    {
-      "home": "Belgium",
-      "away": "Iran",
-      "homeScore": 0,
-      "awayScore": 0,
-      "status": "IN_PLAY",
-      "minute": null,
-      "utcDate": "2026-06-21T19:00:00Z"
-    },
     {
       "home": "Ecuador",
       "away": "Curaçao",
@@ -36,6 +27,15 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-21T16:00:00Z"
+    },
+    {
+      "home": "Belgium",
+      "away": "Iran",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-06-21T19:00:00Z"
     },
     {
       "home": "Uruguay",
