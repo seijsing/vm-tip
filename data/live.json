@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-22T01:55:29.241Z",
+  "updated": "2026-06-22T02:12:27.419Z",
   "matches": [
     {
       "home": "New Zealand",
       "away": "Egypt",
       "homeScore": 1,
       "awayScore": 0,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-22T01:00:00Z"
     },
