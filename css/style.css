@@ -267,16 +267,18 @@ body {
 }
 
 /* Tabs */
-.tabs {
-  display: flex; justify-content: center; gap: 6px; padding: 10px 14px;
+.tabs-wrap {
   position: sticky; top: 57px; z-index: 9;
   background: var(--bg); border-bottom: 1px solid var(--line);
+}
+.tabs {
+  display: flex; justify-content: center; gap: 6px; padding: 10px 14px;
 }
 .tab {
   background: var(--panel); color: var(--muted);
   border: 1px solid var(--line); border-radius: 999px;
   padding: 7px 16px; font-size: 14px; cursor: pointer; transition: .15s;
-  font-weight: 500;
+  font-weight: 500; flex-shrink: 0; white-space: nowrap;
 }
 .tab:hover { color: var(--text); border-color: #cbd5e1; }
 .tab.active { background: var(--accent); color: #fff; border-color: var(--accent); font-weight: 600; }
@@ -424,11 +426,39 @@ body {
 .fave-list { display: flex; flex-direction: column; gap: 6px; }
 .fave { justify-content: space-between; }
 
+/* Skytteliga */
+.scorer-source { margin-bottom: 12px; }
+.scorers .scorer-name { display: flex; align-items: center; gap: 8px; font-weight: 500; }
+.scorer-flag { font-size: 18px; line-height: 1; flex-shrink: 0; }
+.scorer-tippers { font-size: 13px; color: var(--muted); }
+.scorer-tippers .tippers-names { color: var(--accent); font-weight: 600; }
+.scorers td { vertical-align: top; padding-top: 12px; }
+.scorer-mobile-tip { display: none; }
+
 /* Footer */
 .foot {
   position: fixed; bottom: 0; left: 0; right: 0; text-align: center;
   font-size: 11.5px; color: var(--muted); padding: 10px;
   background: #f8fafc; border-top: 1px solid var(--line);
+}
+
+@media (max-width: 600px) {
+  /* Tabs: scrollbara med fade-indikator till höger */
+  .tabs-wrap::after {
+    content: '';
+    position: absolute;
+    right: 0; top: 0; bottom: 0;
+    width: 36px;
+    background: linear-gradient(to right, transparent, var(--bg) 80%);
+    pointer-events: none;
+  }
+  .tabs {
+    justify-content: flex-start;
+    overflow-x: auto; scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding-right: 36px;
+  }
+  .tabs::-webkit-scrollbar { display: none; }
 }
 
 @media (max-width: 480px) {
@@ -446,4 +476,14 @@ body {
   /* Spelade: datum + teams + res-group + pil */
   .match-row.played { grid-template-columns: 56px 1fr auto auto; }
   .live-score .t { font-size: 14px; }
+
+  /* Skytteliga mobil: visa tippare under spelarnamnet, göm separat kolumn */
+  .scorer-tippers-col, .scorers th:last-child { display: none; }
+  .scorer-mobile-tip {
+    display: block;
+    font-size: 12px;
+    color: var(--accent);
+    font-weight: 600;
+    margin-top: 2px;
+  }
 }

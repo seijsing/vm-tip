@@ -1,7 +1,7 @@
 import { CONFIG } from "./config.js";
 import { loadSheet } from "./sheets.js";
 import { fetchLive, matchLiveToSheet } from "./live.js";
-import { renderStandings, renderMatches, renderPerson, renderStats, renderHero, renderTippers } from "./render.js";
+import { renderStandings, renderMatches, renderPerson, renderStats, renderHero, renderTippers, renderGoalscorers } from "./render.js";
 
 const view = document.getElementById("view");
 const heroEl = document.getElementById("hero");
@@ -40,6 +40,8 @@ function render() {
     }
     case "tippers":
       renderTippers(view, data.people, selectPerson); break;
+    case "scorers":
+      renderGoalscorers(view, data.people); break;
     case "stats":
       renderStats(view, data); break;
   }

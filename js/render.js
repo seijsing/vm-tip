@@ -1,5 +1,6 @@
 import { whoTipped } from "./live.js";
 import { flagEmoji } from "./config.js";
+import { fetchGoalscorers } from "./goalscorers.js";
 
 // Liten DOM-hjälpare.
 function el(tag, props = {}, children = []) {
@@ -498,4 +499,90 @@ function normFave(v) {
   const s = (v || "").trim();
   if (!s) return null;
   return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+/* ---------- Skytteliga (Wikipedia) ---------- */
+
+// Normaliserar ett namn för jämförelse: gemen, strippa diakritik.
+function normName(s) {
+  return (s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").trim();
+}
+
+// Avgör om ett tippat skyttekung-tips matchar ett spelarnamn.
+// Kräver ord-för-ord-match och minst 3 tecken för att undvika falska träffar
+// som "ag" (ej angiven) matchar delar av spelarnamn som "Iago".
+function tipMatchesScorer(scorerName, tip) {
+  const sn = normName(scorerName);
+  const t = normName(tip);
+  if (!t || t.length < 3) return false;
+  if (sn === t) return true;
+  const sWords = sn.split(/\s+/);
+  const tWords = t.split(/\s+/).filter(Boolean);
+  return tWords.length > 0 && tWords.every((w) => sWords.some((sw) => sw === w));
+}
+
+export async function renderGoalscorers(container, people) {
+  clear(container);
+  container.appendChild(el("p", { class: "muted", text: "Hämtar skytteliga från Wikipedia…" }));
+
+  let scorers;
+  try {
+    scorers = await fetchGoalscorers();
+  } catch (err) {
+    clear(container);
+    container.appendChild(el("p", { class: "muted", text: "Kunde inte hämta skytteligan: " + err.message }));
+    return;
+  }
+
+  clear(container);
+  container.appendChild(el("p", { class: "muted scorer-source" }, [
+    "Källa: ",
+    el("a", { href: "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup#Goalscorers",
+      target: "_blank", rel: "noopener noreferrer", text: "Wikipedia" }),
+  ]));
+
+  const rows = [];
+  let rank = 0, prevGoals = null, shown = 0;
+  for (const s of scorers) {
+    shown++;
+    if (s.goals !== prevGoals) { rank = shown; prevGoals = s.goals; }
+
+    const tippers = people
+      .map((p) => {
+        const b = p.bonus.find((x) => /Skyttekung/i.test(x.label));
+        return b && tipMatchesScorer(s.name, b.value) ? p.name : null;
+      })
+      .filter(Boolean);
+
+    const rankCls = "rank " + (rank === 1 ? "gold" : rank === 2 ? "silver" : rank === 3 ? "bronze" : "");
+    const tipText = tippers.join(", ");
+    rows.push(
+      el("tr", {}, [
+        el("td", { class: rankCls, text: String(rank) }),
+        el("td", { class: "scorer-name" }, [
+          s.flag ? el("span", { class: "scorer-flag", text: s.flag }) : null,
+          el("span", { text: s.name }),
+          tipText ? el("span", { class: "scorer-mobile-tip", text: tipText }) : null,
+        ]),
+        el("td", { class: "pts", text: String(s.goals) }),
+        el("td", { class: "scorer-tippers scorer-tippers-col" },
+          tippers.length
+            ? [el("span", { class: "tippers-names", text: tipText })]
+            : [el("span", { class: "muted", text: "–" })]
+        ),
+      ])
+    );
+  }
+
+  container.appendChild(
+    el("table", { class: "tbl scorers" }, [
+      el("thead", {}, el("tr", {}, [
+        el("th", { text: "#" }),
+        el("th", { text: "Spelare" }),
+        el("th", { class: "pts", text: "Mål" }),
+        el("th", { text: "Tippade" }),
+      ])),
+      el("tbody", {}, rows),
+    ])
+  );
 }
