@@ -33,6 +33,10 @@ async function main() {
   const res = await fetch(url, { headers: { "X-Auth-Token": TOKEN } });
   if (!res.ok) throw new Error(`football-data svarade ${res.status}: ${await res.text()}`);
   const json = await res.json();
+  console.log(`API svarade med ${json.matches?.length ?? 0} matcher:`);
+  for (const m of json.matches ?? []) {
+    console.log(`  ${m.utcDate} | ${m.status} | ${m.homeTeam?.name} vs ${m.awayTeam?.name}`);
+  }
 
   const matches = (json.matches || [])
     .filter((m) => KEEP.has(m.status))
