@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-23T17:22:31.669Z",
+  "updated": "2026-06-23T17:35:40.159Z",
   "matches": [
     {
       "home": "Portugal",
       "away": "Uzbekistan",
       "homeScore": 2,
-      "awayScore": 0,
+      "awayScore": 1,
       "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-23T17:00:00Z"
