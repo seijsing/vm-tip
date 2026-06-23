@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T19:15:41.284Z",
+  "updated": "2026-06-23T19:24:30.498Z",
   "matches": [
     {
       "home": "Norway",
@@ -33,7 +33,7 @@
       "away": "Ghana",
       "homeScore": null,
       "awayScore": null,
-      "status": "SCHEDULED",
+      "status": "TIMED",
       "minute": null,
       "utcDate": "2026-06-23T20:00:00Z"
     },
