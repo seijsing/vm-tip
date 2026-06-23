@@ -1,6 +1,15 @@
 {
-  "updated": "2026-06-23T05:07:18.964Z",
+  "updated": "2026-06-23T17:06:25.751Z",
   "matches": [
+    {
+      "home": "Portugal",
+      "away": "Uzbekistan",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "IN_PLAY",
+      "minute": null,
+      "utcDate": "2026-06-23T17:00:00Z"
+    },
     {
       "home": "Norway",
       "away": "Senegal",
@@ -18,15 +27,6 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-23T03:00:00Z"
-    },
-    {
-      "home": "Portugal",
-      "away": "Uzbekistan",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-06-23T17:00:00Z"
     },
     {
       "home": "England",
