@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-23T03:43:17.205Z",
+  "updated": "2026-06-23T03:57:17.143Z",
   "matches": [
     {
       "home": "Jordan",
       "away": "Algeria",
       "homeScore": 1,
       "awayScore": 0,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "minute": null,
       "utcDate": "2026-06-23T03:00:00Z"
     },
