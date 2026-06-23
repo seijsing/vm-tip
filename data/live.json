@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-23T00:01:02.319Z",
+  "updated": "2026-06-23T00:06:22.618Z",
   "matches": [
     {
       "home": "Norway",
       "away": "Senegal",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-23T00:00:00Z"
     },
