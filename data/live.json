@@ -1,15 +1,6 @@
 {
-  "updated": "2026-06-23T04:52:21.118Z",
+  "updated": "2026-06-23T05:07:18.964Z",
   "matches": [
-    {
-      "home": "Jordan",
-      "away": "Algeria",
-      "homeScore": 1,
-      "awayScore": 2,
-      "status": "IN_PLAY",
-      "minute": null,
-      "utcDate": "2026-06-23T03:00:00Z"
-    },
     {
       "home": "Norway",
       "away": "Senegal",
@@ -18,6 +9,15 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-23T00:00:00Z"
+    },
+    {
+      "home": "Jordan",
+      "away": "Algeria",
+      "homeScore": 1,
+      "awayScore": 2,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-06-23T03:00:00Z"
     },
     {
       "home": "Portugal",
