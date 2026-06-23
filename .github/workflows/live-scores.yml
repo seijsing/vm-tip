@@ -34,7 +34,7 @@ jobs:
             git config user.name "vm-tip-bot"
             git config user.email "actions@users.noreply.github.com"
             git add data/live.json
-            git commit -m "Uppdatera live-resultat [skip ci]"
+            git commit -m "Uppdatera live-resultat"
             git push
           else
             echo "Inga ändringar att committa."
