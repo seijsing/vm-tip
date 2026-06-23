@@ -1,6 +1,15 @@
 {
-  "updated": "2026-06-23T20:05:33.323Z",
+  "updated": "2026-06-23T20:57:21.590Z",
   "matches": [
+    {
+      "home": "England",
+      "away": "Ghana",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "PAUSED",
+      "minute": null,
+      "utcDate": "2026-06-23T20:00:00Z"
+    },
     {
       "home": "Norway",
       "away": "Senegal",
