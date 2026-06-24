@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T23:16:23.766Z",
+  "updated": "2026-06-24T23:30:44.849Z",
   "matches": [
     {
       "home": "Morocco",
@@ -14,7 +14,7 @@
       "home": "Scotland",
       "away": "Brazil",
       "homeScore": 0,
-      "awayScore": 2,
+      "awayScore": 3,
       "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-24T22:00:00Z"
