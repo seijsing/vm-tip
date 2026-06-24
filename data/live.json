@@ -1,6 +1,15 @@
 {
-  "updated": "2026-06-24T22:07:17.378Z",
+  "updated": "2026-06-24T22:56:22.937Z",
   "matches": [
+    {
+      "home": "Morocco",
+      "away": "Haiti",
+      "homeScore": 2,
+      "awayScore": 2,
+      "status": "PAUSED",
+      "minute": null,
+      "utcDate": "2026-06-24T22:00:00Z"
+    },
     {
       "home": "Colombia",
       "away": "Congo DR",
