@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-24T01:28:25.877Z",
+  "updated": "2026-06-24T01:29:19.975Z",
   "matches": [
     {
       "home": "Colombia",
       "away": "Congo DR",
       "homeScore": null,
       "awayScore": null,
-      "status": "TIMED",
+      "status": "SCHEDULED",
       "minute": null,
       "utcDate": "2026-06-24T02:00:00Z"
     },
