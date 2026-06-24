@@ -1,15 +1,6 @@
 {
-  "updated": "2026-06-24T21:00:56.913Z",
+  "updated": "2026-06-24T21:04:22.430Z",
   "matches": [
-    {
-      "home": "Bosnia-Herzegovina",
-      "away": "Qatar",
-      "homeScore": 3,
-      "awayScore": 1,
-      "status": "IN_PLAY",
-      "minute": null,
-      "utcDate": "2026-06-24T19:00:00Z"
-    },
     {
       "home": "Colombia",
       "away": "Congo DR",
@@ -23,6 +14,15 @@
       "home": "Switzerland",
       "away": "Canada",
       "homeScore": 2,
+      "awayScore": 1,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-06-24T19:00:00Z"
+    },
+    {
+      "home": "Bosnia-Herzegovina",
+      "away": "Qatar",
+      "homeScore": 3,
       "awayScore": 1,
       "status": "FINISHED",
       "minute": null,
