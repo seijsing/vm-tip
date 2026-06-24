@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-24T20:21:18.393Z",
+  "updated": "2026-06-24T20:40:45.699Z",
   "matches": [
     {
       "home": "Switzerland",
       "away": "Canada",
       "homeScore": 2,
-      "awayScore": 0,
+      "awayScore": 1,
       "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-24T19:00:00Z"
