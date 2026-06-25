@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-25T21:24:22.354Z",
+  "updated": "2026-06-25T21:30:46.477Z",
   "matches": [
     {
       "home": "Ecuador",
@@ -14,7 +14,7 @@
       "home": "Curaçao",
       "away": "Ivory Coast",
       "homeScore": 0,
-      "awayScore": 1,
+      "awayScore": 2,
       "status": "IN_PLAY",
       "minute": null,
       "utcDate": "2026-06-25T20:00:00Z"
