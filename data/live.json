@@ -1,12 +1,12 @@
 {
-  "updated": "2026-06-25T02:59:17.633Z",
+  "updated": "2026-06-25T03:02:25.009Z",
   "matches": [
     {
       "home": "Czechia",
       "away": "Mexico",
       "homeScore": 0,
       "awayScore": 3,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-25T01:00:00Z"
     },
@@ -15,7 +15,7 @@
       "away": "South Korea",
       "homeScore": 1,
       "awayScore": 0,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-25T01:00:00Z"
     },
