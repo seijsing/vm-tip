@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-25T02:27:21.063Z",
+  "updated": "2026-06-25T02:29:17.690Z",
   "matches": [
     {
       "home": "Czechia",
@@ -13,7 +13,7 @@
     {
       "home": "South Africa",
       "away": "South Korea",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 0,
       "status": "IN_PLAY",
       "minute": null,
