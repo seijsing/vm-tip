@@ -36,33 +36,7 @@ async function main() {
   const json = await res.json();
   console.log(`API svarade med ${json.matches?.length ?? 0} matcher:`);
   for (const m of json.matches ?? []) {
-    console.log(`  ${m.id} | ${m.utcDate} | ${m.status} | ${m.homeTeam?.name} vs ${m.awayTeam?.name}`);
-  }
-
-  // ENGÅNGS-DIAGNOSTIK: kollar om vår token returnerar målskyttar på match-detalj-endpointen.
-  // Ta bort detta block när vi vet svaret.
-  const finished = (json.matches ?? []).find((m) => m.status === "FINISHED");
-  if (finished) {
-    try {
-      const dRes = await fetch(`https://api.football-data.org/v4/matches/${finished.id}`, {
-        headers: { "X-Auth-Token": TOKEN },
-      });
-      console.log(`[DIAG] match/${finished.id} HTTP ${dRes.status}`);
-      if (dRes.ok) {
-        const d = await dRes.json();
-        const goals = d.goals ?? d.match?.goals ?? null;
-        console.log(`[DIAG] goals-fält: ${goals == null ? "saknas/null" : `array med ${goals.length} poster`}`);
-        if (goals?.length) {
-          const g = goals[0];
-          console.log(`[DIAG] exempel: ${g.scorer?.name} ${g.minute}' (${g.type}) – ${g.team?.name}`);
-        }
-        console.log(`[DIAG] tillgängliga nycklar: ${Object.keys(d).join(", ")}`);
-      } else {
-        console.log(`[DIAG] svarstext: ${(await dRes.text()).slice(0, 200)}`);
-      }
-    } catch (e) {
-      console.log(`[DIAG] fel vid match-detalj: ${e.message}`);
-    }
+    console.log(`  ${m.utcDate} | ${m.status} | ${m.homeTeam?.name} vs ${m.awayTeam?.name}`);
   }
 
   const matches = (json.matches || [])
