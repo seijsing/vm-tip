@@ -1,5 +1,5 @@
 import { whoTipped } from "./live.js";
-import { flagEmoji } from "./config.js";
+import { flagEmoji, codeFromSv } from "./config.js";
 import { fetchGoalscorers } from "./goalscorers.js";
 
 // Liten DOM-hjälpare.
@@ -366,7 +366,8 @@ function playedRow(m, people) {
 }
 
 /* ---------- Per-person ---------- */
-export function renderPerson(container, person, matches, onBack) {
+export function renderPerson(container, person, data, onBack) {
+  const matches = data.matches;
   clear(container);
   if (!person) { container.appendChild(el("p", { text: "Välj en person i topplistan." })); return; }
   container.appendChild(
@@ -399,6 +400,9 @@ export function renderPerson(container, person, matches, onBack) {
     ])
   );
 
+  // Vidare-tips per grupp
+  appendAdvanceSection(container, person, data.advanceGroups);
+
   // Bonus-tips (slutspel/skyttekung)
   const bonus = person.bonus.filter((b) => /Brons|Silver|Guld|Skyttekung/i.test(b.label) && b.value);
   if (bonus.length) {
@@ -412,6 +416,145 @@ export function renderPerson(container, person, matches, onBack) {
       ))
     );
   }
+}
+
+/* ---------- Vidare från grupperna ---------- */
+
+// En persons vidare-tips grupperade på grupp: Map(grupp -> [lagnamn, …]).
+function personAdvancePicks(person) {
+  const m = new Map();
+  for (const b of person.bonus) {
+    if (b.label !== "Vidare" || !b.group) continue;
+    if (!m.has(b.group)) m.set(b.group, []);
+    m.get(b.group).push(b.value);
+  }
+  return m;
+}
+
+// Matchar ett tippat lag mot facit-listan. Jämför via lagkod (tål alias/stavning
+// som finns i config), annars normaliserad sträng.
+function isAdvanceHit(pick, correctList) {
+  const pc = codeFromSv(pick);
+  const pn = normName(pick);
+  return correctList.some((c) => {
+    const cc = codeFromSv(c);
+    if (pc && cc) return pc === cc;
+    return normName(c) === pn;
+  });
+}
+
+// Lag-chip: flagga + namn. cls styr ev. hit/miss/facit-stil.
+function teamChip(name, cls = "") {
+  const code = codeFromSv(name);
+  return el("span", { class: ("adv-chip " + cls).trim() }, [
+    el("span", { class: "adv-flag", text: code ? flagEmoji(code) : "🏳" }),
+    el("span", { class: "adv-chip-name", text: name }),
+  ]);
+}
+
+// Sektion i personvyn: tippade lag vidare per grupp + ev. rätt/fel.
+function appendAdvanceSection(container, person, advanceGroups) {
+  if (!advanceGroups || !advanceGroups.length) return;
+  const picks = personAdvancePicks(person);
+  if (![...picks.values()].some((arr) => arr.some((v) => (v || "").trim()))) return;
+
+  let grpHits = 0, grpDecided = 0, b3Hits = 0, b3Decided = 0;
+  const rows = [];
+  for (const g of advanceGroups) {
+    const vals = (picks.get(g.group) || []).filter((v) => (v || "").trim());
+    if (!vals.length) continue;
+    const decided = g.correct.length > 0;
+    const isB3 = g.group === "Bästa 3a";
+    const chips = vals.map((v) => {
+      let cls = "";
+      if (decided) {
+        const hit = isAdvanceHit(v, g.correct);
+        cls = hit ? "hit" : "miss";
+        if (isB3) { b3Decided++; if (hit) b3Hits++; }
+        else { grpDecided++; if (hit) grpHits++; }
+      }
+      return teamChip(v, cls);
+    });
+    rows.push(el("div", { class: "adv-grp-row" + (isB3 ? " wide" : "") }, [
+      el("span", { class: "adv-grp", text: isB3 ? "Bästa 3:a" : g.group }),
+      el("div", { class: "adv-picks" }, chips),
+    ]));
+  }
+
+  container.appendChild(el("h4", { class: "bonus-h", text: "Vidare från grupperna" }));
+  container.appendChild(el("div", { class: "advance-person" }, rows));
+
+  if (grpDecided || b3Decided) {
+    const parts = [];
+    if (grpDecided) parts.push(`${grpHits}/${grpDecided} rätt i grupperna`);
+    if (b3Decided) parts.push(`${b3Hits}/${b3Decided} bästa 3:or`);
+    container.appendChild(el("div", { class: "adv-summary", text: parts.join(" · ") }));
+  }
+}
+
+// Flik: grupp-för-grupp-översikt över vilka lag som tippats vidare.
+export function renderAdvance(container, data) {
+  clear(container);
+  const { people, advanceGroups } = data;
+  if (!advanceGroups || !advanceGroups.length) {
+    container.appendChild(el("p", { class: "muted", text: "Inga vidare-tips i arket." }));
+    return;
+  }
+  container.appendChild(el("p", { class: "muted",
+    text: "Lag som tippats gå vidare ur varje grupp. ✓ = gick vidare (fylls i när gruppspelet är klart)." }));
+  for (const g of advanceGroups) container.appendChild(advanceCard(g, people));
+}
+
+function advanceCard(g, people) {
+  // Räkna röster per lag i gruppen + vilka som tippat. Hoppa över värden som inte
+  // matchar ett känt lag (t.ex. exempelradens platshållare "a"/"b") så översikten hålls ren.
+  const counts = new Map();
+  for (const p of people) {
+    for (const b of p.bonus) {
+      if (b.label !== "Vidare" || b.group !== g.group) continue;
+      const v = (b.value || "").trim();
+      const code = codeFromSv(v);
+      if (!code) continue;
+      if (!counts.has(code)) counts.set(code, { name: v, people: [] });
+      counts.get(code).people.push(p.name);
+    }
+  }
+  const sorted = [...counts.values()].sort((a, b) => b.people.length - a.people.length);
+  const isB3 = g.group === "Bästa 3a";
+  const title = isB3 ? "Bästa 3:orna" : `Grupp ${g.group}`;
+
+  const head = el("div", { class: "adv-card-head" }, [
+    el("span", { class: "adv-card-title", text: title }),
+    g.correct.length
+      ? el("div", { class: "adv-facit" }, g.correct.map((c) => teamChip(c, "facit")))
+      : el("span", { class: "muted adv-pending", text: "Ej avgjort" }),
+  ]);
+
+  const votes = sorted.map((s) => {
+    const hit = g.correct.length > 0 && isAdvanceHit(s.name, g.correct);
+    const code = codeFromSv(s.name);
+    const chevron = el("span", { class: "chevron", text: "›" });
+    const row = el("div", { class: "adv-vote" + (hit ? " advanced" : "") }, [
+      el("span", { class: "adv-flag", text: code ? flagEmoji(code) : "🏳" }),
+      el("span", { class: "adv-team" }, [
+        s.name,
+        hit ? el("span", { class: "adv-check", text: "✓" }) : null,
+      ]),
+      el("span", { class: "adv-count", text: `${s.people.length}×` }),
+      chevron,
+    ]);
+    const names = el("div", { class: "adv-names", text: s.people.join(", ") });
+    names.hidden = true;
+    row.addEventListener("click", () => {
+      const open = !names.hidden;
+      names.hidden = open;
+      chevron.classList.toggle("open", !open);
+      row.classList.toggle("expanded", !open);
+    });
+    return el("div", { class: "adv-vote-wrap" }, [row, names]);
+  });
+
+  return el("div", { class: "adv-card" }, [head, el("div", { class: "adv-votes" }, votes)]);
 }
 
 /* ---------- Tippare (alfabetisk lista → person-vy) ---------- */

@@ -78,6 +78,23 @@ export function parseSheet(rows) {
     bonusCols.push({ col, label, group }); // label: "Vidare"/"Brons"/"Silver"/"Guld"/"Skyttekung"
   }
 
+  // "Vidare"-kolumnerna grupperade per grupp (A–L = 2 platser, "Bästa 3a" = 8 platser).
+  // correct = de lag som faktiskt gick vidare (ur Resultat-raden); tom = ännu ej avgjort.
+  const advanceMap = new Map(); // grupp -> { group, cols:[], correct:[] }
+  for (const b of bonusCols) {
+    if (b.label !== "Vidare" || !b.group) continue;
+    if (!advanceMap.has(b.group)) advanceMap.set(b.group, { group: b.group, cols: [], correct: [] });
+    const g = advanceMap.get(b.group);
+    g.cols.push(b.col);
+    const res = (resultRow[b.col] || "").trim();
+    if (res) g.correct.push(res);
+  }
+  const advanceGroups = [...advanceMap.values()].map((g) => ({
+    group: g.group,
+    slots: g.cols.length,
+    correct: g.correct,
+  }));
+
   // Personer = rader från firstPerson med ett namn (exkl. exempel-/tomma rader).
   const people = [];
   for (let r = R.firstPerson; r < rows.length; r++) {
@@ -104,7 +121,7 @@ export function parseSheet(rows) {
     });
   }
 
-  return { matches, people, bonusCols };
+  return { matches, people, bonusCols, advanceGroups };
 }
 
 // "2-0" / "2 - 0" -> "2-0"; tomt -> null

@@ -435,6 +435,60 @@ body {
 .scorers td { vertical-align: top; padding-top: 12px; }
 .scorer-mobile-tip { display: none; }
 
+/* Vidare från grupperna – personvy */
+.advance-person { display: flex; flex-direction: column; gap: 6px; }
+.adv-grp-row { display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: center; }
+.adv-grp-row.wide { grid-template-columns: 28px 1fr; align-items: start; }
+.adv-grp {
+  font-weight: 700; font-size: 13px; color: var(--muted);
+  text-align: center;
+}
+.adv-picks { display: flex; flex-wrap: wrap; gap: 6px; }
+.adv-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: 999px; padding: 4px 10px 4px 8px;
+  font-size: 13px; font-weight: 500;
+}
+.adv-chip.hit  { background: var(--hit-exact-bg); border-color: var(--accent); color: var(--accent); font-weight: 700; }
+.adv-chip.miss { background: var(--miss-bg); color: var(--muted); }
+.adv-chip.facit { background: var(--hit-exact-bg); border-color: var(--accent); color: var(--accent); font-weight: 700; }
+.adv-flag { font-size: 16px; line-height: 1; flex-shrink: 0; }
+.adv-summary { margin-top: 10px; font-size: 13px; font-weight: 600; color: var(--accent); }
+
+/* Vidare-fliken – grupp-för-grupp-kort */
+.adv-card {
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: 12px; padding: 12px 14px; margin-bottom: 12px;
+}
+.adv-card-head {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 10px; flex-wrap: wrap; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--line);
+}
+.adv-card-title { font-weight: 700; font-size: 15px; }
+.adv-facit { display: flex; flex-wrap: wrap; gap: 6px; }
+.adv-pending { font-size: 12px; }
+.adv-votes { display: flex; flex-direction: column; }
+.adv-vote-wrap { display: flex; flex-direction: column; }
+.adv-vote {
+  display: grid; grid-template-columns: 20px 1fr auto 16px; gap: 8px;
+  align-items: center; padding: 6px 0; font-size: 14px; cursor: pointer;
+  border-bottom: 1px solid var(--line);
+}
+.adv-vote-wrap:last-child .adv-vote { border-bottom: none; }
+.adv-vote:hover .adv-team { color: var(--accent-2); }
+.adv-vote .adv-team { color: var(--text); display: flex; align-items: center; gap: 5px; }
+.adv-vote.advanced .adv-team { font-weight: 700; }
+.adv-check { color: var(--accent); font-weight: 700; }
+.adv-count { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+.adv-vote .chevron { font-size: 15px; }
+.adv-names {
+  font-size: 13px; color: var(--accent); font-weight: 600;
+  line-height: 1.5; padding: 2px 0 8px 28px;
+}
+.adv-names[hidden] { display: none; }
+
 /* Footer */
 .foot {
   position: fixed; bottom: 0; left: 0; right: 0; text-align: center;
@@ -486,4 +540,9 @@ body {
     font-weight: 600;
     margin-top: 2px;
   }
+
+  /* Vidare: kompaktare chips, tillåt radbrytning */
+  .adv-chip { font-size: 12px; padding: 3px 9px 3px 7px; }
+  .adv-flag { font-size: 14px; }
+  .adv-card-title { font-size: 14px; }
 }

@@ -75,6 +75,29 @@ export function teamSv(code) {
   return CONFIG.teamCodes[code]?.sv ?? code;
 }
 
+// Normalisera ett lagnamn för jämförelse: gemener, strippa diakritik, trimma.
+function normTeam(s) {
+  return (s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").trim();
+}
+
+// Omvänd uppslagning: svenskt lagnamn (eller engelskt namn/alias) -> 3-bokstavskod.
+// Byggs en gång och cachas. Returnerar null om inget lag matchar.
+let _svIndex = null;
+function svIndex() {
+  if (_svIndex) return _svIndex;
+  _svIndex = new Map();
+  for (const [code, t] of Object.entries(CONFIG.teamCodes)) {
+    _svIndex.set(normTeam(t.sv), code);
+    _svIndex.set(normTeam(t.en), code);
+    for (const a of t.aliases ?? []) _svIndex.set(normTeam(a), code);
+  }
+  return _svIndex;
+}
+
+export function codeFromSv(name) {
+  return svIndex().get(normTeam(name)) ?? null;
+}
+
 // Returnerar flagg-emoji för en 3-bokstavs lagkod (via ISO 2-bokstavskod).
 export function flagEmoji(code) {
   const iso = CONFIG.teamCodes[code]?.iso;

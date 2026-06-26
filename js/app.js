@@ -1,7 +1,7 @@
 import { CONFIG } from "./config.js";
 import { loadSheet } from "./sheets.js";
 import { fetchLive, matchLiveToSheet } from "./live.js";
-import { renderStandings, renderMatches, renderPerson, renderStats, renderHero, renderTippers, renderGoalscorers } from "./render.js";
+import { renderStandings, renderMatches, renderPerson, renderStats, renderHero, renderTippers, renderGoalscorers, renderAdvance } from "./render.js";
 
 const view = document.getElementById("view");
 const heroEl = document.getElementById("hero");
@@ -36,8 +36,10 @@ function render() {
       renderMatches(view, data, state.liveEnriched); break;
     case "person": {
       const person = data.people.find((p) => p.name === state.selected) || null;
-      renderPerson(view, person, data.matches, () => setActive("standings")); break;
+      renderPerson(view, person, data, () => setActive("standings")); break;
     }
+    case "advance":
+      renderAdvance(view, data); break;
     case "tippers":
       renderTippers(view, data.people, selectPerson); break;
     case "scorers":
