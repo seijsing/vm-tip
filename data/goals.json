@@ -1200,6 +1200,12 @@
       "scorer": "Ousmane Dembélé",
       "minute": "32",
       "type": "Goal"
+    },
+    {
+      "code": "FRA",
+      "scorer": "Désiré Doué",
+      "minute": "90+4",
+      "type": "Goal - Header"
     }
   ],
   "IRA|SEN": [
