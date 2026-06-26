@@ -1,6 +1,7 @@
 import { CONFIG } from "./config.js";
 import { loadSheet } from "./sheets.js";
 import { fetchLive, matchLiveToSheet } from "./live.js";
+import { fetchGoalsMap, orientGoals } from "./matchgoals.js";
 import { renderStandings, renderMatches, renderPerson, renderStats, renderHero, renderTippers, renderGoalscorers, renderAdvance } from "./render.js";
 
 const view = document.getElementById("view");
@@ -51,7 +52,9 @@ function render() {
 
 async function refresh() {
   try {
-    const [data, live] = await Promise.all([loadSheet(), fetchLive()]);
+    const [data, live, goalsMap] = await Promise.all([loadSheet(), fetchLive(), fetchGoalsMap()]);
+    // Koppla målskyttar (från data/goals.json) till varje match via lagkodspar.
+    for (const m of data.matches) m.goals = orientGoals(m, goalsMap);
     state.data = data;
     state.liveEnriched = matchLiveToSheet(live.matches, data.matches);
     const liveCount = state.liveEnriched.filter((l) => l.isLive).length;

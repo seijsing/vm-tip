@@ -1,0 +1,1213 @@
+{
+  "MEX|SAF": [
+    {
+      "code": "MEX",
+      "scorer": "Julián Quiñones",
+      "minute": "9",
+      "type": "Goal"
+    },
+    {
+      "code": "MEX",
+      "scorer": "Raúl Jiménez",
+      "minute": "67",
+      "type": "Goal - Header"
+    }
+  ],
+  "KOR|TJE": [
+    {
+      "code": "TJE",
+      "scorer": "Ladislav Krejcí",
+      "minute": "59",
+      "type": "Goal - Header"
+    },
+    {
+      "code": "KOR",
+      "scorer": "Hwang In-Beom",
+      "minute": "67",
+      "type": "Goal"
+    },
+    {
+      "code": "KOR",
+      "scorer": "Oh Hyeon-Gyu",
+      "minute": "80",
+      "type": "Goal"
+    }
+  ],
+  "BOS|KAN": [
+    {
+      "code": "BOS",
+      "scorer": "Jovo Lukic",
+      "minute": "21",
+      "type": "Goal - Header"
+    },
+    {
+      "code": "KAN",
+      "scorer": "Cyle Larin",
+      "minute": "78",
+      "type": "Goal"
+    }
+  ],
+  "PAR|USA": [
+    {
+      "code": "USA",
+      "scorer": "Damián Bobadilla",
+      "minute": "7",
+      "type": "Own Goal"
+    },
+    {
+      "code": "USA",
+      "scorer": "Folarin Balogun",
+      "minute": "31",
+      "type": "Goal"
+    },
+    {
+      "code": "USA",
+      "scorer": "Folarin Balogun",
+      "minute": "45+5",
+      "type": "Goal"
+    },
+    {
+      "code": "PAR",
+      "scorer": "Maurício",
+      "minute": "73",
+      "type": "Goal"
+    },
+    {
+      "code": "USA",
+      "scorer": "Giovanni Reyna",
+      "minute": "90+8",
+      "type": "Goal"
+    }
+  ],
+  "QAT|SWZ": [
+    {
+      "code": "SWZ",
+      "scorer": "Breel Embolo",
+      "minute": "17",
+      "type": "Penalty - Scored"
+    },
+    {
+      "code": "QAT",
+      "scorer": "Miro Muheim",
+      "minute": "90+4",
+      "type": "Own Goal"
+    }
+  ],
+  "BRA|MAR": [
+    {
+      "code": "MAR",
+      "scorer": "Ismael Saibari",
+      "minute": "21",
+      "type": "Goal"
+    },
+    {
+      "code": "BRA",
+      "scorer": "Vinícius Júnior",
+      "minute": "32",
+      "type": "Goal"
+    }
+  ],
+  "HAI|SCO": [
+    {
+      "code": "SCO",
+      "scorer": "John McGinn",
+      "minute": "28",
+      "type": "Goal"
+    }
+  ],
+  "AUS|TUR": [
+    {
+      "code": "AUS",
+      "scorer": "Nestory Irankunda",
+      "minute": "27",
+      "type": "Goal"
+    },
+    {
+      "code": "AUS",
+      "scorer": "Connor Metcalfe",
+      "minute": "75",
+      "type": "Goal"
+    }
+  ],
+  "CUR|TYS": [
+    {
+      "code": "TYS",
+      "scorer": "Felix Nmecha",
+      "minute": "6",
+      "type": "Goal"
+    },
+    {
+      "code": "CUR",
+      "scorer": "Livano Comenencia",
+      "minute": "21",
+      "type": "Goal"
+    },
+    {
+      "code": "TYS",
+      "scorer": "Nico Schlotterbeck",
+      "minute": "38",
+      "type": "Goal - Header"
+    },
+    {
+      "code": "TYS",
+      "scorer": "Kai Havertz",
+      "minute": "45+5",
+      "type": "Penalty - Scored"
+    },
+    {
+      "code": "TYS",
+      "scorer": "Jamal Musiala",
+      "minute": "47",
+      "type": "Goal"
+    },
+    {
+      "code": "TYS",
+      "scorer": "Nathaniel Brown",
+      "minute": "68",
+      "type": "Goal - Volley"
+    },
+    {
+      "code": "TYS",
+      "scorer": "Deniz Undav",
+      "minute": "78",
+      "type": "Goal"
+    },
+    {
+      "code": "TYS",
+      "scorer": "Kai Havertz",
+      "minute": "88",
+      "type": "Goal"
+    }
+  ],
+  "JPN|NED": [
+    {
+      "code": "NED",
+      "scorer": "Virgil van Dijk",
+      "minute": "51",
+      "type": "Goal - Header"
+    },
+    {
+      "code": "JPN",
+      "scorer": "Keito Nakamura",
+      "minute": "57",
+      "type": "Goal"
+    },
+    {
+      "code": "NED",
+      "scorer": "Crysencio Summerville",
+      "minute": "64",
+      "type": "Goal"
+    },
+    {
+      "code": "JPN",
+      "scorer": "Daichi Kamada",
+      "minute": "89",
+      "type": "Goal - Header"
+    }
+  ],
+  "ECU|ELF": [
+    {
+      "code": "ELF",
+      "scorer": "Amad Diallo",
+      "minute": "90",
+      "type": "Goal"
+    }
+  ],
+  "SWE|TUN": [
+    {
+      "code": "SWE",
+      "scorer": "Yasin Ayari",
+      "minute": "7",
+      "type": "Goal"
+    },
+    {
+      "code": "SWE",
+      "scorer": "Alexander Isak",
+      "minute": "30",
+      "type": "Goal"
+    },
+    {
+      "code": "TUN",
+      "scorer": "Omar Rekik",
+      "minute": "43",
+      "type": "Goal - Header"
+    },
+    {
+      "code": "SWE",
+      "scorer": "Viktor Gyökeres",
+      "minute": "59",
+      "type": "Goal"
+    },
+    {
+      "code": "SWE",
+      "scorer": "Mattias Svanberg",
+      "minute": "84",
+      "type": "Goal"
+    },
+    {
+      "code": "SWE",
+      "scorer": "Yasin Ayari",
+      "minute": "90+6",
+      "type": "Goal"
+    }
+  ],
+  "KAP|SPA": [],
+  "BEL|EGY": [
+    {
+      "code": "EGY",
+      "scorer": "Emam Ashour",
+      "minute": "20",
+      "type": "Goal"
+    },
+    {
+      "code": "BEL",
+      "scorer": "Mohamed Hany",
+      "minute": "66",
+      "type": "Own Goal"
+    }
+  ],
+  "SAU|URU": [
+    {
+      "code": "SAU",
+      "scorer": "Abdulelah Al-Amri",
+      "minute": "41",
+      "type": "Goal"
+    },
+    {
+      "code": "URU",
+      "scorer": "Maxi Araújo",
+      "minute": "80",
+      "type": "Goal"
+    }
+  ],
+  "IRN|NZL": [
+    {
+      "code": "NZL",
+      "scorer": "Elijah Just",
+      "minute": "7",
+      "type": "Goal"
+    },
+    {
+      "code": "IRN",
+      "scorer": "Ramin Rezaeian",
+      "minute": "32",
+      "type": "Goal"
+    },
+    {
+      "code": "NZL",
+      "scorer": "Elijah Just",
+      "minute": "54",
+      "type": "Goal"
+    },
+    {
+      "code": "IRN",
+      "scorer": "Mohammad Mohebbi",
+      "minute": "64",
+      "type": "Goal - Header"
+    }
+  ],
+  "FRA|SEN": [
+    {
+      "code": "FRA",
+      "scorer": "Kylian Mbappé",
+      "minute": "66",
+      "type": "Goal"
+    },
+    {
+      "code": "FRA",
+      "scorer": "Bradley Barcola",
+      "minute": "82",
+      "type": "Goal"
+    },
+    {
+      "code": "SEN",
+      "scorer": "Ibrahim Mbaye",
+      "minute": "90+5",
+      "type": "Goal"
+    },
+    {
+      "code": "FRA",
+      "scorer": "Kylian Mbappé",
+      "minute": "90+6",
+      "type": "Goal"
+    }
+  ],
+  "IRA|NOR": [
+    {
+      "code": "NOR",
+      "scorer": "Erling Haaland",
+      "minute": "29",
+      "type": "Goal"
+    },
+    {
+      "code": "IRA",
+      "scorer": "Aymen Hussein",
+      "minute": "39",
+      "type": "Goal - Header"
+    },
+    {
+      "code": "NOR",
+      "scorer": "Erling Haaland",
+      "minute": "43",
+      "type": "Goal"
+    },
+    {
+      "code": "NOR",
+      "scorer": "Leo Østigard",
+      "minute": "76",
+      "type": "Goal - Header"
+    },
+    {
+      "code": "NOR",
+      "scorer": "Aymen Hussein",
+      "minute": "90+6",
+      "type": "Own Goal"
+    }
+  ],
+  "ALG|ARG": [
+    {
+      "code": "ARG",
+      "scorer": "Lionel Messi",
+      "minute": "17",
+      "type": "Goal"
+    },
+    {
+      "code": "ARG",
+      "scorer": "Lionel Messi",
+      "minute": "60",
+      "type": "Goal"
+    },
+    {
+      "code": "ARG",
+      "scorer": "Lionel Messi",
+      "minute": "76",
+      "type": "Goal"
+    }
+  ],
+  "JOR|ÖST": [
+    {
+      "code": "ÖST",
+      "scorer": "Romano Schmid",
+      "minute": "21",
+      "type": "Goal"
+    },
+    {
+      "code": "JOR",
+      "scorer": "Ali Olwan",
+      "minute": "50",
+      "type": "Goal"
+    },
+    {
+      "code": "ÖST",
+      "scorer": "Yazan Al-Arab",
+      "minute": "76",
+      "type": "Own Goal"
+    },
+    {
+      "code": "ÖST",
+      "scorer": "Marko Arnautovic",
+      "minute": "90+12",
+      "type": "Penalty - Scored"
+    }
+  ],
+  "KON|POR": [
+    {
+      "code": "POR",
+      "scorer": "João Neves",
+      "minute": "6",
+      "type": "Goal - Header"
+    },
+    {
+      "code": "KON",
+      "scorer": "Yoane Wissa",
+      "minute": "45+5",
+      "type": "Goal - Header"
+    }
+  ],
+  "ENG|KRO": [
+    {
+      "code": "ENG",
+      "scorer": "Harry Kane",
+      "minute": "12",
+      "type": "Penalty - Scored"
+    },
+    {
+      "code": "KRO",
+      "scorer": "Martin Baturina",
+      "minute": "36",
+      "type": "Goal"
+    },
+    {
+      "code": "ENG",
+      "scorer": "Harry Kane",
+      "minute": "42",
+      "type": "Goal - Header"
+    },
+    {
+      "code": "KRO",
+      "scorer": "Petar Musa",
+      "minute": "45+5",
+      "type": "Goal"
+    },
+    {
+      "code": "ENG",
+      "scorer": "Jude Bellingham",
+      "minute": "47",
+      "type": "Goal"
+    },
+    {
+      "code": "ENG",
+      "scorer": "Marcus Rashford",
+      "minute": "85",
+      "type": "Goal"
+    }
+  ],
+  "GHA|PAN": [
+    {
+      "code": "GHA",
+      "scorer": "Caleb Yirenkyi",
+      "minute": "90+5",
+      "type": "Goal"
+    }
+  ],
+  "COL|UZB": [
+    {
+      "code": "COL",
+      "scorer": "Daniel Muñoz",
+      "minute": "40",
+      "type": "Goal"
+    },
+    {
+      "code": "UZB",
+      "scorer": "Abbosbek Fayzullaev",
+      "minute": "60",
+      "type": "Goal - Header"
+    },
+    {
+      "code": "COL",
+      "scorer": "Luis Díaz",
+      "minute": "65",
+      "type": "Goal"
+    },
+    {
+      "code": "COL",
+      "scorer": "Jáminton Campaz",
+      "minute": "90+9",
+      "type": "Goal - Header"
+    }
+  ],
+  "SAF|TJE": [
+    {
+      "code": "TJE",
+      "scorer": "Michal Sadílek",
+      "minute": "6",
+      "type": "Goal"
+    },
+    {
+      "code": "SAF",
+      "scorer": "Teboho Mokoena",
+      "minute": "83",
+      "type": "Penalty - Scored"
+    }
+  ],
+  "BOS|SWZ": [
+    {
+      "code": "SWZ",
+      "scorer": "Johan Manzambi",
+      "minute": "74",
+      "type": "Goal"
+    },
+    {
+      "code": "SWZ",
+      "scorer": "Rubén Vargas",
+      "minute": "84",
+      "type": "Goal"
+    },
+    {
+      "code": "SWZ",
+      "scorer": "Johan Manzambi",
+      "minute": "90",
+      "type": "Goal"
+    },
+    {
+      "code": "BOS",
+      "scorer": "Ermin Mahmic",
+      "minute": "90+3",
+      "type": "Goal"
+    },
+    {
+      "code": "SWZ",
+      "scorer": "Granit Xhaka",
+      "minute": "90+7",
+      "type": "Penalty - Scored"
+    }
+  ],
+  "KAN|QAT": [
+    {
+      "code": "KAN",
+      "scorer": "Cyle Larin",
+      "minute": "16",
+      "type": "Goal"
+    },
+    {
+      "code": "KAN",
+      "scorer": "Jonathan David",
+      "minute": "29",
+      "type": "Goal"
+    },
+    {
+      "code": "KAN",
+      "scorer": "Jonathan David",
+      "minute": "45+3",
+      "type": "Goal"
+    },
+    {
+      "code": "KAN",
+      "scorer": "Nathan Saliba",
+      "minute": "64",
+      "type": "Goal - Free-kick"
+    },
+    {
+      "code": "KAN",
+      "scorer": "Mohamed Manai",
+      "minute": "75",
+      "type": "Own Goal"
+    },
+    {
+      "code": "KAN",
+      "scorer": "Jonathan David",
+      "minute": "90+2",
+      "type": "Goal"
+    }
+  ],
+  "KOR|MEX": [
+    {
+      "code": "MEX",
+      "scorer": "Luis Romo",
+      "minute": "50",
+      "type": "Goal"
+    }
+  ],
+  "AUS|USA": [
+    {
+      "code": "USA",
+      "scorer": "Cameron Burgess",
+      "minute": "11",
+      "type": "Own Goal"
+    },
+    {
+      "code": "USA",
+      "scorer": "Alex Freeman",
+      "minute": "43",
+      "type": "Goal - Header"
+    }
+  ],
+  "MAR|SCO": [
+    {
+      "code": "MAR",
+      "scorer": "Ismael Saibari",
+      "minute": "2",
+      "type": "Goal"
+    }
+  ],
+  "BRA|HAI": [
+    {
+      "code": "BRA",
+      "scorer": "Matheus Cunha",
+      "minute": "23",
+      "type": "Goal"
+    },
+    {
+      "code": "BRA",
+      "scorer": "Matheus Cunha",
+      "minute": "36",
+      "type": "Goal"
+    },
+    {
+      "code": "BRA",
+      "scorer": "Vinícius Júnior",
+      "minute": "45+3",
+      "type": "Goal"
+    }
+  ],
+  "PAR|TUR": [
+    {
+      "code": "PAR",
+      "scorer": "Matías Galarza",
+      "minute": "2",
+      "type": "Goal"
+    }
+  ],
+  "NED|SWE": [
+    {
+      "code": "NED",
+      "scorer": "Brian Brobbey",
+      "minute": "5",
+      "type": "Goal"
+    },
+    {
+      "code": "NED",
+      "scorer": "Brian Brobbey",
+      "minute": "17",
+      "type": "Goal"
+    },
+    {
+      "code": "NED",
+      "scorer": "Cody Gakpo",
+      "minute": "47",
+      "type": "Goal"
+    },
+    {
+      "code": "NED",
+      "scorer": "Cody Gakpo",
+      "minute": "54",
+      "type": "Goal"
+    },
+    {
+      "code": "SWE",
+      "scorer": "Anthony Elanga",
+      "minute": "59",
+      "type": "Goal"
+    },
+    {
+      "code": "NED",
+      "scorer": "Crysencio Summerville",
+      "minute": "89",
+      "type": "Goal"
+    }
+  ],
+  "ELF|TYS": [
+    {
+      "code": "ELF",
+      "scorer": "Franck Kessié",
+      "minute": "30",
+      "type": "Goal"
+    },
+    {
+      "code": "TYS",
+      "scorer": "Deniz Undav",
+      "minute": "68",
+      "type": "Goal"
+    },
+    {
+      "code": "TYS",
+      "scorer": "Deniz Undav",
+      "minute": "90+4",
+      "type": "Goal"
+    }
+  ],
+  "CUR|ECU": [],
+  "JPN|TUN": [
+    {
+      "code": "JPN",
+      "scorer": "Daichi Kamada",
+      "minute": "4",
+      "type": "Goal"
+    },
+    {
+      "code": "JPN",
+      "scorer": "Ayase Ueda",
+      "minute": "31",
+      "type": "Goal"
+    },
+    {
+      "code": "JPN",
+      "scorer": "Junya Ito",
+      "minute": "69",
+      "type": "Goal"
+    },
+    {
+      "code": "JPN",
+      "scorer": "Ayase Ueda",
+      "minute": "83",
+      "type": "Goal - Header"
+    }
+  ],
+  "SAU|SPA": [
+    {
+      "code": "SPA",
+      "scorer": "Lamine Yamal",
+      "minute": "10",
+      "type": "Goal"
+    },
+    {
+      "code": "SPA",
+      "scorer": "Mikel Oyarzabal",
+      "minute": "21",
+      "type": "Goal"
+    },
+    {
+      "code": "SPA",
+      "scorer": "Mikel Oyarzabal",
+      "minute": "24",
+      "type": "Goal"
+    },
+    {
+      "code": "SPA",
+      "scorer": "Hassan Al-Tambakti",
+      "minute": "49",
+      "type": "Own Goal"
+    }
+  ],
+  "BEL|IRN": [],
+  "KAP|URU": [
+    {
+      "code": "KAP",
+      "scorer": "Kevin Pina",
+      "minute": "21",
+      "type": "Goal - Free-kick"
+    },
+    {
+      "code": "URU",
+      "scorer": "Maxi Araújo",
+      "minute": "44",
+      "type": "Goal - Header"
+    },
+    {
+      "code": "URU",
+      "scorer": "Agustín Canobbio",
+      "minute": "45+6",
+      "type": "Goal"
+    },
+    {
+      "code": "KAP",
+      "scorer": "Hélio Varela",
+      "minute": "61",
+      "type": "Goal"
+    }
+  ],
+  "EGY|NZL": [
+    {
+      "code": "NZL",
+      "scorer": "Finn Surman",
+      "minute": "15",
+      "type": "Goal - Header"
+    },
+    {
+      "code": "EGY",
+      "scorer": "Mostafa Zico",
+      "minute": "58",
+      "type": "Goal - Header"
+    },
+    {
+      "code": "EGY",
+      "scorer": "Mohamed Salah",
+      "minute": "67",
+      "type": "Goal"
+    },
+    {
+      "code": "EGY",
+      "scorer": "Trézéguet",
+      "minute": "82",
+      "type": "Goal - Header"
+    }
+  ],
+  "ARG|ÖST": [
+    {
+      "code": "ARG",
+      "scorer": "Lionel Messi",
+      "minute": "38",
+      "type": "Goal"
+    },
+    {
+      "code": "ARG",
+      "scorer": "Lionel Messi",
+      "minute": "90+5",
+      "type": "Goal"
+    }
+  ],
+  "FRA|IRA": [
+    {
+      "code": "FRA",
+      "scorer": "Kylian Mbappé",
+      "minute": "14",
+      "type": "Goal"
+    },
+    {
+      "code": "FRA",
+      "scorer": "Kylian Mbappé",
+      "minute": "54",
+      "type": "Goal"
+    },
+    {
+      "code": "FRA",
+      "scorer": "Ousmane Dembélé",
+      "minute": "66",
+      "type": "Goal"
+    }
+  ],
+  "NOR|SEN": [
+    {
+      "code": "NOR",
+      "scorer": "Marcus Holmgren Pedersen",
+      "minute": "43",
+      "type": "Goal"
+    },
+    {
+      "code": "NOR",
+      "scorer": "Erling Haaland",
+      "minute": "48",
+      "type": "Goal"
+    },
+    {
+      "code": "SEN",
+      "scorer": "Ismaïla Sarr",
+      "minute": "53",
+      "type": "Goal"
+    },
+    {
+      "code": "NOR",
+      "scorer": "Erling Haaland",
+      "minute": "58",
+      "type": "Goal"
+    },
+    {
+      "code": "SEN",
+      "scorer": "Ismaïla Sarr",
+      "minute": "90+3",
+      "type": "Goal"
+    }
+  ],
+  "ALG|JOR": [
+    {
+      "code": "JOR",
+      "scorer": "Nizar Al-Rashdan",
+      "minute": "36",
+      "type": "Goal"
+    },
+    {
+      "code": "ALG",
+      "scorer": "Nadhir Benbouali",
+      "minute": "69",
+      "type": "Goal - Header"
+    },
+    {
+      "code": "ALG",
+      "scorer": "Amine Gouiri",
+      "minute": "82",
+      "type": "Goal"
+    }
+  ],
+  "POR|UZB": [
+    {
+      "code": "POR",
+      "scorer": "Cristiano Ronaldo",
+      "minute": "6",
+      "type": "Goal - Volley"
+    },
+    {
+      "code": "POR",
+      "scorer": "Nuno Mendes",
+      "minute": "17",
+      "type": "Goal - Free-kick"
+    },
+    {
+      "code": "POR",
+      "scorer": "Cristiano Ronaldo",
+      "minute": "39",
+      "type": "Goal"
+    },
+    {
+      "code": "POR",
+      "scorer": "Abduvohid Nematov",
+      "minute": "60",
+      "type": "Own Goal"
+    },
+    {
+      "code": "POR",
+      "scorer": "Rafael Leão",
+      "minute": "87",
+      "type": "Goal"
+    }
+  ],
+  "ENG|GHA": [],
+  "KRO|PAN": [
+    {
+      "code": "KRO",
+      "scorer": "Ante Budimir",
+      "minute": "54",
+      "type": "Goal"
+    }
+  ],
+  "COL|KON": [
+    {
+      "code": "COL",
+      "scorer": "Daniel Muñoz",
+      "minute": "76",
+      "type": "Goal"
+    }
+  ],
+  "BOS|QAT": [
+    {
+      "code": "BOS",
+      "scorer": "Kerim Alajbegovic",
+      "minute": "29",
+      "type": "Goal"
+    },
+    {
+      "code": "BOS",
+      "scorer": "Mahmoud Abunada",
+      "minute": "34",
+      "type": "Own Goal"
+    },
+    {
+      "code": "QAT",
+      "scorer": "Hassan Al-Haydos",
+      "minute": "42",
+      "type": "Goal"
+    },
+    {
+      "code": "BOS",
+      "scorer": "Ermin Mahmic",
+      "minute": "80",
+      "type": "Goal"
+    }
+  ],
+  "KAN|SWZ": [
+    {
+      "code": "SWZ",
+      "scorer": "Rubén Vargas",
+      "minute": "46",
+      "type": "Goal"
+    },
+    {
+      "code": "SWZ",
+      "scorer": "Johan Manzambi",
+      "minute": "57",
+      "type": "Goal"
+    },
+    {
+      "code": "KAN",
+      "scorer": "Promise David",
+      "minute": "76",
+      "type": "Goal"
+    }
+  ],
+  "HAI|MAR": [
+    {
+      "code": "HAI",
+      "scorer": "Yassine Bounou",
+      "minute": "10",
+      "type": "Own Goal"
+    },
+    {
+      "code": "MAR",
+      "scorer": "Achraf Hakimi",
+      "minute": "39",
+      "type": "Goal"
+    },
+    {
+      "code": "HAI",
+      "scorer": "Wilson Isidor",
+      "minute": "43",
+      "type": "Goal"
+    },
+    {
+      "code": "MAR",
+      "scorer": "Ismael Saibari",
+      "minute": "45+1",
+      "type": "Goal"
+    },
+    {
+      "code": "MAR",
+      "scorer": "Soufiane Rahimi",
+      "minute": "78",
+      "type": "Goal"
+    },
+    {
+      "code": "MAR",
+      "scorer": "Gessime Yassine",
+      "minute": "89",
+      "type": "Goal"
+    }
+  ],
+  "BRA|SCO": [
+    {
+      "code": "BRA",
+      "scorer": "Vinícius Júnior",
+      "minute": "7",
+      "type": "Goal"
+    },
+    {
+      "code": "BRA",
+      "scorer": "Vinícius Júnior",
+      "minute": "45+3",
+      "type": "Goal - Header"
+    },
+    {
+      "code": "BRA",
+      "scorer": "Matheus Cunha",
+      "minute": "60",
+      "type": "Goal"
+    }
+  ],
+  "MEX|TJE": [
+    {
+      "code": "MEX",
+      "scorer": "Mateo Chávez",
+      "minute": "55",
+      "type": "Goal"
+    },
+    {
+      "code": "MEX",
+      "scorer": "Julián Quiñones",
+      "minute": "61",
+      "type": "Goal"
+    },
+    {
+      "code": "MEX",
+      "scorer": "Álvaro Fidalgo",
+      "minute": "90+4",
+      "type": "Goal"
+    }
+  ],
+  "KOR|SAF": [
+    {
+      "code": "SAF",
+      "scorer": "Thapelo Maseko",
+      "minute": "63",
+      "type": "Goal"
+    }
+  ],
+  "CUR|ELF": [
+    {
+      "code": "ELF",
+      "scorer": "Nicolas Pépé",
+      "minute": "7",
+      "type": "Goal"
+    },
+    {
+      "code": "ELF",
+      "scorer": "Nicolas Pépé",
+      "minute": "64",
+      "type": "Goal"
+    }
+  ],
+  "ECU|TYS": [
+    {
+      "code": "TYS",
+      "scorer": "Leroy Sané",
+      "minute": "2",
+      "type": "Goal"
+    },
+    {
+      "code": "ECU",
+      "scorer": "Nilson Angulo",
+      "minute": "9",
+      "type": "Goal"
+    },
+    {
+      "code": "ECU",
+      "scorer": "Gonzalo Plata",
+      "minute": "77",
+      "type": "Goal - Volley"
+    }
+  ],
+  "JPN|SWE": [
+    {
+      "code": "JPN",
+      "scorer": "Daizen Maeda",
+      "minute": "56",
+      "type": "Goal"
+    },
+    {
+      "code": "SWE",
+      "scorer": "Anthony Elanga",
+      "minute": "62",
+      "type": "Goal"
+    }
+  ],
+  "NED|TUN": [
+    {
+      "code": "NED",
+      "scorer": "Ellyes Skhiri",
+      "minute": "3",
+      "type": "Own Goal"
+    },
+    {
+      "code": "NED",
+      "scorer": "Brian Brobbey",
+      "minute": "7",
+      "type": "Goal - Volley"
+    },
+    {
+      "code": "TUN",
+      "scorer": "Hazem Mastouri",
+      "minute": "54",
+      "type": "Goal - Header"
+    },
+    {
+      "code": "NED",
+      "scorer": "Jan Paul van Hecke",
+      "minute": "62",
+      "type": "Goal - Header"
+    }
+  ],
+  "AUS|PAR": [],
+  "TUR|USA": [
+    {
+      "code": "USA",
+      "scorer": "Auston Trusty",
+      "minute": "3",
+      "type": "Goal"
+    },
+    {
+      "code": "TUR",
+      "scorer": "Arda Güler",
+      "minute": "10",
+      "type": "Goal"
+    },
+    {
+      "code": "TUR",
+      "scorer": "Baris Alper Yilmaz",
+      "minute": "31",
+      "type": "Goal"
+    },
+    {
+      "code": "USA",
+      "scorer": "Sebastian Berhalter",
+      "minute": "49",
+      "type": "Goal"
+    },
+    {
+      "code": "TUR",
+      "scorer": "Kaan Ayhan",
+      "minute": "90+8",
+      "type": "Goal"
+    }
+  ],
+  "FRA|NOR": [
+    {
+      "code": "FRA",
+      "scorer": "Ousmane Dembélé",
+      "minute": "7",
+      "type": "Goal"
+    },
+    {
+      "code": "FRA",
+      "scorer": "Ousmane Dembélé",
+      "minute": "20",
+      "type": "Goal"
+    },
+    {
+      "code": "NOR",
+      "scorer": "Thelo Aasgaard",
+      "minute": "21",
+      "type": "Goal"
+    },
+    {
+      "code": "FRA",
+      "scorer": "Ousmane Dembélé",
+      "minute": "32",
+      "type": "Goal"
+    }
+  ],
+  "IRA|SEN": [
+    {
+      "code": "SEN",
+      "scorer": "Habib Diarra",
+      "minute": "4",
+      "type": "Goal"
+    }
+  ]
+}

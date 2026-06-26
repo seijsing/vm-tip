@@ -104,6 +104,27 @@ function teamCol(code, name) {
   ]);
 }
 
+// Formaterar en målpost: "Dembélé 7'" (+ markör för straff/självmål).
+function fmtGoal(g) {
+  const mark = /pen/i.test(g.type) ? " (str)" : /own/i.test(g.type) ? " (sj)" : "";
+  return `${g.scorer}${g.minute ? ` ${g.minute}'` : ""}${mark}`;
+}
+
+// Målskyttar i två kolumner (hemma vänster, borta höger) med boll i mitten.
+function scorersBlock(goals) {
+  if (!Array.isArray(goals) || !goals.length) return null;
+  const home = goals.filter((g) => g.side === "home");
+  const away = goals.filter((g) => g.side === "away");
+  if (!home.length && !away.length) return null;
+  const col = (list, cls) =>
+    el("div", { class: "hs-col " + cls }, list.map((g) => el("div", { class: "hs-item", text: fmtGoal(g) })));
+  return el("div", { class: "hero-scorers" }, [
+    col(home, "hs-home"),
+    el("span", { class: "hs-ball", text: "⚽" }),
+    col(away, "hs-away"),
+  ]);
+}
+
 function liveBody(m, l, people) {
   const timeLabel = l.status === "PAUSED" ? "Paus"
     : l.minute != null ? `${l.minute}'` : "Live";
@@ -118,6 +139,7 @@ function liveBody(m, l, people) {
       ]),
       teamCol(m.away, m.awaySv),
     ]),
+    scorersBlock(m.goals),
     dist.length ? distBlock(dist, l.scoreStr) : null,
   ]);
 }
@@ -135,6 +157,7 @@ function resultBody(m, resStr, people) {
       ]),
       teamCol(m.away, m.awaySv),
     ]),
+    scorersBlock(m.goals),
     el("div", { class: "hero-result-line", text:
       exact.length ? `Prickade slutresultatet: ${exact.join(", ")}` : "Ingen prickade slutresultatet" }),
     dist.length ? distBlock(dist, resStr) : null,
@@ -285,6 +308,7 @@ function liveCard(l, people) {
       el("span", { class: "sc", text: `${l.homeScore} – ${l.awayScore}` }),
       el("span", { class: "t away", text: m.awaySv }),
     ]),
+    scorersBlock(m.goals),
     el("div", { class: "tippers" }, [
       el("span", { class: "tippers-label", text: `Tippade ${l.scoreStr}: ` }),
       tippers.length
@@ -334,16 +358,18 @@ function playedRow(m, people) {
   const exact = (dist.find(([s]) => s === m.result) || [null, []])[1].length;
   const chevron = el("span", { class: "chevron", text: "›" });
 
-  const detailEl = el("div", { class: "match-tips" },
-    dist.length
+  const scorers = scorersBlock(m.goals);
+  const detailEl = el("div", { class: "match-tips" }, [
+    scorers,
+    ...(dist.length
       ? dist.map(([score, names]) =>
           el("div", { class: "hero-tip-row" + (score === m.result ? " hit" : "") }, [
             el("span", { class: "tip-score", text: score }),
             el("span", { class: "tip-count", text: `${names.length}×` }),
             el("span", { class: "tip-names", text: names.join(", ") }),
           ]))
-      : [el("span", { class: "muted", text: "Inga tips" })]
-  );
+      : [el("span", { class: "muted", text: "Inga tips" })]),
+  ]);
   detailEl.hidden = true;
 
   const row = el("div", { class: "match-row played" }, [
