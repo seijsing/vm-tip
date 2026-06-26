@@ -1,22 +1,22 @@
 {
-  "updated": "2026-06-26T20:59:16.735Z",
+  "updated": "2026-06-26T21:00:54.500Z",
   "matches": [
-    {
-      "home": "Norway",
-      "away": "France",
-      "homeScore": 1,
-      "awayScore": 4,
-      "status": "LIVE",
-      "minute": "90+5",
-      "utcDate": "2026-06-26T19:00Z"
-    },
     {
       "home": "Senegal",
       "away": "Iraq",
       "homeScore": 5,
       "awayScore": 0,
       "status": "LIVE",
-      "minute": "90+1",
+      "minute": "90+3",
+      "utcDate": "2026-06-26T19:00Z"
+    },
+    {
+      "home": "Norway",
+      "away": "France",
+      "homeScore": 1,
+      "awayScore": 4,
+      "status": "FINISHED",
+      "minute": null,
       "utcDate": "2026-06-26T19:00Z"
     },
     {
