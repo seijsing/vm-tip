@@ -1,21 +1,21 @@
 {
-  "updated": "2026-06-26T05:03:20.744Z",
+  "updated": "2026-06-26T05:14:21.406Z",
   "matches": [
     {
       "home": "Turkey",
       "away": "United States",
-      "homeScore": 3,
-      "awayScore": 2,
-      "status": "FINISHED",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
       "minute": null,
       "utcDate": "2026-06-26T02:00:00Z"
     },
     {
       "home": "Paraguay",
       "away": "Australia",
-      "homeScore": 0,
-      "awayScore": 0,
-      "status": "FINISHED",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
       "minute": null,
       "utcDate": "2026-06-26T02:00:00Z"
     },
