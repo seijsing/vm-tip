@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26T20:29:19.453Z",
+  "updated": "2026-06-26T20:30:46.559Z",
   "matches": [
     {
       "home": "Norway",
@@ -7,7 +7,7 @@
       "homeScore": 1,
       "awayScore": 3,
       "status": "LIVE",
-      "minute": "65",
+      "minute": "67",
       "utcDate": "2026-06-26T19:00Z"
     },
     {
@@ -16,7 +16,7 @@
       "homeScore": 3,
       "awayScore": 0,
       "status": "LIVE",
-      "minute": "61",
+      "minute": "63",
       "utcDate": "2026-06-26T19:00Z"
     },
     {
