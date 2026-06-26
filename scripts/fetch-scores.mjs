@@ -19,8 +19,9 @@ const COMPETITION = process.env.COMPETITION || "WC";
 const OUT = join(dirname(fileURLToPath(import.meta.url)), "..", "data", "live.json");
 
 // Statusar vi bryr oss om att visa (pågående + nyligen avslutade samma dag).
-const KEEP = new Set(["IN_PLAY", "PAUSED", "FINISHED", "TIMED", "SCHEDULED"]);
-const LIVE = new Set(["IN_PLAY", "PAUSED"]);
+// OBS: football-data.org returnerar ibland "LIVE" (inte "IN_PLAY") för pågående matcher.
+const KEEP = new Set(["LIVE", "IN_PLAY", "PAUSED", "FINISHED", "TIMED", "SCHEDULED"]);
+const LIVE = new Set(["LIVE", "IN_PLAY", "PAUSED"]);
 
 async function main() {
   if (!TOKEN) {
