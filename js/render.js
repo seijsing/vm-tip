@@ -76,8 +76,8 @@ export function renderHero(container, liveEnriched, data) {
   const toLive = () => { heroFocusCol = null; renderHero(container, liveEnriched, data); };
 
   const inner = el("div", { class: "hero-inner" }, [
-    heroBody(m, li, data.people),
     heroNav(matches, idx, liveEnriched, go, toLive),
+    heroBody(m, li, data.people),
   ]);
   container.replaceChildren(inner);
 }
