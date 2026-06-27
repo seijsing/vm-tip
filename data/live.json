@@ -1,6 +1,24 @@
 {
-  "updated": "2026-06-27T23:00:52.524Z",
+  "updated": "2026-06-27T23:32:22.240Z",
   "matches": [
+    {
+      "home": "Colombia",
+      "away": "Portugal",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "LIVE",
+      "minute": "1",
+      "utcDate": "2026-06-27T23:30Z"
+    },
+    {
+      "home": "Congo DR",
+      "away": "Uzbekistan",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "LIVE",
+      "minute": "1",
+      "utcDate": "2026-06-27T23:30Z"
+    },
     {
       "home": "Croatia",
       "away": "Ghana",
@@ -18,24 +36,6 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-27T21:00Z"
-    },
-    {
-      "home": "Colombia",
-      "away": "Portugal",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-06-27T23:30Z"
-    },
-    {
-      "home": "Congo DR",
-      "away": "Uzbekistan",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-06-27T23:30Z"
     },
     {
       "home": "Algeria",
