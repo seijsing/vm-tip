@@ -1301,6 +1301,13 @@
       "type": "Goal"
     }
   ],
-  "GHA|KRO": [],
+  "GHA|KRO": [
+    {
+      "code": "KRO",
+      "scorer": "Petar Sucic",
+      "minute": "31",
+      "type": "Goal"
+    }
+  ],
   "ENG|PAN": []
 }
