@@ -1309,5 +1309,12 @@
       "type": "Goal"
     }
   ],
-  "ENG|PAN": []
+  "ENG|PAN": [
+    {
+      "code": "ENG",
+      "scorer": "Jude Bellingham",
+      "minute": "62",
+      "type": "Goal"
+    }
+  ]
 }
