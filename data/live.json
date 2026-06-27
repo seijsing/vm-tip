@@ -1,13 +1,13 @@
 {
-  "updated": "2026-06-27T03:14:24.186Z",
+  "updated": "2026-06-27T03:15:34.065Z",
   "matches": [
     {
       "home": "Egypt",
       "away": "Iran",
       "homeScore": 1,
-      "awayScore": 0,
+      "awayScore": 1,
       "status": "LIVE",
-      "minute": "13",
+      "minute": "15",
       "utcDate": "2026-06-27T03:00Z"
     },
     {
@@ -16,7 +16,7 @@
       "homeScore": 0,
       "awayScore": 0,
       "status": "LIVE",
-      "minute": "13",
+      "minute": "14",
       "utcDate": "2026-06-27T03:00Z"
     },
     {

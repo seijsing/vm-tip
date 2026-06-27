@@ -1254,7 +1254,13 @@
       "code": "EGY",
       "scorer": "Mahmoud Saber",
       "minute": "5",
-      "type": "Goal - Volley"
+      "type": "Goal"
+    },
+    {
+      "code": "IRN",
+      "scorer": "Ramin Rezaeian",
+      "minute": "14",
+      "type": "Goal"
     }
   ],
   "BEL|NZL": []
