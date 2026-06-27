@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T05:04:24.391Z",
+  "updated": "2026-06-27T06:00:57.127Z",
   "matches": [
     {
       "home": "Cape Verde",
@@ -72,6 +72,24 @@
       "status": "TIMED",
       "minute": null,
       "utcDate": "2026-06-27T23:30Z"
+    },
+    {
+      "home": "Algeria",
+      "away": "Austria",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-06-28T02:00Z"
+    },
+    {
+      "home": "Jordan",
+      "away": "Argentina",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-06-28T02:00Z"
     }
   ]
 }
