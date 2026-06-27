@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T00:55:28.437Z",
+  "updated": "2026-06-27T01:00:56.730Z",
   "matches": [
     {
       "home": "Cape Verde",
@@ -54,6 +54,24 @@
       "status": "TIMED",
       "minute": null,
       "utcDate": "2026-06-27T03:00Z"
+    },
+    {
+      "home": "Croatia",
+      "away": "Ghana",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-06-27T21:00Z"
+    },
+    {
+      "home": "Panama",
+      "away": "England",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-06-27T21:00Z"
     }
   ]
 }
