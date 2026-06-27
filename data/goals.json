@@ -1336,5 +1336,12 @@
     }
   ],
   "COL|POR": [],
-  "KON|UZB": []
+  "KON|UZB": [
+    {
+      "code": "UZB",
+      "scorer": "Eldor Shomurodov",
+      "minute": "10",
+      "type": "Goal"
+    }
+  ]
 }
