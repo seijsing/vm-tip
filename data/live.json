@@ -1,13 +1,13 @@
 {
-  "updated": "2026-06-27T00:53:16.353Z",
+  "updated": "2026-06-27T00:54:23.025Z",
   "matches": [
     {
       "home": "Cape Verde",
       "away": "Saudi Arabia",
       "homeScore": 0,
       "awayScore": 0,
-      "status": "LIVE",
-      "minute": "45+6",
+      "status": "PAUSED",
+      "minute": null,
       "utcDate": "2026-06-27T00:00Z"
     },
     {
@@ -16,7 +16,7 @@
       "homeScore": 0,
       "awayScore": 1,
       "status": "LIVE",
-      "minute": "45+7",
+      "minute": "45+8",
       "utcDate": "2026-06-27T00:00Z"
     },
     {
