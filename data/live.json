@@ -1,14 +1,41 @@
 {
-  "updated": "2026-06-27T11:00:53.888Z",
+  "updated": "2026-06-27T13:48:20.945Z",
   "matches": [
     {
-      "home": "Croatia",
-      "away": "Ghana",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
+      "home": "Uruguay",
+      "away": "Spain",
+      "homeScore": 0,
+      "awayScore": 1,
+      "status": "FINISHED",
       "minute": null,
-      "utcDate": "2026-06-27T21:00Z"
+      "utcDate": "2026-06-27T00:00:00Z"
+    },
+    {
+      "home": "Cape Verde Islands",
+      "away": "Saudi Arabia",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-06-27T00:00:00Z"
+    },
+    {
+      "home": "New Zealand",
+      "away": "Belgium",
+      "homeScore": 1,
+      "awayScore": 5,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-06-27T03:00:00Z"
+    },
+    {
+      "home": "Egypt",
+      "away": "Iran",
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-06-27T03:00:00Z"
     },
     {
       "home": "Panama",
@@ -17,7 +44,16 @@
       "awayScore": null,
       "status": "TIMED",
       "minute": null,
-      "utcDate": "2026-06-27T21:00Z"
+      "utcDate": "2026-06-27T21:00:00Z"
+    },
+    {
+      "home": "Croatia",
+      "away": "Ghana",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-06-27T21:00:00Z"
     },
     {
       "home": "Colombia",
@@ -26,7 +62,7 @@
       "awayScore": null,
       "status": "TIMED",
       "minute": null,
-      "utcDate": "2026-06-27T23:30Z"
+      "utcDate": "2026-06-27T23:30:00Z"
     },
     {
       "home": "Congo DR",
@@ -35,25 +71,7 @@
       "awayScore": null,
       "status": "TIMED",
       "minute": null,
-      "utcDate": "2026-06-27T23:30Z"
-    },
-    {
-      "home": "Algeria",
-      "away": "Austria",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-06-28T02:00Z"
-    },
-    {
-      "home": "Jordan",
-      "away": "Argentina",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-06-28T02:00Z"
+      "utcDate": "2026-06-27T23:30:00Z"
     }
   ]
 }
