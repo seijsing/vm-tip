@@ -1287,6 +1287,12 @@
       "scorer": "Elijah Just",
       "minute": "84",
       "type": "Goal"
+    },
+    {
+      "code": "BEL",
+      "scorer": "Romelu Lukaku",
+      "minute": "86",
+      "type": "Goal - Header"
     }
   ]
 }
