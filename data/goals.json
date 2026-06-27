@@ -1314,7 +1314,13 @@
       "code": "ENG",
       "scorer": "Jude Bellingham",
       "minute": "62",
-      "type": "Goal - Volley"
+      "type": "Goal"
+    },
+    {
+      "code": "ENG",
+      "scorer": "Harry Kane",
+      "minute": "67",
+      "type": "Goal - Header"
     }
   ]
 }
