@@ -13,6 +13,18 @@ export async function fetchGoalsMap() {
   }
 }
 
+// Slutspelsträdet (data/bracket.json, skrivs av fetch-scores). [] om filen saknas.
+export async function fetchBracket() {
+  try {
+    const res = await fetch(`data/bracket.json?cb=${Date.now()}`, { cache: "no-store" });
+    if (!res.ok) return [];
+    const data = await res.json();
+    return Array.isArray(data.matches) ? data.matches : [];
+  } catch {
+    return [];
+  }
+}
+
 // Mål för en (ark-)match, orienterade efter arkets hemma/borta via lagkod.
 // Returnerar [{ scorer, minute, type, side: "home"|"away"|null }].
 export function orientGoals(match, goalsMap) {

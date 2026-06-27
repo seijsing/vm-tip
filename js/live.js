@@ -1,4 +1,4 @@
-import { CONFIG } from "./config.js";
+import { CONFIG, teamSv } from "./config.js";
 
 // Hämtar data/live.json (skrivs av GitHub Actions). Saknas filen -> tom live-status.
 export async function fetchLive() {
@@ -48,10 +48,19 @@ export function matchLiveToSheet(liveMatches, sheetMatches) {
       console.warn(`live.js: okänt lagnamn – "${lm.home}" (${hc ?? "?"}) / "${lm.away}" (${ac ?? "?"})`);
       continue;
     }
-    const match = byPair.get([hc, ac].sort().join("|"));
-    if (!match) continue;
+    // Finns matchen i arket (gruppspel)? Annars syntetisk slutspelsmatch.
+    const match = byPair.get([hc, ac].sort().join("|")) || {
+      col: null,
+      code: `${hc}-${ac}`,
+      group: lm.stage || "Slutspel",
+      home: hc, away: ac,
+      homeSv: teamSv(hc), awaySv: teamSv(ac),
+      result: null,
+      synthetic: true,
+      utcDate: lm.utcDate ?? null,
+    };
 
-    // Orientera API-ställningen efter arkets hemmalag.
+    // Orientera API-ställningen efter (arkets) hemmalag.
     let hs = lm.homeScore, as = lm.awayScore;
     if (hc !== match.home) [hs, as] = [as, hs];
     if (hs == null || as == null) continue;

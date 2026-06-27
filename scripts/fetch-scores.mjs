@@ -14,13 +14,18 @@
 import { writeFile, readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
-import { fetchEspnDay } from "./espn.mjs";
+import { fetchEspnDay, fetchEspnRange } from "./espn.mjs";
 
 const TOKEN = process.env.FOOTBALL_API_TOKEN;
 const COMPETITION = process.env.COMPETITION || "WC";
 const DATA = join(dirname(fileURLToPath(import.meta.url)), "..", "data");
 const LIVE_OUT = join(DATA, "live.json");
 const GOALS_OUT = join(DATA, "goals.json");
+const BRACKET_OUT = join(DATA, "bracket.json");
+
+// Slutspelets datumintervall (R32 → final). ESPN ger hela trädet i ett anrop.
+const KO_FROM = new Date("2026-06-28T12:00:00Z");
+const KO_TO = new Date("2026-07-19T12:00:00Z");
 
 // live.json: ta med matcher i ett tidsfönster runt nu (nyligen spelade … snart kommande).
 const WINDOW_BACK_MS = 8 * 3600 * 1000;
@@ -54,6 +59,7 @@ async function main() {
         status: e.status,
         minute: e.minute,
         utcDate: e.utcDate,
+        ...(e.stage ? { stage: e.stage } : {}),
       }))
       .sort((a, b) => liveRank(b) - liveRank(a));
     for (const m of matches) {
@@ -70,6 +76,29 @@ async function main() {
     (prev, next) => JSON.stringify(prev.matches) === JSON.stringify(next.matches),
     `${matches.length} matcher`
   );
+
+  // Slutspelsträd: hela R32→final i ett anrop (kommande med ev. platshållarlag).
+  try {
+    const ko = await fetchEspnRange(KO_FROM, KO_TO);
+    const bracket = ko.filter((e) => e.stage).map((e) => ({
+      stage: e.stage,
+      utcDate: e.utcDate,
+      home: e.home, away: e.away,
+      homeCode: e.homeCode, awayCode: e.awayCode,
+      status: e.status,
+      homeScore: e.homeScore, awayScore: e.awayScore,
+    }));
+    if (bracket.length) {
+      await writeIfChanged(
+        BRACKET_OUT,
+        { updated: now.toISOString(), matches: bracket },
+        (prev, next) => JSON.stringify(prev.matches) === JSON.stringify(next.matches),
+        `${bracket.length} slutspelsmatcher`
+      );
+    }
+  } catch (err) {
+    console.error(`Slutspelsträd misslyckades (${err.message}).`);
+  }
 
   // Uppdatera den beständiga målskytte-databasen från ESPN (om vi fick data).
   if (events && events.length) {

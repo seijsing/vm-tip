@@ -12,7 +12,16 @@ export function ymd(date) {
 
 // Hämtar och normaliserar alla matcher för ett datum. Kastar vid nätverks-/HTTP-fel.
 export async function fetchEspnDay(date) {
-  const res = await fetch(`${BASE}?dates=${ymd(date)}`);
+  return fetchEspn(ymd(date));
+}
+
+// Hämtar ett helt datumintervall i ETT anrop (t.ex. hela slutspelet).
+export async function fetchEspnRange(fromDate, toDate) {
+  return fetchEspn(`${ymd(fromDate)}-${ymd(toDate)}`);
+}
+
+async function fetchEspn(dates) {
+  const res = await fetch(`${BASE}?dates=${dates}`);
   if (!res.ok) throw new Error(`ESPN svarade ${res.status}`);
   const json = await res.json();
   return (json.events ?? []).map(normalizeEvent).filter(Boolean);
@@ -61,9 +70,23 @@ function normalizeEvent(ev) {
     status,
     minute: status === "LIVE" ? stripMinute(ev.status?.displayClock) : null,
     utcDate: ev.date ?? null,
+    stage: roundLabel(comp),
     goals,
     pair: homeCode && awayCode ? [homeCode, awayCode].sort().join("|") : null,
   };
+}
+
+// Slutspelsrond (svensk) ur ESPN:s altGameNote ("FIFA World Cup, Round of 32" …).
+// null för gruppspel.
+function roundLabel(comp) {
+  const n = comp.altGameNote || "";
+  if (/round of 32/i.test(n)) return "Sextondelsfinal";
+  if (/round of 16/i.test(n)) return "Åttondelsfinal";
+  if (/quarter/i.test(n)) return "Kvartsfinal";
+  if (/semi/i.test(n)) return "Semifinal";
+  if (/3rd|third/i.test(n)) return "Bronsmatch";
+  if (/final/i.test(n)) return "Final";
+  return null;
 }
 
 // ESPN-status (state pre/in/post) -> vårt vokabulär.
