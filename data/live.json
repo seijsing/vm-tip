@@ -1,22 +1,13 @@
 {
-  "updated": "2026-06-27T01:59:18.987Z",
+  "updated": "2026-06-27T02:01:00.385Z",
   "matches": [
-    {
-      "home": "Cape Verde",
-      "away": "Saudi Arabia",
-      "homeScore": 0,
-      "awayScore": 0,
-      "status": "LIVE",
-      "minute": "90+5",
-      "utcDate": "2026-06-27T00:00Z"
-    },
     {
       "home": "Uruguay",
       "away": "Spain",
       "homeScore": 0,
       "awayScore": 1,
       "status": "LIVE",
-      "minute": "90+4",
+      "minute": "90+6",
       "utcDate": "2026-06-27T00:00Z"
     },
     {
@@ -36,6 +27,15 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-26T19:00Z"
+    },
+    {
+      "home": "Cape Verde",
+      "away": "Saudi Arabia",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-06-27T00:00Z"
     },
     {
       "home": "Egypt",
