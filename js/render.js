@@ -529,16 +529,27 @@ function personAdvancePicks(person) {
   return m;
 }
 
-// Matchar ett tippat lag mot facit-listan. Jämför via lagkod (tål alias/stavning
-// som finns i config), annars normaliserad sträng.
-function isAdvanceHit(pick, correctList) {
-  const pc = codeFromSv(pick);
-  const pn = normName(pick);
-  return correctList.some((c) => {
-    const cc = codeFromSv(c);
-    if (pc && cc) return pc === cc;
-    return normName(c) === pn;
-  });
+// Sammanlagt avancemang: ett tippat lag räknas som rätt om det gått vidare i NÅGON
+// position (1:a/2:a/bästa 3:a) – samma lenienta regel som arkets poäng. Bygger en
+// union av alla facit-celler. `advanced(pick)` = predikat; `fullyDecided` när alla
+// vidare-celler är ifyllda (annars markeras inga missar).
+function advancementState(advanceGroups) {
+  const codes = new Set();
+  const names = new Set();
+  let filled = 0, slots = 0;
+  for (const g of advanceGroups || []) {
+    slots += g.slots || g.correct.length;
+    for (const c of g.correct) {
+      const code = codeFromSv(c);
+      if (code) codes.add(code); else names.add(normName(c));
+      filled++;
+    }
+  }
+  const advanced = (pick) => {
+    const pc = codeFromSv(pick);
+    return pc ? codes.has(pc) : names.has(normName(pick));
+  };
+  return { advanced, fullyDecided: slots > 0 && filled >= slots };
 }
 
 // Lag-chip: flagga + namn. cls styr ev. hit/miss/facit-stil.
@@ -556,18 +567,17 @@ function appendAdvanceSection(container, person, advanceGroups) {
   const picks = personAdvancePicks(person);
   if (![...picks.values()].some((arr) => arr.some((v) => (v || "").trim()))) return;
 
+  const { advanced, fullyDecided } = advancementState(advanceGroups);
   let grpHits = 0, grpDecided = 0, b3Hits = 0, b3Decided = 0;
   const rows = [];
   for (const g of advanceGroups) {
     const vals = (picks.get(g.group) || []).filter((v) => (v || "").trim());
     if (!vals.length) continue;
-    const decided = g.correct.length > 0;
     const isB3 = g.group === "Bästa 3a";
     const chips = vals.map((v) => {
-      let cls = "";
-      if (decided) {
-        const hit = isAdvanceHit(v, g.correct);
-        cls = hit ? "hit" : "miss";
+      const hit = advanced(v);
+      const cls = hit ? "hit" : fullyDecided ? "miss" : "";
+      if (hit || fullyDecided) {
         if (isB3) { b3Decided++; if (hit) b3Hits++; }
         else { grpDecided++; if (hit) grpHits++; }
       }
@@ -613,11 +623,12 @@ export function renderAdvance(container, data, bracket) {
     container.appendChild(el("h3", { class: "section-h", text: "Vidare ur grupperna" }));
     container.appendChild(el("p", { class: "muted",
       text: "Lag som tippats gå vidare ur varje grupp. ✓ = gick vidare (fylls i när gruppspelet är klart)." }));
-    for (const g of advanceGroups) container.appendChild(advanceCard(g, people));
+    const { advanced } = advancementState(advanceGroups);
+    for (const g of advanceGroups) container.appendChild(advanceCard(g, people, advanced));
   }
 }
 
-function advanceCard(g, people) {
+function advanceCard(g, people, advanced) {
   // Räkna röster per lag i gruppen + vilka som tippat. Hoppa över värden som inte
   // matchar ett känt lag (t.ex. exempelradens platshållare "a"/"b") så översikten hålls ren.
   const counts = new Map();
@@ -643,7 +654,7 @@ function advanceCard(g, people) {
   ]);
 
   const votes = sorted.map((s) =>
-    voteRow(s.name, s.people, { hit: g.correct.length > 0 && isAdvanceHit(s.name, g.correct) }));
+    voteRow(s.name, s.people, { hit: advanced(s.name) }));
 
   return el("div", { class: "adv-card" }, [head, el("div", { class: "adv-votes" }, votes)]);
 }
