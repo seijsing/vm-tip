@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T21:50:36.026Z",
+  "updated": "2026-06-27T22:05:27.143Z",
   "matches": [
     {
       "home": "Croatia",
@@ -15,8 +15,8 @@
       "away": "England",
       "homeScore": 0,
       "awayScore": 0,
-      "status": "PAUSED",
-      "minute": null,
+      "status": "LIVE",
+      "minute": "46",
       "utcDate": "2026-06-27T21:00Z"
     },
     {
