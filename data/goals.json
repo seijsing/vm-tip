@@ -1249,6 +1249,13 @@
       "type": "Goal"
     }
   ],
-  "EGY|IRN": [],
+  "EGY|IRN": [
+    {
+      "code": "EGY",
+      "scorer": "Mahmoud Saber",
+      "minute": "5",
+      "type": "Goal"
+    }
+  ],
   "BEL|NZL": []
 }
