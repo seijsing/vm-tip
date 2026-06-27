@@ -1281,6 +1281,12 @@
       "scorer": "Kevin De Bruyne",
       "minute": "66",
       "type": "Goal"
+    },
+    {
+      "code": "NZL",
+      "scorer": "Elijah Just",
+      "minute": "84",
+      "type": "Goal"
     }
   ]
 }
