@@ -1241,5 +1241,12 @@
     }
   ],
   "KAP|SAU": [],
-  "SPA|URU": []
+  "SPA|URU": [
+    {
+      "code": "SPA",
+      "scorer": "Álex Baena",
+      "minute": "42",
+      "type": "Goal"
+    }
+  ]
 }

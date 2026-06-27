@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T00:42:23.304Z",
+  "updated": "2026-06-27T00:43:16.219Z",
   "matches": [
     {
       "home": "Cape Verde",
@@ -7,16 +7,16 @@
       "homeScore": 0,
       "awayScore": 0,
       "status": "LIVE",
-      "minute": "40",
+      "minute": "41",
       "utcDate": "2026-06-27T00:00Z"
     },
     {
       "home": "Uruguay",
       "away": "Spain",
       "homeScore": 0,
-      "awayScore": 0,
+      "awayScore": 1,
       "status": "LIVE",
-      "minute": "41",
+      "minute": "42",
       "utcDate": "2026-06-27T00:00Z"
     },
     {
