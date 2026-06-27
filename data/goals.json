@@ -1261,6 +1261,12 @@
       "scorer": "Ramin Rezaeian",
       "minute": "14",
       "type": "Goal"
+    },
+    {
+      "code": "IRN",
+      "scorer": "Shoja Khalilzadeh",
+      "minute": "90+3",
+      "type": "Goal"
     }
   ],
   "BEL|NZL": [
@@ -1293,6 +1299,12 @@
       "scorer": "Romelu Lukaku",
       "minute": "86",
       "type": "Goal - Header"
+    },
+    {
+      "code": "BEL",
+      "scorer": "Alexis Saelemaekers",
+      "minute": "90+4",
+      "type": "Goal"
     }
   ]
 }
