@@ -1274,7 +1274,31 @@
       "code": "BEL",
       "scorer": "Leandro Trossard",
       "minute": "50",
-      "type": "Goal - Volley"
+      "type": "Goal"
+    },
+    {
+      "code": "BEL",
+      "scorer": "Kevin De Bruyne",
+      "minute": "66",
+      "type": "Goal"
+    },
+    {
+      "code": "NZL",
+      "scorer": "Elijah Just",
+      "minute": "84",
+      "type": "Goal"
+    },
+    {
+      "code": "BEL",
+      "scorer": "Romelu Lukaku",
+      "minute": "86",
+      "type": "Goal - Header"
+    },
+    {
+      "code": "BEL",
+      "scorer": "Alexis Saelemaekers",
+      "minute": "90+4",
+      "type": "Goal"
     }
   ]
 }
