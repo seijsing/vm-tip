@@ -1263,5 +1263,12 @@
       "type": "Goal"
     }
   ],
-  "BEL|NZL": []
+  "BEL|NZL": [
+    {
+      "code": "BEL",
+      "scorer": "Leandro Trossard",
+      "minute": "28",
+      "type": "Goal"
+    }
+  ]
 }

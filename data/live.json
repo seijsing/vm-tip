@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T03:28:21.968Z",
+  "updated": "2026-06-27T03:29:17.772Z",
   "matches": [
     {
       "home": "Egypt",
@@ -7,16 +7,16 @@
       "homeScore": 1,
       "awayScore": 1,
       "status": "LIVE",
-      "minute": "27",
+      "minute": "28",
       "utcDate": "2026-06-27T03:00Z"
     },
     {
       "home": "New Zealand",
       "away": "Belgium",
       "homeScore": 0,
-      "awayScore": 0,
+      "awayScore": 1,
       "status": "LIVE",
-      "minute": "27",
+      "minute": "28",
       "utcDate": "2026-06-27T03:00Z"
     },
     {
