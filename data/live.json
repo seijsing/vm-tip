@@ -1,22 +1,22 @@
 {
-  "updated": "2026-06-27T13:49:18.924Z",
+  "updated": "2026-06-27T21:02:21.739Z",
   "matches": [
     {
       "home": "Croatia",
       "away": "Ghana",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "LIVE",
+      "minute": "1",
       "utcDate": "2026-06-27T21:00Z"
     },
     {
       "home": "Panama",
       "away": "England",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "LIVE",
+      "minute": "1",
       "utcDate": "2026-06-27T21:00Z"
     },
     {
