@@ -1,6 +1,24 @@
 {
-  "updated": "2026-06-27T03:00:57.475Z",
+  "updated": "2026-06-27T03:02:24.481Z",
   "matches": [
+    {
+      "home": "Egypt",
+      "away": "Iran",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "LIVE",
+      "minute": "2",
+      "utcDate": "2026-06-27T03:00Z"
+    },
+    {
+      "home": "New Zealand",
+      "away": "Belgium",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "LIVE",
+      "minute": "1",
+      "utcDate": "2026-06-27T03:00Z"
+    },
     {
       "home": "Cape Verde",
       "away": "Saudi Arabia",
@@ -18,24 +36,6 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-27T00:00Z"
-    },
-    {
-      "home": "Egypt",
-      "away": "Iran",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-06-27T03:00Z"
-    },
-    {
-      "home": "New Zealand",
-      "away": "Belgium",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-06-27T03:00Z"
     },
     {
       "home": "Croatia",
