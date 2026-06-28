@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T23:04:19.850Z",
+  "updated": "2026-06-28T01:34:22.137Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -82,9 +82,9 @@
       "stage": "Sextondelsfinal",
       "utcDate": "2026-07-01T16:00Z",
       "home": "England",
-      "away": "Third Place Group E/H/I/J/K",
+      "away": "Congo DR",
       "homeCode": "ENG",
-      "awayCode": null,
+      "awayCode": "KON",
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null
@@ -93,9 +93,9 @@
       "stage": "Sextondelsfinal",
       "utcDate": "2026-07-01T20:00Z",
       "home": "Belgium",
-      "away": "Third Place Group A/E/H/I/J",
+      "away": "Senegal",
       "homeCode": "BEL",
-      "awayCode": null,
+      "awayCode": "SEN",
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null
@@ -125,9 +125,9 @@
     {
       "stage": "Sextondelsfinal",
       "utcDate": "2026-07-02T23:00Z",
-      "home": "Group K 2nd Place",
+      "home": "Portugal",
       "away": "Croatia",
-      "homeCode": null,
+      "homeCode": "POR",
       "awayCode": "KRO",
       "status": "TIMED",
       "homeScore": null,
@@ -169,9 +169,9 @@
     {
       "stage": "Sextondelsfinal",
       "utcDate": "2026-07-04T01:30Z",
-      "home": "Group K Winner",
+      "home": "Colombia",
       "away": "Ghana",
-      "homeCode": null,
+      "homeCode": "COL",
       "awayCode": "GHA",
       "status": "TIMED",
       "homeScore": null,
