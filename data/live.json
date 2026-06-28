@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T02:46:24.701Z",
+  "updated": "2026-06-28T02:47:19.074Z",
   "matches": [
     {
       "home": "Algeria",
@@ -7,7 +7,7 @@
       "homeScore": 1,
       "awayScore": 1,
       "status": "LIVE",
-      "minute": "45+1",
+      "minute": "45+2",
       "utcDate": "2026-06-28T02:00Z"
     },
     {
@@ -16,7 +16,7 @@
       "homeScore": 0,
       "awayScore": 2,
       "status": "LIVE",
-      "minute": "45",
+      "minute": "45+2",
       "utcDate": "2026-06-28T02:00Z"
     },
     {
