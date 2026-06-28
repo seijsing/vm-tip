@@ -1,15 +1,6 @@
 {
-  "updated": "2026-06-28T01:32:22.687Z",
+  "updated": "2026-06-28T01:33:18.390Z",
   "matches": [
-    {
-      "home": "Congo DR",
-      "away": "Uzbekistan",
-      "homeScore": 3,
-      "awayScore": 1,
-      "status": "LIVE",
-      "minute": "90+8",
-      "utcDate": "2026-06-27T23:30Z"
-    },
     {
       "home": "Croatia",
       "away": "Ghana",
@@ -33,6 +24,15 @@
       "away": "Portugal",
       "homeScore": 0,
       "awayScore": 0,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-06-27T23:30Z"
+    },
+    {
+      "home": "Congo DR",
+      "away": "Uzbekistan",
+      "homeScore": 3,
+      "awayScore": 1,
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-27T23:30Z"
