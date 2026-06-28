@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T00:52:19.129Z",
+  "updated": "2026-06-28T00:53:16.414Z",
   "matches": [
     {
       "home": "Colombia",
@@ -7,7 +7,7 @@
       "homeScore": 0,
       "awayScore": 0,
       "status": "LIVE",
-      "minute": "60",
+      "minute": "61",
       "utcDate": "2026-06-27T23:30Z"
     },
     {
@@ -16,7 +16,7 @@
       "homeScore": 0,
       "awayScore": 1,
       "status": "LIVE",
-      "minute": "58",
+      "minute": "59",
       "utcDate": "2026-06-27T23:30Z"
     },
     {
