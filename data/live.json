@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T20:58:21.617Z",
+  "updated": "2026-06-28T21:00:50.666Z",
   "matches": [
     {
       "home": "South Africa",
@@ -9,6 +9,16 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-28T19:00Z",
+      "stage": "Sextondelsfinal"
+    },
+    {
+      "home": "Brazil",
+      "away": "Japan",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-06-29T17:00Z",
       "stage": "Sextondelsfinal"
     }
   ]
