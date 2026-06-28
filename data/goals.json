@@ -1426,5 +1426,12 @@
       "type": "Goal - Header"
     }
   ],
-  "KAN|SAF": []
+  "KAN|SAF": [
+    {
+      "code": "KAN",
+      "scorer": "Stephen Eustáquio",
+      "minute": "90+2",
+      "type": "Goal"
+    }
+  ]
 }
