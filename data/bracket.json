@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T19:00:53.837Z",
+  "updated": "2026-06-28T19:49:19.405Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -8,7 +8,7 @@
       "away": "Canada",
       "homeCode": "SAF",
       "awayCode": "KAN",
-      "status": "LIVE",
+      "status": "PAUSED",
       "homeScore": 0,
       "awayScore": 0
     },
