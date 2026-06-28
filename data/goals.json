@@ -1374,6 +1374,12 @@
       "scorer": "Lautaro Martínez",
       "minute": "31",
       "type": "Penalty - Scored"
+    },
+    {
+      "code": "JOR",
+      "scorer": "Mousa Al-Tamari",
+      "minute": "55",
+      "type": "Goal"
     }
   ],
   "ALG|ÖST": [
@@ -1387,6 +1393,12 @@
       "code": "ALG",
       "scorer": "Rafik Belghali",
       "minute": "45",
+      "type": "Goal"
+    },
+    {
+      "code": "ÖST",
+      "scorer": "Marcel Sabitzer",
+      "minute": "55",
       "type": "Goal"
     }
   ]
