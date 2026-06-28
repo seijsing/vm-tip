@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T20:52:22.098Z",
+  "updated": "2026-06-28T20:58:21.617Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -8,7 +8,7 @@
       "away": "Canada",
       "homeCode": "SAF",
       "awayCode": "KAN",
-      "status": "LIVE",
+      "status": "FINISHED",
       "homeScore": 0,
       "awayScore": 1
     },
@@ -180,9 +180,9 @@
     {
       "stage": "Åttondelsfinal",
       "utcDate": "2026-07-04T17:00Z",
-      "home": "Round of 32 1 Winner",
+      "home": "Canada",
       "away": "Round of 32 3 Winner",
-      "homeCode": null,
+      "homeCode": "KAN",
       "awayCode": null,
       "status": "TIMED",
       "homeScore": null,
