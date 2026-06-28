@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T01:11:20.086Z",
+  "updated": "2026-06-28T01:12:20.570Z",
   "matches": [
     {
       "home": "Colombia",
@@ -7,16 +7,16 @@
       "homeScore": 0,
       "awayScore": 0,
       "status": "LIVE",
-      "minute": "79",
+      "minute": "80",
       "utcDate": "2026-06-27T23:30Z"
     },
     {
       "home": "Congo DR",
       "away": "Uzbekistan",
-      "homeScore": 1,
+      "homeScore": 2,
       "awayScore": 1,
       "status": "LIVE",
-      "minute": "78",
+      "minute": "79",
       "utcDate": "2026-06-27T23:30Z"
     },
     {
