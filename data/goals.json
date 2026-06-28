@@ -1354,6 +1354,12 @@
       "scorer": "Fiston Mayele",
       "minute": "78",
       "type": "Goal"
+    },
+    {
+      "code": "KON",
+      "scorer": "Yoane Wissa",
+      "minute": "90+1",
+      "type": "Goal"
     }
   ]
 }
