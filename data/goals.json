@@ -1362,6 +1362,13 @@
       "type": "Goal"
     }
   ],
-  "ARG|JOR": [],
+  "ARG|JOR": [
+    {
+      "code": "ARG",
+      "scorer": "Giovani Lo Celso",
+      "minute": "19",
+      "type": "Goal - Free-kick"
+    }
+  ],
   "ALG|ÖST": []
 }
