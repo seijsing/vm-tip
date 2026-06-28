@@ -1,13 +1,13 @@
 {
-  "updated": "2026-06-28T00:19:16.692Z",
+  "updated": "2026-06-28T00:20:37.736Z",
   "matches": [
     {
       "home": "Colombia",
       "away": "Portugal",
       "homeScore": 0,
       "awayScore": 0,
-      "status": "LIVE",
-      "minute": "45+3",
+      "status": "PAUSED",
+      "minute": null,
       "utcDate": "2026-06-27T23:30Z"
     },
     {
@@ -16,7 +16,7 @@
       "homeScore": 0,
       "awayScore": 1,
       "status": "LIVE",
-      "minute": "45+3",
+      "minute": "45+4",
       "utcDate": "2026-06-27T23:30Z"
     },
     {
