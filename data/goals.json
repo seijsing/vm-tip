@@ -1380,6 +1380,12 @@
       "scorer": "Mousa Al-Tamari",
       "minute": "55",
       "type": "Goal"
+    },
+    {
+      "code": "ARG",
+      "scorer": "Lionel Messi",
+      "minute": "80",
+      "type": "Goal - Free-kick"
     }
   ],
   "ALG|ÖST": [
