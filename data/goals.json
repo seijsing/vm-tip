@@ -1370,5 +1370,12 @@
       "type": "Goal - Free-kick"
     }
   ],
-  "ALG|ÖST": []
+  "ALG|ÖST": [
+    {
+      "code": "ÖST",
+      "scorer": "Marko Arnautovic",
+      "minute": "28",
+      "type": "Goal"
+    }
+  ]
 }

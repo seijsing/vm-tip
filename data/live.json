@@ -1,13 +1,13 @@
 {
-  "updated": "2026-06-28T02:28:22.348Z",
+  "updated": "2026-06-28T02:29:21.794Z",
   "matches": [
     {
       "home": "Algeria",
       "away": "Austria",
       "homeScore": 0,
-      "awayScore": 0,
+      "awayScore": 1,
       "status": "LIVE",
-      "minute": "28",
+      "minute": "29",
       "utcDate": "2026-06-28T02:00Z"
     },
     {
@@ -16,7 +16,7 @@
       "homeScore": 0,
       "awayScore": 1,
       "status": "LIVE",
-      "minute": "27",
+      "minute": "29",
       "utcDate": "2026-06-28T02:00Z"
     },
     {
