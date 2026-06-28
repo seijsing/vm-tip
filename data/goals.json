@@ -1412,6 +1412,12 @@
       "scorer": "Riyad Mahrez",
       "minute": "60",
       "type": "Goal"
+    },
+    {
+      "code": "ALG",
+      "scorer": "Riyad Mahrez",
+      "minute": "90+3",
+      "type": "Goal"
     }
   ]
 }
