@@ -1,22 +1,13 @@
 {
-  "updated": "2026-06-28T03:57:16.503Z",
+  "updated": "2026-06-28T03:58:22.393Z",
   "matches": [
     {
       "home": "Algeria",
       "away": "Austria",
       "homeScore": 3,
-      "awayScore": 2,
-      "status": "LIVE",
-      "minute": "90+5",
-      "utcDate": "2026-06-28T02:00Z"
-    },
-    {
-      "home": "Jordan",
-      "away": "Argentina",
-      "homeScore": 1,
       "awayScore": 3,
       "status": "LIVE",
-      "minute": "90+5",
+      "minute": "90+6",
       "utcDate": "2026-06-28T02:00Z"
     },
     {
@@ -54,6 +45,15 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-27T23:30Z"
+    },
+    {
+      "home": "Jordan",
+      "away": "Argentina",
+      "homeScore": 1,
+      "awayScore": 3,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-06-28T02:00Z"
     },
     {
       "home": "South Africa",

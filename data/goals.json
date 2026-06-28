@@ -1418,6 +1418,12 @@
       "scorer": "Riyad Mahrez",
       "minute": "90+3",
       "type": "Goal"
+    },
+    {
+      "code": "ÖST",
+      "scorer": "Sasa Kalajdzic",
+      "minute": "90+6",
+      "type": "Goal - Header"
     }
   ]
 }
