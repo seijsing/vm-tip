@@ -1,13 +1,13 @@
 {
-  "updated": "2026-06-28T19:49:19.405Z",
+  "updated": "2026-06-28T20:06:21.628Z",
   "matches": [
     {
       "home": "South Africa",
       "away": "Canada",
       "homeScore": 0,
       "awayScore": 0,
-      "status": "PAUSED",
-      "minute": null,
+      "status": "LIVE",
+      "minute": "46",
       "utcDate": "2026-06-28T19:00Z",
       "stage": "Sextondelsfinal"
     }
