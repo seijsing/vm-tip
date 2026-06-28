@@ -748,7 +748,12 @@ function translatePlaceholder(text) {
 
 function fmtKoDate(utc) {
   if (!utc) return "";
-  return new Date(utc).toLocaleDateString("sv-SE", { day: "numeric", month: "short" });
+  return new Date(utc).toLocaleDateString("sv-SE", { day: "numeric", month: "short", timeZone: "Europe/Stockholm" });
+}
+
+function fmtKoTime(utc) {
+  if (!utc) return "";
+  return new Date(utc).toLocaleTimeString("sv-SE", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Stockholm" });
 }
 
 // Bracket-post -> match-objekt i hero-format, så den blir navigerbar. Lag som inte
@@ -765,7 +770,7 @@ function bracketToMatch(b) {
     awaySv: b.awayCode ? teamSv(b.awayCode) : translatePlaceholder(b.away),
     result: b.status === "FINISHED" && b.homeScore != null ? `${b.homeScore}-${b.awayScore}` : null,
     datum: fmtKoDate(b.utcDate),
-    tid: "",
+    tid: fmtKoTime(b.utcDate),
     synthetic: true,
     tbd: !(b.homeCode && b.awayCode),
     utcDate: b.utcDate,
@@ -801,7 +806,7 @@ function koMatch(m) {
   const live = m.status === "LIVE" || m.status === "PAUSED";
   const meta = live
     ? el("span", { class: "ko-when ko-live", text: "live" })
-    : el("span", { class: "ko-when", text: m.status === "FINISHED" ? "slut" : fmtKoDate(m.utcDate) });
+    : el("span", { class: "ko-when", text: m.status === "FINISHED" ? "slut" : [fmtKoDate(m.utcDate), fmtKoTime(m.utcDate)].filter(Boolean).join(" · ") });
   return el("div", { class: "ko-match" }, [
     el("div", { class: "ko-teams" }, [side(m.homeCode, m.home, m.homeScore), side(m.awayCode, m.away, m.awayScore)]),
     meta,
