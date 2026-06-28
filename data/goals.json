@@ -1382,6 +1382,12 @@
       "scorer": "Marko Arnautovic",
       "minute": "28",
       "type": "Goal"
+    },
+    {
+      "code": "ALG",
+      "scorer": "Rafik Belghali",
+      "minute": "45",
+      "type": "Goal"
     }
   ]
 }
