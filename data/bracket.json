@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T01:34:22.137Z",
+  "updated": "2026-06-28T04:00:53.905Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -115,9 +115,9 @@
       "stage": "Sextondelsfinal",
       "utcDate": "2026-07-02T19:00Z",
       "home": "Spain",
-      "away": "Group J 2nd Place",
+      "away": "Austria",
       "homeCode": "SPA",
-      "awayCode": null,
+      "awayCode": "ÖST",
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null
@@ -137,9 +137,9 @@
       "stage": "Sextondelsfinal",
       "utcDate": "2026-07-03T03:00Z",
       "home": "Switzerland",
-      "away": "Third Place Group E/F/G/I/J",
+      "away": "Algeria",
       "homeCode": "SWZ",
-      "awayCode": null,
+      "awayCode": "ALG",
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null
