@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29T21:21:14.946Z",
+  "updated": "2026-06-29T21:39:14.249Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -30,7 +30,7 @@
       "away": "Paraguay",
       "homeCode": "TYS",
       "awayCode": "PAR",
-      "status": "PAUSED",
+      "status": "LIVE",
       "homeScore": 0,
       "awayScore": 1
     },
