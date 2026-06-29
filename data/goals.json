@@ -1440,6 +1440,12 @@
       "scorer": "Kaishu Sano",
       "minute": "29",
       "type": "Goal"
+    },
+    {
+      "code": "BRA",
+      "scorer": "Casemiro",
+      "minute": "56",
+      "type": "Goal - Header"
     }
   ]
 }
