@@ -1466,6 +1466,12 @@
       "scorer": "Kai Havertz",
       "minute": "54",
       "type": "Goal - Header"
+    },
+    {
+      "code": "PAR",
+      "scorer": "Maurício",
+      "minute": "120",
+      "type": "Penalty - Scored"
     }
   ]
 }
