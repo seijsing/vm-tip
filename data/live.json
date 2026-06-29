@@ -1,16 +1,6 @@
 {
-  "updated": "2026-06-29T23:20:33.302Z",
+  "updated": "2026-06-29T23:30:12.871Z",
   "matches": [
-    {
-      "home": "Germany",
-      "away": "Paraguay",
-      "homeScore": 1,
-      "awayScore": 1,
-      "status": "LIVE",
-      "minute": "120",
-      "utcDate": "2026-06-29T20:30Z",
-      "stage": "Sextondelsfinal"
-    },
     {
       "home": "Brazil",
       "away": "Japan",
@@ -19,6 +9,16 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-29T17:00Z",
+      "stage": "Sextondelsfinal"
+    },
+    {
+      "home": "Germany",
+      "away": "Paraguay",
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-06-29T20:30Z",
       "stage": "Sextondelsfinal"
     },
     {
