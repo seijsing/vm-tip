@@ -1,14 +1,15 @@
 {
-  "updated": "2026-06-29T22:56:20.934Z",
+  "updated": "2026-06-29T22:57:18.858Z",
   "matches": [
     {
       "home": "Germany",
       "away": "Paraguay",
-      "homeScore": 2,
+      "homeScore": 1,
       "awayScore": 1,
       "status": "LIVE",
-      "minute": null,
-      "utcDate": "2026-06-29T20:30:00Z"
+      "minute": "106",
+      "utcDate": "2026-06-29T20:30Z",
+      "stage": "Sextondelsfinal"
     },
     {
       "home": "Brazil",
@@ -17,7 +18,28 @@
       "awayScore": 1,
       "status": "FINISHED",
       "minute": null,
-      "utcDate": "2026-06-29T17:00:00Z"
+      "utcDate": "2026-06-29T17:00Z",
+      "stage": "Sextondelsfinal"
+    },
+    {
+      "home": "Netherlands",
+      "away": "Morocco",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-06-30T01:00Z",
+      "stage": "Sextondelsfinal"
+    },
+    {
+      "home": "Ivory Coast",
+      "away": "Norway",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-06-30T17:00Z",
+      "stage": "Sextondelsfinal"
     }
   ]
 }
