@@ -1454,5 +1454,12 @@
       "type": "Goal"
     }
   ],
-  "PAR|TYS": []
+  "PAR|TYS": [
+    {
+      "code": "PAR",
+      "scorer": "Julio Enciso",
+      "minute": "42",
+      "type": "Goal - Header"
+    }
+  ]
 }

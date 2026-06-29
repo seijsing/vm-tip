@@ -1,13 +1,13 @@
 {
-  "updated": "2026-06-29T21:11:15.452Z",
+  "updated": "2026-06-29T21:12:20.529Z",
   "matches": [
     {
       "home": "Germany",
       "away": "Paraguay",
       "homeScore": 0,
-      "awayScore": 0,
+      "awayScore": 1,
       "status": "LIVE",
-      "minute": "41",
+      "minute": "42",
       "utcDate": "2026-06-29T20:30Z",
       "stage": "Sextondelsfinal"
     },
