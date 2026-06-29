@@ -1478,6 +1478,12 @@
       "scorer": "Joshua Kimmich",
       "minute": "120",
       "type": "Penalty - Scored"
+    },
+    {
+      "code": "PAR",
+      "scorer": "Gustavo Gómez",
+      "minute": "120",
+      "type": "Penalty - Scored"
     }
   ]
 }
