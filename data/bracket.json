@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29T23:30:12.871Z",
+  "updated": "2026-06-29T23:30:40.970Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -191,9 +191,9 @@
     {
       "stage": "Åttondelsfinal",
       "utcDate": "2026-07-04T21:00Z",
-      "home": "Round of 32 2 Winner",
+      "home": "Paraguay",
       "away": "Round of 32 5 Winner",
-      "homeCode": null,
+      "homeCode": "PAR",
       "awayCode": null,
       "status": "TIMED",
       "homeScore": null,
