@@ -1502,6 +1502,12 @@
       "scorer": "Nadiem Amiri",
       "minute": "120",
       "type": "Penalty - Scored"
+    },
+    {
+      "code": "PAR",
+      "scorer": "José Canale",
+      "minute": "120",
+      "type": "Penalty - Scored"
     }
   ]
 }
