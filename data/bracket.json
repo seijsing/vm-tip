@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T20:58:21.617Z",
+  "updated": "2026-06-29T17:01:17.448Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -19,9 +19,9 @@
       "away": "Japan",
       "homeCode": "BRA",
       "awayCode": "JPN",
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "LIVE",
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "stage": "Sextondelsfinal",
