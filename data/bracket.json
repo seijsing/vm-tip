@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29T19:04:19.716Z",
+  "updated": "2026-06-29T19:05:25.248Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -202,9 +202,9 @@
     {
       "stage": "Åttondelsfinal",
       "utcDate": "2026-07-05T20:00Z",
-      "home": "Round of 32 4 Winner",
+      "home": "Brazil",
       "away": "Round of 32 6 Winner",
-      "homeCode": null,
+      "homeCode": "BRA",
       "awayCode": null,
       "status": "TIMED",
       "homeScore": null,
