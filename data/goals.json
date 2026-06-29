@@ -1446,6 +1446,12 @@
       "scorer": "Casemiro",
       "minute": "56",
       "type": "Goal - Header"
+    },
+    {
+      "code": "BRA",
+      "scorer": "Gabriel Martinelli",
+      "minute": "90+5",
+      "type": "Goal"
     }
   ]
 }
