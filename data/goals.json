@@ -1434,5 +1434,12 @@
       "type": "Goal"
     }
   ],
-  "BRA|JPN": []
+  "BRA|JPN": [
+    {
+      "code": "JPN",
+      "scorer": "Kaishu Sano",
+      "minute": "29",
+      "type": "Goal"
+    }
+  ]
 }

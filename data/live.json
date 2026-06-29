@@ -1,13 +1,13 @@
 {
-  "updated": "2026-06-29T17:29:15.114Z",
+  "updated": "2026-06-29T17:30:37.634Z",
   "matches": [
     {
       "home": "Brazil",
       "away": "Japan",
       "homeScore": 0,
-      "awayScore": 0,
+      "awayScore": 1,
       "status": "LIVE",
-      "minute": "29",
+      "minute": "30",
       "utcDate": "2026-06-29T17:00Z",
       "stage": "Sextondelsfinal"
     },
