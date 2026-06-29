@@ -1490,6 +1490,12 @@
       "scorer": "Jamal Musiala",
       "minute": "120",
       "type": "Penalty - Scored"
+    },
+    {
+      "code": "PAR",
+      "scorer": "Matías Galarza",
+      "minute": "120",
+      "type": "Penalty - Scored"
     }
   ]
 }
