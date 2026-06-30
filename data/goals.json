@@ -1574,5 +1574,12 @@
       "type": "Goal"
     }
   ],
-  "FRA|SWE": []
+  "FRA|SWE": [
+    {
+      "code": "FRA",
+      "scorer": "Kylian Mbappé",
+      "minute": "45",
+      "type": "Goal"
+    }
+  ]
 }
