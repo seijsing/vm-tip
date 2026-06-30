@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30T03:55:22.940Z",
+  "updated": "2026-06-30T17:01:18.928Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -52,9 +52,9 @@
       "away": "Norway",
       "homeCode": "ELF",
       "awayCode": "NOR",
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "LIVE",
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "stage": "Sextondelsfinal",
