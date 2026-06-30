@@ -1,13 +1,13 @@
 {
-  "updated": "2026-06-30T21:50:33.516Z",
+  "updated": "2026-06-30T22:05:24.469Z",
   "matches": [
     {
       "home": "France",
       "away": "Sweden",
       "homeScore": 1,
       "awayScore": 0,
-      "status": "PAUSED",
-      "minute": null,
+      "status": "LIVE",
+      "minute": "46",
       "utcDate": "2026-06-30T21:00Z",
       "stage": "Sextondelsfinal"
     },
