@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30T04:30:41.817Z",
+  "updated": "2026-06-30T05:00:49.135Z",
   "matches": [
     {
       "home": "Netherlands",
@@ -29,6 +29,16 @@
       "status": "TIMED",
       "minute": null,
       "utcDate": "2026-06-30T21:00Z",
+      "stage": "Sextondelsfinal"
+    },
+    {
+      "home": "Mexico",
+      "away": "Ecuador",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-07-01T01:00Z",
       "stage": "Sextondelsfinal"
     }
   ]
