@@ -1554,5 +1554,12 @@
       "type": "Penalty - Scored"
     }
   ],
-  "ELF|NOR": []
+  "ELF|NOR": [
+    {
+      "code": "NOR",
+      "scorer": "Antonio Nusa",
+      "minute": "39",
+      "type": "Goal"
+    }
+  ]
 }

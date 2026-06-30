@@ -1,13 +1,13 @@
 {
-  "updated": "2026-06-30T17:39:15.360Z",
+  "updated": "2026-06-30T17:40:30.724Z",
   "matches": [
     {
       "home": "Ivory Coast",
       "away": "Norway",
       "homeScore": 0,
-      "awayScore": 0,
+      "awayScore": 1,
       "status": "LIVE",
-      "minute": "39",
+      "minute": "40",
       "utcDate": "2026-06-30T17:00Z",
       "stage": "Sextondelsfinal"
     },
