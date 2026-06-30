@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29T23:30:40.970Z",
+  "updated": "2026-06-30T01:01:18.571Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -41,9 +41,9 @@
       "away": "Morocco",
       "homeCode": "NED",
       "awayCode": "MAR",
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "LIVE",
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "stage": "Sextondelsfinal",
