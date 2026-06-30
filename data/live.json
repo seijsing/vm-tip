@@ -1,13 +1,13 @@
 {
-  "updated": "2026-06-30T02:52:17.437Z",
+  "updated": "2026-06-30T02:53:13.997Z",
   "matches": [
     {
       "home": "Netherlands",
       "away": "Morocco",
       "homeScore": 1,
-      "awayScore": 0,
+      "awayScore": 1,
       "status": "LIVE",
-      "minute": "90",
+      "minute": "90+1",
       "utcDate": "2026-06-30T01:00Z",
       "stage": "Sextondelsfinal"
     },
