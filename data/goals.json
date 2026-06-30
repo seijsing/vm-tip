@@ -1510,5 +1510,12 @@
       "type": "Penalty - Scored"
     }
   ],
-  "MAR|NED": []
+  "MAR|NED": [
+    {
+      "code": "NED",
+      "scorer": "Cody Gakpo",
+      "minute": "72",
+      "type": "Goal"
+    }
+  ]
 }
