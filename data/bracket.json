@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30T03:24:17.161Z",
+  "updated": "2026-06-30T03:55:22.940Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -41,7 +41,7 @@
       "away": "Morocco",
       "homeCode": "NED",
       "awayCode": "MAR",
-      "status": "LIVE",
+      "status": "FINISHED",
       "homeScore": 1,
       "awayScore": 1
     },
@@ -181,9 +181,9 @@
       "stage": "Åttondelsfinal",
       "utcDate": "2026-07-04T17:00Z",
       "home": "Canada",
-      "away": "Round of 32 3 Winner",
+      "away": "Morocco",
       "homeCode": "KAN",
-      "awayCode": null,
+      "awayCode": "MAR",
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null

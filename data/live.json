@@ -1,16 +1,6 @@
 {
-  "updated": "2026-06-30T03:46:20.239Z",
+  "updated": "2026-06-30T03:55:22.940Z",
   "matches": [
-    {
-      "home": "Netherlands",
-      "away": "Morocco",
-      "homeScore": 1,
-      "awayScore": 1,
-      "status": "LIVE",
-      "minute": "120",
-      "utcDate": "2026-06-30T01:00Z",
-      "stage": "Sextondelsfinal"
-    },
     {
       "home": "Germany",
       "away": "Paraguay",
@@ -19,6 +9,16 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-29T20:30Z",
+      "stage": "Sextondelsfinal"
+    },
+    {
+      "home": "Netherlands",
+      "away": "Morocco",
+      "homeScore": 1,
+      "awayScore": 1,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-06-30T01:00Z",
       "stage": "Sextondelsfinal"
     },
     {
