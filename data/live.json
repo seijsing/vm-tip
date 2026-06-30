@@ -1,16 +1,6 @@
 {
-  "updated": "2026-06-30T22:53:13.015Z",
+  "updated": "2026-06-30T22:54:18.700Z",
   "matches": [
-    {
-      "home": "France",
-      "away": "Sweden",
-      "homeScore": 3,
-      "awayScore": 0,
-      "status": "LIVE",
-      "minute": "90+4",
-      "utcDate": "2026-06-30T21:00Z",
-      "stage": "Sextondelsfinal"
-    },
     {
       "home": "Ivory Coast",
       "away": "Norway",
@@ -19,6 +9,16 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-30T17:00Z",
+      "stage": "Sextondelsfinal"
+    },
+    {
+      "home": "France",
+      "away": "Sweden",
+      "homeScore": 3,
+      "awayScore": 0,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-06-30T21:00Z",
       "stage": "Sextondelsfinal"
     },
     {

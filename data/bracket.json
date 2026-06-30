@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30T22:33:14.330Z",
+  "updated": "2026-06-30T22:54:18.700Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -63,7 +63,7 @@
       "away": "Sweden",
       "homeCode": "FRA",
       "awayCode": "SWE",
-      "status": "LIVE",
+      "status": "FINISHED",
       "homeScore": 3,
       "awayScore": 0
     },
