@@ -1566,6 +1566,12 @@
       "scorer": "Amad Diallo",
       "minute": "74",
       "type": "Goal"
+    },
+    {
+      "code": "NOR",
+      "scorer": "Erling Haaland",
+      "minute": "86",
+      "type": "Goal"
     }
   ]
 }
