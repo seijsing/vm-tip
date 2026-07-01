@@ -1608,5 +1608,12 @@
       "type": "Goal"
     }
   ],
-  "ENG|KON": []
+  "ENG|KON": [
+    {
+      "code": "KON",
+      "scorer": "Brian Cipenga",
+      "minute": "7",
+      "type": "Goal"
+    }
+  ]
 }
