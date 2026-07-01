@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-01T18:00:56.277Z",
+  "updated": "2026-07-01T18:01:16.076Z",
   "matches": [
     {
       "home": "England",
       "away": "Congo DR",
       "homeScore": 2,
       "awayScore": 1,
-      "status": "LIVE",
-      "minute": "90+7",
+      "status": "FINISHED",
+      "minute": null,
       "utcDate": "2026-07-01T16:00Z",
       "stage": "Sextondelsfinal"
     },
