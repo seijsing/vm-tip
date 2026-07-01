@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T22:50:33.682Z",
+  "updated": "2026-07-01T22:58:19.016Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -236,9 +236,9 @@
       "stage": "Åttondelsfinal",
       "utcDate": "2026-07-07T00:00Z",
       "home": "Round of 32 9 Winner",
-      "away": "Round of 32 10 Winner",
+      "away": "Belgium",
       "homeCode": null,
-      "awayCode": null,
+      "awayCode": "BEL",
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null
