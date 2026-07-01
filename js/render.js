@@ -203,8 +203,11 @@ function liveBody(m, l, people) {
 
 function resultBody(m, resStr, people) {
   const [hs, as] = resStr.split("-");
-  const dist = tipDistribution(m, people);
-  const exact = (dist.find(([s]) => s === resStr) || [null, []])[1];
+  // Slutspelsmatch: ingen har tippat exakta slutresultat på dem, visa medaljsupportrar i stället.
+  const detail = m.synthetic
+    ? (supportersBlock(m, people)
+        ?? el("div", { class: "hero-tippers" }, [el("span", { class: "muted", text: "Inga medaljtips på lagen" })]))
+    : resultDist(m, resStr, people);
   return el("div", {}, [
     heroHead(m, el("span", { class: "hero-finished-badge", text: "SLUTRESULTAT" })),
     el("div", { class: "hero-match" }, [
@@ -215,6 +218,14 @@ function resultBody(m, resStr, people) {
       teamCol(m.away, m.awaySv),
     ]),
     scorersBlock(m.goals),
+    detail,
+  ]);
+}
+
+function resultDist(m, resStr, people) {
+  const dist = tipDistribution(m, people);
+  const exact = (dist.find(([s]) => s === resStr) || [null, []])[1];
+  return el("div", {}, [
     el("div", { class: "hero-result-line", text:
       exact.length ? `Prickade slutresultatet: ${exact.join(", ")}` : "Ingen prickade slutresultatet" }),
     dist.length ? distBlock(dist, resStr) : null,
