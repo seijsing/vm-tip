@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T04:06:17.987Z",
+  "updated": "2026-07-01T16:02:23.717Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -85,9 +85,9 @@
       "away": "Congo DR",
       "homeCode": "ENG",
       "awayCode": "KON",
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "LIVE",
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "stage": "Sextondelsfinal",
