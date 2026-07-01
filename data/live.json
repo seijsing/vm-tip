@@ -1,6 +1,16 @@
 {
-  "updated": "2026-07-01T18:01:16.076Z",
+  "updated": "2026-07-01T20:01:16.837Z",
   "matches": [
+    {
+      "home": "Belgium",
+      "away": "Senegal",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "LIVE",
+      "minute": "1",
+      "utcDate": "2026-07-01T20:00Z",
+      "stage": "Sextondelsfinal"
+    },
     {
       "home": "England",
       "away": "Congo DR",
@@ -9,16 +19,6 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-07-01T16:00Z",
-      "stage": "Sextondelsfinal"
-    },
-    {
-      "home": "Belgium",
-      "away": "Senegal",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-07-01T20:00Z",
       "stage": "Sextondelsfinal"
     },
     {
