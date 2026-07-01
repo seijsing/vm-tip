@@ -1,11 +1,11 @@
 {
-  "updated": "2026-07-01T20:25:22.231Z",
+  "updated": "2026-07-01T20:26:17.190Z",
   "matches": [
     {
       "home": "Belgium",
       "away": "Senegal",
       "homeScore": 0,
-      "awayScore": 0,
+      "awayScore": 1,
       "status": "LIVE",
       "minute": "25",
       "utcDate": "2026-07-01T20:00Z",
