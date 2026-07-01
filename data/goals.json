@@ -1614,6 +1614,12 @@
       "scorer": "Brian Cipenga",
       "minute": "7",
       "type": "Goal"
+    },
+    {
+      "code": "ENG",
+      "scorer": "Harry Kane",
+      "minute": "75",
+      "type": "Goal - Header"
     }
   ]
 }
