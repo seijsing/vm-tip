@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-01T02:51:15.498Z",
+  "updated": "2026-07-01T03:08:21.834Z",
   "matches": [
     {
       "home": "Mexico",
       "away": "Ecuador",
       "homeScore": 2,
       "awayScore": 0,
-      "status": "PAUSED",
-      "minute": null,
+      "status": "LIVE",
+      "minute": "46",
       "utcDate": "2026-07-01T02:00Z",
       "stage": "Sextondelsfinal"
     },
