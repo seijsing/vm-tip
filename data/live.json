@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T05:21:17.680Z",
+  "updated": "2026-07-01T05:22:19.877Z",
   "matches": [
     {
       "home": "Mexico",
@@ -8,7 +8,8 @@
       "awayScore": 0,
       "status": "FINISHED",
       "minute": null,
-      "utcDate": "2026-07-01T01:00:00Z"
+      "utcDate": "2026-07-01T02:00Z",
+      "stage": "Sextondelsfinal"
     },
     {
       "home": "England",
@@ -17,7 +18,8 @@
       "awayScore": null,
       "status": "TIMED",
       "minute": null,
-      "utcDate": "2026-07-01T16:00:00Z"
+      "utcDate": "2026-07-01T16:00Z",
+      "stage": "Sextondelsfinal"
     },
     {
       "home": "Belgium",
@@ -26,7 +28,8 @@
       "awayScore": null,
       "status": "TIMED",
       "minute": null,
-      "utcDate": "2026-07-01T20:00:00Z"
+      "utcDate": "2026-07-01T20:00Z",
+      "stage": "Sextondelsfinal"
     },
     {
       "home": "United States",
@@ -35,7 +38,8 @@
       "awayScore": null,
       "status": "TIMED",
       "minute": null,
-      "utcDate": "2026-07-02T00:00:00Z"
+      "utcDate": "2026-07-02T00:00Z",
+      "stage": "Sextondelsfinal"
     }
   ]
 }
