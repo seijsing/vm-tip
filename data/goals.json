@@ -1620,6 +1620,12 @@
       "scorer": "Harry Kane",
       "minute": "75",
       "type": "Goal - Header"
+    },
+    {
+      "code": "ENG",
+      "scorer": "Harry Kane",
+      "minute": "86",
+      "type": "Goal"
     }
   ]
 }
