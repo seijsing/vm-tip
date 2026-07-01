@@ -1628,5 +1628,12 @@
       "type": "Goal"
     }
   ],
-  "BEL|SEN": []
+  "BEL|SEN": [
+    {
+      "code": "SEN",
+      "scorer": "Habib Diarra",
+      "minute": "25",
+      "type": "Goal"
+    }
+  ]
 }
