@@ -1646,6 +1646,12 @@
       "scorer": "Romelu Lukaku",
       "minute": "86",
       "type": "Goal"
+    },
+    {
+      "code": "BEL",
+      "scorer": "Youri Tielemans",
+      "minute": "89",
+      "type": "Goal - Header"
     }
   ]
 }
