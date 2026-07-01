@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30T22:54:18.700Z",
+  "updated": "2026-07-01T00:00:50.184Z",
   "matches": [
     {
       "home": "Ivory Coast",
@@ -39,6 +39,16 @@
       "status": "TIMED",
       "minute": null,
       "utcDate": "2026-07-01T16:00Z",
+      "stage": "Sextondelsfinal"
+    },
+    {
+      "home": "Belgium",
+      "away": "Senegal",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-07-01T20:00Z",
       "stage": "Sextondelsfinal"
     }
   ]
