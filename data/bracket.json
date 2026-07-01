@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T22:43:18.704Z",
+  "updated": "2026-07-01T22:50:33.682Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -96,7 +96,7 @@
       "away": "Senegal",
       "homeCode": "BEL",
       "awayCode": "SEN",
-      "status": "LIVE",
+      "status": "FINISHED",
       "homeScore": 3,
       "awayScore": 2
     },
