@@ -1,6 +1,16 @@
 {
-  "updated": "2026-07-01T01:00:49.748Z",
+  "updated": "2026-07-01T02:02:18.585Z",
   "matches": [
+    {
+      "home": "Mexico",
+      "away": "Ecuador",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "LIVE",
+      "minute": "1",
+      "utcDate": "2026-07-01T02:00Z",
+      "stage": "Sextondelsfinal"
+    },
     {
       "home": "France",
       "away": "Sweden",
@@ -9,16 +19,6 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-06-30T21:00Z",
-      "stage": "Sextondelsfinal"
-    },
-    {
-      "home": "Mexico",
-      "away": "Ecuador",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-07-01T02:00Z",
       "stage": "Sextondelsfinal"
     },
     {
