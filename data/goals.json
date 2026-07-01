@@ -1652,6 +1652,12 @@
       "scorer": "Youri Tielemans",
       "minute": "89",
       "type": "Goal - Header"
+    },
+    {
+      "code": "BEL",
+      "scorer": "Youri Tielemans",
+      "minute": "120+5",
+      "type": "Penalty - Scored"
     }
   ]
 }
