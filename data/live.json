@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T03:58:16.376Z",
+  "updated": "2026-07-01T04:00:48.265Z",
   "matches": [
     {
       "home": "Mexico",
@@ -7,7 +7,7 @@
       "homeScore": 2,
       "awayScore": 0,
       "status": "LIVE",
-      "minute": "90+6",
+      "minute": "90+8",
       "utcDate": "2026-07-01T02:00Z",
       "stage": "Sextondelsfinal"
     },
@@ -39,6 +39,16 @@
       "status": "TIMED",
       "minute": null,
       "utcDate": "2026-07-01T20:00Z",
+      "stage": "Sextondelsfinal"
+    },
+    {
+      "home": "United States",
+      "away": "Bosnia-Herzegovina",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-07-02T00:00Z",
       "stage": "Sextondelsfinal"
     }
   ]
