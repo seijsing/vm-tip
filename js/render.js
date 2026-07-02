@@ -357,6 +357,10 @@ export function renderMatches(container, data, liveEnriched) {
   const live = liveEnriched.filter((l) => l.isLive);
   const played = matches.filter((m) => m.result && !liveByCol.get(m.col)?.isLive);
   const upcoming = matches.filter((m) => !m.result && !liveByCol.get(m.col)?.isLive);
+  // Slutspelsmatcher (ej i arket) som är klara – annars försvinner de spårlöst ur "Spelade".
+  const playedKo = liveEnriched
+    .filter((l) => l.match.synthetic && !l.isLive && l.status === "FINISHED")
+    .sort((a, b) => new Date(b.match.utcDate || 0) - new Date(a.match.utcDate || 0));
 
   if (live.length) {
     container.appendChild(el("h3", { class: "section-h live-h", text: "🔴 Pågående just nu" }));
@@ -372,6 +376,7 @@ export function renderMatches(container, data, liveEnriched) {
 
   container.appendChild(el("h3", { class: "section-h", text: "Spelade" }));
   const playedList = el("div", { class: "match-list" });
+  for (const l of playedKo) playedList.appendChild(playedKoRow(l, people));
   for (const m of [...played].reverse()) playedList.appendChild(playedRow(m, people));
   container.appendChild(playedList);
 }
@@ -424,6 +429,37 @@ function upcomingRow(m, people) {
     ]),
     el("span", { class: "teams", text: `${m.homeSv} – ${m.awaySv}` }),
     el("span", { class: "grp", text: m.group }),
+    chevron,
+  ]);
+  row.addEventListener("click", () => {
+    const open = !detailEl.hidden;
+    detailEl.hidden = open;
+    chevron.classList.toggle("open", !open);
+    row.classList.toggle("expanded", !open);
+  });
+
+  return el("div", { class: "match-row-wrap" }, [row, detailEl]);
+}
+
+// Slutspelsmatch (ej i arket, inga exakta score-tips) – visa mål + medaljsupportrar.
+function playedKoRow(l, people) {
+  const m = l.match;
+  const chevron = el("span", { class: "chevron", text: "›" });
+
+  const detailEl = el("div", { class: "match-tips" }, [
+    scorersBlock(m.goals),
+    supportersBlock(m, people)
+      ?? el("span", { class: "muted", text: "Inga medaljtips på lagen" }),
+  ]);
+  detailEl.hidden = true;
+
+  const row = el("div", { class: "match-row played" }, [
+    el("span", { class: "when", text: fmtKoDate(m.utcDate) }),
+    el("span", { class: "teams", text: `${m.homeSv} – ${m.awaySv}` }),
+    el("div", { class: "res-group" }, [
+      el("span", { class: "res", text: l.scoreStr }),
+      el("span", { class: "exact", text: m.group }),
+    ]),
     chevron,
   ]);
   row.addEventListener("click", () => {
