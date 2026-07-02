@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T01:48:20.083Z",
+  "updated": "2026-07-02T02:07:15.835Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -107,7 +107,7 @@
       "away": "Bosnia-Herzegovina",
       "homeCode": "USA",
       "awayCode": "BOS",
-      "status": "LIVE",
+      "status": "FINISHED",
       "homeScore": 2,
       "awayScore": 0
     },
@@ -235,9 +235,9 @@
     {
       "stage": "Åttondelsfinal",
       "utcDate": "2026-07-07T00:00Z",
-      "home": "Round of 32 9 Winner",
+      "home": "United States",
       "away": "Belgium",
-      "homeCode": null,
+      "homeCode": "USA",
       "awayCode": "BEL",
       "status": "TIMED",
       "homeScore": null,
