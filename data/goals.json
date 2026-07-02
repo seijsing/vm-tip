@@ -1660,5 +1660,12 @@
       "type": "Penalty - Scored"
     }
   ],
-  "BOS|USA": []
+  "BOS|USA": [
+    {
+      "code": "USA",
+      "scorer": "Folarin Balogun",
+      "minute": "45",
+      "type": "Goal"
+    }
+  ]
 }

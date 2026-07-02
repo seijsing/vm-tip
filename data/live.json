@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-02T00:44:16.330Z",
+  "updated": "2026-07-02T00:45:27.916Z",
   "matches": [
     {
       "home": "United States",
       "away": "Bosnia-Herzegovina",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 0,
       "status": "LIVE",
-      "minute": "44",
+      "minute": "45",
       "utcDate": "2026-07-02T00:00Z",
       "stage": "Sextondelsfinal"
     },
