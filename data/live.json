@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T02:07:15.835Z",
+  "updated": "2026-07-02T03:00:58.806Z",
   "matches": [
     {
       "home": "Belgium",
@@ -29,6 +29,16 @@
       "status": "TIMED",
       "minute": null,
       "utcDate": "2026-07-02T19:00Z",
+      "stage": "Sextondelsfinal"
+    },
+    {
+      "home": "Portugal",
+      "away": "Croatia",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-07-02T23:00Z",
       "stage": "Sextondelsfinal"
     }
   ]
