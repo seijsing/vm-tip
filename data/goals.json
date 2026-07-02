@@ -1666,6 +1666,12 @@
       "scorer": "Folarin Balogun",
       "minute": "45",
       "type": "Goal"
+    },
+    {
+      "code": "USA",
+      "scorer": "Malik Tillman",
+      "minute": "82",
+      "type": "Goal - Free-kick"
     }
   ]
 }
