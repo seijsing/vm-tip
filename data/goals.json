@@ -1680,6 +1680,12 @@
       "scorer": "Mikel Oyarzabal",
       "minute": "36",
       "type": "Goal"
+    },
+    {
+      "code": "SPA",
+      "scorer": "Pedro Porro",
+      "minute": "66",
+      "type": "Goal - Header"
     }
   ]
 }
