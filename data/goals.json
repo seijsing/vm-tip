@@ -1674,5 +1674,12 @@
       "type": "Goal - Free-kick"
     }
   ],
-  "SPA|ÖST": []
+  "SPA|ÖST": [
+    {
+      "code": "SPA",
+      "scorer": "Mikel Oyarzabal",
+      "minute": "36",
+      "type": "Goal"
+    }
+  ]
 }
