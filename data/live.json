@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-02T19:50:35.014Z",
+  "updated": "2026-07-02T20:08:17.863Z",
   "matches": [
     {
       "home": "Spain",
       "away": "Austria",
       "homeScore": 1,
       "awayScore": 0,
-      "status": "PAUSED",
-      "minute": null,
+      "status": "LIVE",
+      "minute": "46",
       "utcDate": "2026-07-02T19:00Z",
       "stage": "Sextondelsfinal"
     },
