@@ -1,6 +1,16 @@
 {
-  "updated": "2026-07-02T22:00:55.432Z",
+  "updated": "2026-07-02T23:01:15.218Z",
   "matches": [
+    {
+      "home": "Portugal",
+      "away": "Croatia",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "LIVE",
+      "minute": "1",
+      "utcDate": "2026-07-02T23:00Z",
+      "stage": "Sextondelsfinal"
+    },
     {
       "home": "Spain",
       "away": "Austria",
@@ -9,16 +19,6 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-07-02T19:00Z",
-      "stage": "Sextondelsfinal"
-    },
-    {
-      "home": "Portugal",
-      "away": "Croatia",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-07-02T23:00Z",
       "stage": "Sextondelsfinal"
     },
     {
