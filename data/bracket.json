@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T00:56:19.728Z",
+  "updated": "2026-07-02T01:12:19.114Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -107,7 +107,7 @@
       "away": "Bosnia-Herzegovina",
       "homeCode": "USA",
       "awayCode": "BOS",
-      "status": "PAUSED",
+      "status": "LIVE",
       "homeScore": 1,
       "awayScore": 0
     },
