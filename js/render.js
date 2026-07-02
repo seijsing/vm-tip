@@ -349,7 +349,7 @@ export function renderStandings(container, people, onSelect) {
 function medal(r) { return r === 1 ? "gold" : r === 2 ? "silver" : r === 3 ? "bronze" : ""; }
 
 /* ---------- Matcher + live ---------- */
-export function renderMatches(container, data, liveEnriched) {
+export function renderMatches(container, data, liveEnriched, bracket) {
   clear(container);
   const { matches, people } = data;
   const liveByCol = new Map(liveEnriched.map((l) => [l.match.col, l]));
@@ -357,10 +357,13 @@ export function renderMatches(container, data, liveEnriched) {
   const live = liveEnriched.filter((l) => l.isLive);
   const played = matches.filter((m) => m.result && !liveByCol.get(m.col)?.isLive);
   const upcoming = matches.filter((m) => !m.result && !liveByCol.get(m.col)?.isLive);
-  // Slutspelsmatcher (ej i arket) som är klara – annars försvinner de spårlöst ur "Spelade".
-  const playedKo = liveEnriched
-    .filter((l) => l.match.synthetic && !l.isLive && l.status === "FINISHED")
-    .sort((a, b) => new Date(b.match.utcDate || 0) - new Date(a.match.utcDate || 0));
+  // Slutspelsmatcher (ej i arket) som är klara. Läses ur det beständiga bracket.json
+  // (inte liveEnriched/live.json) – annars försvinner de ur "Spelade" när de åldras ur
+  // live.json:s tidsfönster.
+  const playedKo = (bracket ?? [])
+    .filter((b) => b.status === "FINISHED" && b.homeCode && b.awayCode)
+    .map(bracketToMatch)
+    .sort((a, b) => new Date(b.utcDate || 0) - new Date(a.utcDate || 0));
 
   if (live.length) {
     container.appendChild(el("h3", { class: "section-h live-h", text: "🔴 Pågående just nu" }));
@@ -376,7 +379,7 @@ export function renderMatches(container, data, liveEnriched) {
 
   container.appendChild(el("h3", { class: "section-h", text: "Spelade" }));
   const playedList = el("div", { class: "match-list" });
-  for (const l of playedKo) playedList.appendChild(playedKoRow(l, people));
+  for (const m of playedKo) playedList.appendChild(playedKoRow(m, people));
   for (const m of [...played].reverse()) playedList.appendChild(playedRow(m, people));
   container.appendChild(playedList);
 }
@@ -442,8 +445,7 @@ function upcomingRow(m, people) {
 }
 
 // Slutspelsmatch (ej i arket, inga exakta score-tips) – visa mål + medaljsupportrar.
-function playedKoRow(l, people) {
-  const m = l.match;
+function playedKoRow(m, people) {
   const chevron = el("span", { class: "chevron", text: "›" });
 
   const detailEl = el("div", { class: "match-tips" }, [
@@ -457,7 +459,7 @@ function playedKoRow(l, people) {
     el("span", { class: "when", text: fmtKoDate(m.utcDate) }),
     el("span", { class: "teams", text: `${m.homeSv} – ${m.awaySv}` }),
     el("div", { class: "res-group" }, [
-      el("span", { class: "res", text: l.scoreStr }),
+      el("span", { class: "res", text: m.result }),
       el("span", { class: "exact", text: m.group }),
     ]),
     chevron,
@@ -821,6 +823,7 @@ function bracketToMatch(b) {
     synthetic: true,
     tbd: !(b.homeCode && b.awayCode),
     utcDate: b.utcDate,
+    goals: b.goals ?? [],
   };
 }
 

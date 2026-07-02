@@ -35,7 +35,7 @@ function render() {
     case "standings":
       renderStandings(view, data.people, selectPerson); break;
     case "matches":
-      renderMatches(view, data, state.liveEnriched); break;
+      renderMatches(view, data, state.liveEnriched, state.bracket); break;
     case "person": {
       const person = data.people.find((p) => p.name === state.selected) || null;
       renderPerson(view, person, data, () => setActive("standings")); break;
@@ -58,6 +58,12 @@ async function refresh() {
     ]);
     // Koppla målskyttar (från data/goals.json) till varje match via lagkodspar.
     for (const m of data.matches) m.goals = orientGoals(m, goalsMap);
+    // Slutspelsträdets klara matcher får också målskyttar (beständigt, oavsett live.json-fönster).
+    for (const b of bracket) {
+      if (b.status === "FINISHED" && b.homeCode && b.awayCode) {
+        b.goals = orientGoals({ home: b.homeCode, away: b.awayCode }, goalsMap);
+      }
+    }
     state.data = data;
     state.bracket = bracket;
     state.liveEnriched = matchLiveToSheet(live.matches, data.matches);
