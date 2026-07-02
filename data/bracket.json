@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T20:59:15.156Z",
+  "updated": "2026-07-02T23:00:51.393Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -129,9 +129,9 @@
       "away": "Croatia",
       "homeCode": "POR",
       "awayCode": "KRO",
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "LIVE",
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "stage": "Sextondelsfinal",
