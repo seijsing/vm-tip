@@ -1778,5 +1778,12 @@
       "type": "Penalty - Scored"
     }
   ],
-  "ARG|KAP": []
+  "ARG|KAP": [
+    {
+      "code": "ARG",
+      "scorer": "Lionel Messi",
+      "minute": "29",
+      "type": "Goal"
+    }
+  ]
 }

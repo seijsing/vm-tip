@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-03T22:28:17.303Z",
+  "updated": "2026-07-03T22:29:15.132Z",
   "matches": [
     {
       "home": "Argentina",
       "away": "Cape Verde",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 0,
       "status": "LIVE",
-      "minute": "27",
+      "minute": "29",
       "utcDate": "2026-07-03T22:00Z",
       "stage": "Sextondelsfinal"
     },
