@@ -1784,6 +1784,12 @@
       "scorer": "Lionel Messi",
       "minute": "29",
       "type": "Goal"
+    },
+    {
+      "code": "KAP",
+      "scorer": "Deroy Duarte",
+      "minute": "59",
+      "type": "Goal"
     }
   ]
 }
