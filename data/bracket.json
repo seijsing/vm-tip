@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T05:01:02.906Z",
+  "updated": "2026-07-03T18:00:52.502Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -151,9 +151,9 @@
       "away": "Egypt",
       "homeCode": "AUS",
       "awayCode": "EGY",
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "LIVE",
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "stage": "Sextondelsfinal",
