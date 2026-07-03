@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T04:57:15.789Z",
+  "updated": "2026-07-03T05:01:02.906Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -257,9 +257,9 @@
     {
       "stage": "Åttondelsfinal",
       "utcDate": "2026-07-07T20:00Z",
-      "home": "Round of 32 13 Winner",
+      "home": "Switzerland",
       "away": "Round of 32 15 Winner",
-      "homeCode": null,
+      "homeCode": "SWZ",
       "awayCode": null,
       "status": "TIMED",
       "homeScore": null,
