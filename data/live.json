@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-03T19:17:16.689Z",
+  "updated": "2026-07-03T19:18:17.582Z",
   "matches": [
     {
       "home": "Australia",
       "away": "Egypt",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 1,
       "status": "LIVE",
-      "minute": "55",
+      "minute": "56",
       "utcDate": "2026-07-03T18:00Z",
       "stage": "Sextondelsfinal"
     },

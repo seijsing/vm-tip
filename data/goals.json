@@ -1734,6 +1734,12 @@
       "scorer": "Emam Ashour",
       "minute": "13",
       "type": "Goal - Header"
+    },
+    {
+      "code": "AUS",
+      "scorer": "Mohamed Hany",
+      "minute": "55",
+      "type": "Own Goal"
     }
   ]
 }
