@@ -1,14 +1,14 @@
 {
-  "updated": "2026-07-03T02:00:56.640Z",
+  "updated": "2026-07-03T03:00:57.178Z",
   "matches": [
     {
-      "home": "Spain",
-      "away": "Austria",
-      "homeScore": 3,
+      "home": "Switzerland",
+      "away": "Algeria",
+      "homeScore": 0,
       "awayScore": 0,
-      "status": "FINISHED",
-      "minute": null,
-      "utcDate": "2026-07-02T19:00Z",
+      "status": "LIVE",
+      "minute": "1",
+      "utcDate": "2026-07-03T03:00Z",
       "stage": "Sextondelsfinal"
     },
     {
@@ -19,16 +19,6 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-07-02T23:00Z",
-      "stage": "Sextondelsfinal"
-    },
-    {
-      "home": "Switzerland",
-      "away": "Algeria",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-07-03T03:00Z",
       "stage": "Sextondelsfinal"
     },
     {

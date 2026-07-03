@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T01:10:34.696Z",
+  "updated": "2026-07-03T03:00:57.178Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -140,9 +140,9 @@
       "away": "Algeria",
       "homeCode": "SWZ",
       "awayCode": "ALG",
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "LIVE",
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "stage": "Sextondelsfinal",
