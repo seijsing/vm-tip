@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T20:57:19.302Z",
+  "updated": "2026-07-03T21:00:51.253Z",
   "matches": [
     {
       "home": "Australia",
@@ -30,6 +30,16 @@
       "minute": null,
       "utcDate": "2026-07-04T01:30Z",
       "stage": "Sextondelsfinal"
+    },
+    {
+      "home": "Canada",
+      "away": "Morocco",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-07-04T17:00Z",
+      "stage": "Åttondelsfinal"
     }
   ]
 }
