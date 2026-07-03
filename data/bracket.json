@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T01:06:21.194Z",
+  "updated": "2026-07-03T01:10:34.696Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -129,7 +129,7 @@
       "away": "Croatia",
       "homeCode": "POR",
       "awayCode": "KRO",
-      "status": "LIVE",
+      "status": "FINISHED",
       "homeScore": 2,
       "awayScore": 1
     },
@@ -224,9 +224,9 @@
     {
       "stage": "Åttondelsfinal",
       "utcDate": "2026-07-06T19:00Z",
-      "home": "Round of 32 11 Winner",
+      "home": "Portugal",
       "away": "Spain",
-      "homeCode": null,
+      "homeCode": "POR",
       "awayCode": "SPA",
       "status": "TIMED",
       "homeScore": null,
