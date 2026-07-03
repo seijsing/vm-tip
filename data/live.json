@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-03T01:03:16.795Z",
+  "updated": "2026-07-03T01:05:21.613Z",
   "matches": [
     {
       "home": "Portugal",
       "away": "Croatia",
       "homeScore": 2,
-      "awayScore": 1,
+      "awayScore": 2,
       "status": "LIVE",
-      "minute": "90+13",
+      "minute": "90+15",
       "utcDate": "2026-07-02T23:00Z",
       "stage": "Sextondelsfinal"
     },
