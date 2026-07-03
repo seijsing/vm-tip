@@ -1700,6 +1700,12 @@
       "scorer": "Ivan Perisic",
       "minute": "53",
       "type": "Goal"
+    },
+    {
+      "code": "POR",
+      "scorer": "Cristiano Ronaldo",
+      "minute": "68",
+      "type": "Penalty - Scored"
     }
   ]
 }
