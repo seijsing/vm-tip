@@ -1706,6 +1706,12 @@
       "scorer": "Cristiano Ronaldo",
       "minute": "68",
       "type": "Penalty - Scored"
+    },
+    {
+      "code": "POR",
+      "scorer": "Gonçalo Ramos",
+      "minute": "90+4",
+      "type": "Goal - Header"
     }
   ]
 }
