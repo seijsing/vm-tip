@@ -1740,6 +1740,42 @@
       "scorer": "Mohamed Hany",
       "minute": "55",
       "type": "Own Goal"
+    },
+    {
+      "code": "EGY",
+      "scorer": "Mahmoud Saber",
+      "minute": "120",
+      "type": "Penalty - Scored"
+    },
+    {
+      "code": "AUS",
+      "scorer": "Jackson Irvine",
+      "minute": "120",
+      "type": "Penalty - Scored"
+    },
+    {
+      "code": "EGY",
+      "scorer": "Ramy Rabia",
+      "minute": "120",
+      "type": "Penalty - Scored"
+    },
+    {
+      "code": "AUS",
+      "scorer": "Awer Mabil",
+      "minute": "120",
+      "type": "Penalty - Scored"
+    },
+    {
+      "code": "EGY",
+      "scorer": "Mohamed Salah",
+      "minute": "120",
+      "type": "Penalty - Scored"
+    },
+    {
+      "code": "EGY",
+      "scorer": "Hossam Abdelmaguid",
+      "minute": "120",
+      "type": "Penalty - Scored"
     }
   ]
 }
