@@ -1728,5 +1728,12 @@
       "type": "Goal"
     }
   ],
-  "AUS|EGY": []
+  "AUS|EGY": [
+    {
+      "code": "EGY",
+      "scorer": "Emam Ashour",
+      "minute": "13",
+      "type": "Goal - Header"
+    }
+  ]
 }
