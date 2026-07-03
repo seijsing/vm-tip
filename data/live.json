@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-03T03:11:17.297Z",
+  "updated": "2026-07-03T03:12:17.401Z",
   "matches": [
     {
       "home": "Switzerland",
       "away": "Algeria",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 0,
       "status": "LIVE",
-      "minute": "11",
+      "minute": "12",
       "utcDate": "2026-07-03T03:00Z",
       "stage": "Sextondelsfinal"
     },

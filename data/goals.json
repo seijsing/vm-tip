@@ -1714,5 +1714,12 @@
       "type": "Goal - Header"
     }
   ],
-  "ALG|SWZ": []
+  "ALG|SWZ": [
+    {
+      "code": "SWZ",
+      "scorer": "Breel Embolo",
+      "minute": "11",
+      "type": "Goal"
+    }
+  ]
 }
