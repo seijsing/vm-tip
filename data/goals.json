@@ -1694,5 +1694,12 @@
       "type": "Goal"
     }
   ],
-  "KRO|POR": []
+  "KRO|POR": [
+    {
+      "code": "KRO",
+      "scorer": "Ivan Perisic",
+      "minute": "53",
+      "type": "Goal"
+    }
+  ]
 }
