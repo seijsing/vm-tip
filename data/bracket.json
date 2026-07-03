@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T00:14:17.052Z",
+  "updated": "2026-07-03T00:28:16.817Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -130,7 +130,7 @@
       "homeCode": "POR",
       "awayCode": "KRO",
       "status": "LIVE",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 1
     },
     {
