@@ -1720,6 +1720,12 @@
       "scorer": "Breel Embolo",
       "minute": "10",
       "type": "Goal"
+    },
+    {
+      "code": "SWZ",
+      "scorer": "Dan Ndoye",
+      "minute": "46",
+      "type": "Goal"
     }
   ]
 }
