@@ -1,6 +1,16 @@
 {
-  "updated": "2026-07-04T01:00:55.512Z",
+  "updated": "2026-07-04T01:31:14.724Z",
   "matches": [
+    {
+      "home": "Colombia",
+      "away": "Ghana",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "LIVE",
+      "minute": "1",
+      "utcDate": "2026-07-04T01:30Z",
+      "stage": "Sextondelsfinal"
+    },
     {
       "home": "Australia",
       "away": "Egypt",
@@ -19,16 +29,6 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-07-03T22:00Z",
-      "stage": "Sextondelsfinal"
-    },
-    {
-      "home": "Colombia",
-      "away": "Ghana",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-07-04T01:30Z",
       "stage": "Sextondelsfinal"
     },
     {

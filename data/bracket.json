@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T00:45:27.360Z",
+  "updated": "2026-07-04T01:31:14.724Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -173,9 +173,9 @@
       "away": "Ghana",
       "homeCode": "COL",
       "awayCode": "GHA",
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "LIVE",
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "stage": "Åttondelsfinal",
