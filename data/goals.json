@@ -1802,6 +1802,12 @@
       "scorer": "Sidny Lopes Cabral",
       "minute": "103",
       "type": "Goal"
+    },
+    {
+      "code": "ARG",
+      "scorer": "Diney Borges",
+      "minute": "111",
+      "type": "Own Goal"
     }
   ]
 }
