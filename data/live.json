@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T00:45:27.360Z",
+  "updated": "2026-07-04T01:00:55.512Z",
   "matches": [
     {
       "home": "Australia",
@@ -39,6 +39,16 @@
       "status": "TIMED",
       "minute": null,
       "utcDate": "2026-07-04T17:00Z",
+      "stage": "Åttondelsfinal"
+    },
+    {
+      "home": "Paraguay",
+      "away": "France",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-07-04T21:00Z",
       "stage": "Åttondelsfinal"
     }
   ]
