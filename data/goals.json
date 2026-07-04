@@ -1838,5 +1838,12 @@
       "type": "Goal"
     }
   ],
-  "FRA|PAR": []
+  "FRA|PAR": [
+    {
+      "code": "FRA",
+      "scorer": "Kylian Mbappé",
+      "minute": "70",
+      "type": "Penalty - Scored"
+    }
+  ]
 }
