@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T00:24:16.887Z",
+  "updated": "2026-07-04T00:27:15.664Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -162,7 +162,7 @@
       "away": "Cape Verde",
       "homeCode": "ARG",
       "awayCode": "KAP",
-      "status": "PAUSED",
+      "status": "LIVE",
       "homeScore": 2,
       "awayScore": 2
     },
