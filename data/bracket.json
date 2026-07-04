@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T00:33:14.845Z",
+  "updated": "2026-07-04T00:45:27.360Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -162,7 +162,7 @@
       "away": "Cape Verde",
       "homeCode": "ARG",
       "awayCode": "KAP",
-      "status": "LIVE",
+      "status": "FINISHED",
       "homeScore": 3,
       "awayScore": 2
     },
@@ -246,9 +246,9 @@
     {
       "stage": "Åttondelsfinal",
       "utcDate": "2026-07-07T16:00Z",
-      "home": "Round of 32 14 Winner",
+      "home": "Argentina",
       "away": "Egypt",
-      "homeCode": null,
+      "homeCode": "ARG",
       "awayCode": "EGY",
       "status": "TIMED",
       "homeScore": null,

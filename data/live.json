@@ -1,16 +1,6 @@
 {
-  "updated": "2026-07-04T00:44:16.504Z",
+  "updated": "2026-07-04T00:45:27.360Z",
   "matches": [
-    {
-      "home": "Argentina",
-      "away": "Cape Verde",
-      "homeScore": 3,
-      "awayScore": 2,
-      "status": "LIVE",
-      "minute": "120+3",
-      "utcDate": "2026-07-03T22:00Z",
-      "stage": "Sextondelsfinal"
-    },
     {
       "home": "Australia",
       "away": "Egypt",
@@ -19,6 +9,16 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-07-03T18:00Z",
+      "stage": "Sextondelsfinal"
+    },
+    {
+      "home": "Argentina",
+      "away": "Cape Verde",
+      "homeScore": 3,
+      "awayScore": 2,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-07-03T22:00Z",
       "stage": "Sextondelsfinal"
     },
     {
