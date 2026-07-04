@@ -1818,5 +1818,12 @@
       "type": "Goal"
     }
   ],
-  "KAN|MAR": []
+  "KAN|MAR": [
+    {
+      "code": "MAR",
+      "scorer": "Azzedine Ounahi",
+      "minute": "50",
+      "type": "Goal"
+    }
+  ]
 }
