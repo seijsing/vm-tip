@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-04T01:43:16.803Z",
+  "updated": "2026-07-04T01:45:28.568Z",
   "matches": [
     {
       "home": "Colombia",
       "away": "Ghana",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 0,
       "status": "LIVE",
-      "minute": "13",
+      "minute": "15",
       "utcDate": "2026-07-04T01:30Z",
       "stage": "Sextondelsfinal"
     },

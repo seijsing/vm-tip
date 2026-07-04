@@ -1810,5 +1810,12 @@
       "type": "Own Goal"
     }
   ],
-  "COL|GHA": []
+  "COL|GHA": [
+    {
+      "code": "COL",
+      "scorer": "Jhon Arias",
+      "minute": "14",
+      "type": "Goal"
+    }
+  ]
 }
