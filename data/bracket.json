@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T22:34:16.778Z",
+  "updated": "2026-07-04T23:05:22.133Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -195,7 +195,7 @@
       "away": "France",
       "homeCode": "PAR",
       "awayCode": "FRA",
-      "status": "LIVE",
+      "status": "FINISHED",
       "homeScore": 0,
       "awayScore": 1
     },
@@ -268,9 +268,9 @@
     {
       "stage": "Kvartsfinal",
       "utcDate": "2026-07-09T20:00Z",
-      "home": "Round of 16 1 Winner",
+      "home": "France",
       "away": "Morocco",
-      "homeCode": null,
+      "homeCode": "FRA",
       "awayCode": "MAR",
       "status": "TIMED",
       "homeScore": null,
