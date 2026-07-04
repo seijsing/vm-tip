@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T02:40:34.461Z",
+  "updated": "2026-07-04T03:33:15.154Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -173,7 +173,7 @@
       "away": "Ghana",
       "homeCode": "COL",
       "awayCode": "GHA",
-      "status": "LIVE",
+      "status": "FINISHED",
       "homeScore": 1,
       "awayScore": 0
     },
@@ -258,9 +258,9 @@
       "stage": "Åttondelsfinal",
       "utcDate": "2026-07-07T20:00Z",
       "home": "Switzerland",
-      "away": "Round of 32 15 Winner",
+      "away": "Colombia",
       "homeCode": "SWZ",
-      "awayCode": null,
+      "awayCode": "COL",
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null
