@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T19:04:16.639Z",
+  "updated": "2026-07-04T19:05:23.540Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -184,7 +184,7 @@
       "away": "Morocco",
       "homeCode": "KAN",
       "awayCode": "MAR",
-      "status": "LIVE",
+      "status": "FINISHED",
       "homeScore": 0,
       "awayScore": 3
     },
