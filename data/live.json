@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-04T09:30:46.016Z",
+  "updated": "2026-07-04T17:01:16.082Z",
   "matches": [
     {
       "home": "Canada",
       "away": "Morocco",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "LIVE",
+      "minute": "1",
       "utcDate": "2026-07-04T17:00Z",
       "stage": "Åttondelsfinal"
     },
