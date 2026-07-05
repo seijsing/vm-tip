@@ -1852,6 +1852,12 @@
       "scorer": "Erling Haaland",
       "minute": "79",
       "type": "Goal - Header"
+    },
+    {
+      "code": "NOR",
+      "scorer": "Erling Haaland",
+      "minute": "90",
+      "type": "Goal"
     }
   ]
 }
