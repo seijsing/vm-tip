@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T22:05:22.535Z",
+  "updated": "2026-07-05T22:06:17.378Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -290,9 +290,9 @@
     {
       "stage": "Kvartsfinal",
       "utcDate": "2026-07-11T21:00Z",
-      "home": "Round of 16 3 Winner",
+      "home": "Norway",
       "away": "Round of 16 4 Winner",
-      "homeCode": null,
+      "homeCode": "NOR",
       "awayCode": null,
       "status": "TIMED",
       "homeScore": null,
