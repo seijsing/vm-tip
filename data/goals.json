@@ -1846,5 +1846,12 @@
       "type": "Penalty - Scored"
     }
   ],
-  "BRA|NOR": []
+  "BRA|NOR": [
+    {
+      "code": "NOR",
+      "scorer": "Erling Haaland",
+      "minute": "79",
+      "type": "Goal - Header"
+    }
+  ]
 }
