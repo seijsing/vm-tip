@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-05T05:00:56.799Z",
+  "updated": "2026-07-05T20:01:16.475Z",
   "matches": [
     {
       "home": "Brazil",
       "away": "Norway",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "LIVE",
+      "minute": "1",
       "utcDate": "2026-07-05T20:00Z",
       "stage": "Åttondelsfinal"
     },

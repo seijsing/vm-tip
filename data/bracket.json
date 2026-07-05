@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T23:05:22.133Z",
+  "updated": "2026-07-05T20:01:16.475Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -206,9 +206,9 @@
       "away": "Norway",
       "homeCode": "BRA",
       "awayCode": "NOR",
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "LIVE",
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "stage": "Åttondelsfinal",
