@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T01:51:19.060Z",
+  "updated": "2026-07-06T02:08:20.671Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -217,7 +217,7 @@
       "away": "England",
       "homeCode": "MEX",
       "awayCode": "ENG",
-      "status": "PAUSED",
+      "status": "LIVE",
       "homeScore": 1,
       "awayScore": 2
     },
