@@ -1890,6 +1890,12 @@
       "scorer": "Harry Kane",
       "minute": "60",
       "type": "Penalty - Scored"
+    },
+    {
+      "code": "MEX",
+      "scorer": "Raúl Jiménez",
+      "minute": "69",
+      "type": "Penalty - Scored"
     }
   ]
 }
