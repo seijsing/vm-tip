@@ -1878,6 +1878,12 @@
       "scorer": "Jude Bellingham",
       "minute": "38",
       "type": "Goal"
+    },
+    {
+      "code": "MEX",
+      "scorer": "Julián Quiñones",
+      "minute": "42",
+      "type": "Goal - Volley"
     }
   ]
 }

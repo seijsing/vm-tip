@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-06T01:42:19.712Z",
+  "updated": "2026-07-06T01:43:14.928Z",
   "matches": [
     {
       "home": "Mexico",
       "away": "England",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 2,
       "status": "LIVE",
-      "minute": "42",
+      "minute": "43",
       "utcDate": "2026-07-06T01:00Z",
       "stage": "Åttondelsfinal"
     },
