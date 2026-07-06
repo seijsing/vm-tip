@@ -1898,5 +1898,12 @@
       "type": "Penalty - Scored"
     }
   ],
-  "POR|SPA": []
+  "POR|SPA": [
+    {
+      "code": "SPA",
+      "scorer": "Mikel Merino",
+      "minute": "90+1",
+      "type": "Goal"
+    }
+  ]
 }

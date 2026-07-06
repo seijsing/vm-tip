@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T20:09:15.021Z",
+  "updated": "2026-07-06T20:54:17.592Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -230,7 +230,7 @@
       "awayCode": "SPA",
       "status": "LIVE",
       "homeScore": 0,
-      "awayScore": 0
+      "awayScore": 1
     },
     {
       "stage": "Åttondelsfinal",

@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-06T20:53:18.069Z",
+  "updated": "2026-07-06T20:54:17.592Z",
   "matches": [
     {
       "home": "Portugal",
       "away": "Spain",
       "homeScore": 0,
-      "awayScore": 0,
+      "awayScore": 1,
       "status": "LIVE",
-      "minute": "90",
+      "minute": "90+1",
       "utcDate": "2026-07-06T19:00Z",
       "stage": "Åttondelsfinal"
     },
