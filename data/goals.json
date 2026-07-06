@@ -1872,6 +1872,12 @@
       "scorer": "Jude Bellingham",
       "minute": "36",
       "type": "Goal - Header"
+    },
+    {
+      "code": "ENG",
+      "scorer": "Jude Bellingham",
+      "minute": "38",
+      "type": "Goal"
     }
   ]
 }
