@@ -1883,7 +1883,13 @@
       "code": "MEX",
       "scorer": "Julián Quiñones",
       "minute": "42",
-      "type": "Goal - Volley"
+      "type": "Goal"
+    },
+    {
+      "code": "ENG",
+      "scorer": "Harry Kane",
+      "minute": "60",
+      "type": "Penalty - Scored"
     }
   ]
 }
