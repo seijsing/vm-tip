@@ -1866,5 +1866,12 @@
       "type": "Penalty - Scored"
     }
   ],
-  "ENG|MEX": []
+  "ENG|MEX": [
+    {
+      "code": "ENG",
+      "scorer": "Jude Bellingham",
+      "minute": "36",
+      "type": "Goal - Header"
+    }
+  ]
 }
