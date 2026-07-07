@@ -1,16 +1,6 @@
 {
-  "updated": "2026-07-07T01:58:16.443Z",
+  "updated": "2026-07-07T01:59:14.346Z",
   "matches": [
-    {
-      "home": "United States",
-      "away": "Belgium",
-      "homeScore": 1,
-      "awayScore": 4,
-      "status": "LIVE",
-      "minute": "90+4",
-      "utcDate": "2026-07-07T00:00Z",
-      "stage": "Åttondelsfinal"
-    },
     {
       "home": "Portugal",
       "away": "Spain",
@@ -19,6 +9,16 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-07-06T19:00Z",
+      "stage": "Åttondelsfinal"
+    },
+    {
+      "home": "United States",
+      "away": "Belgium",
+      "homeScore": 1,
+      "awayScore": 4,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-07-07T00:00Z",
       "stage": "Åttondelsfinal"
     },
     {
