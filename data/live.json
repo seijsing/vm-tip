@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-07T17:47:18.201Z",
+  "updated": "2026-07-07T17:48:19.009Z",
   "matches": [
     {
       "home": "Argentina",
       "away": "Egypt",
-      "homeScore": 1,
+      "homeScore": 2,
       "awayScore": 2,
       "status": "LIVE",
-      "minute": "83",
+      "minute": "84",
       "utcDate": "2026-07-07T16:00Z",
       "stage": "Åttondelsfinal"
     },
