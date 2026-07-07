@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T20:49:17.807Z",
+  "updated": "2026-07-07T21:06:19.257Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -261,7 +261,7 @@
       "away": "Colombia",
       "homeCode": "SWZ",
       "awayCode": "COL",
-      "status": "PAUSED",
+      "status": "LIVE",
       "homeScore": 0,
       "awayScore": 0
     },
