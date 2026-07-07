@@ -1961,7 +1961,13 @@
       "code": "ARG",
       "scorer": "Lionel Messi",
       "minute": "83",
-      "type": "Goal - Volley"
+      "type": "Goal"
+    },
+    {
+      "code": "ARG",
+      "scorer": "Enzo Fernández",
+      "minute": "90+2",
+      "type": "Goal - Header"
     }
   ]
 }
