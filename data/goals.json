@@ -1950,6 +1950,12 @@
       "scorer": "Mostafa Zico",
       "minute": "67",
       "type": "Goal"
+    },
+    {
+      "code": "ARG",
+      "scorer": "Cristian Romero",
+      "minute": "79",
+      "type": "Goal - Header"
     }
   ]
 }
