@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T00:53:17.899Z",
+  "updated": "2026-07-07T01:10:34.019Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -239,7 +239,7 @@
       "away": "Belgium",
       "homeCode": "USA",
       "awayCode": "BEL",
-      "status": "PAUSED",
+      "status": "LIVE",
       "homeScore": 1,
       "awayScore": 2
     },
