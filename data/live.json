@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-07T20:49:17.807Z",
+  "updated": "2026-07-07T21:05:26.039Z",
   "matches": [
     {
       "home": "Switzerland",
       "away": "Colombia",
       "homeScore": 0,
       "awayScore": 0,
-      "status": "PAUSED",
-      "minute": null,
+      "status": "LIVE",
+      "minute": "46",
       "utcDate": "2026-07-07T20:00Z",
       "stage": "Åttondelsfinal"
     },
