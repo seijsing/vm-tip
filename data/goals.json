@@ -1918,6 +1918,12 @@
       "scorer": "Malik Tillman",
       "minute": "31",
       "type": "Goal - Free-kick"
+    },
+    {
+      "code": "BEL",
+      "scorer": "Charles De Ketelaere",
+      "minute": "33",
+      "type": "Goal - Header"
     }
   ]
 }
