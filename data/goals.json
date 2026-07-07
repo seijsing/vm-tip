@@ -1970,5 +1970,12 @@
       "type": "Goal - Header"
     }
   ],
-  "COL|SWZ": []
+  "COL|SWZ": [
+    {
+      "code": "COL",
+      "scorer": "Juan Fernando Quintero",
+      "minute": "120",
+      "type": "Penalty - Scored"
+    }
+  ]
 }
