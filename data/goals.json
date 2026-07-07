@@ -1938,5 +1938,12 @@
       "type": "Goal"
     }
   ],
-  "ARG|EGY": []
+  "ARG|EGY": [
+    {
+      "code": "EGY",
+      "scorer": "Yasser Ibrahim",
+      "minute": "15",
+      "type": "Goal - Header"
+    }
+  ]
 }
