@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T22:18:17.275Z",
+  "updated": "2026-07-07T00:00:55.819Z",
   "matches": [
     {
       "home": "Portugal",
@@ -29,6 +29,16 @@
       "status": "TIMED",
       "minute": null,
       "utcDate": "2026-07-07T16:00Z",
+      "stage": "Åttondelsfinal"
+    },
+    {
+      "home": "Switzerland",
+      "away": "Colombia",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-07-07T20:00Z",
       "stage": "Åttondelsfinal"
     }
   ]
