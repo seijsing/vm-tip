@@ -1924,6 +1924,12 @@
       "scorer": "Charles De Ketelaere",
       "minute": "33",
       "type": "Goal - Header"
+    },
+    {
+      "code": "BEL",
+      "scorer": "Hans Vanaken",
+      "minute": "57",
+      "type": "Goal"
     }
   ]
 }
