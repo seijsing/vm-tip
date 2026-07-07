@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-07T00:09:14.672Z",
+  "updated": "2026-07-07T00:10:32.302Z",
   "matches": [
     {
       "home": "United States",
       "away": "Belgium",
       "homeScore": 0,
-      "awayScore": 0,
+      "awayScore": 1,
       "status": "LIVE",
-      "minute": "8",
+      "minute": "9",
       "utcDate": "2026-07-07T00:00Z",
       "stage": "Åttondelsfinal"
     },

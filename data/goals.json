@@ -1906,5 +1906,12 @@
       "type": "Goal"
     }
   ],
-  "BEL|USA": []
+  "BEL|USA": [
+    {
+      "code": "BEL",
+      "scorer": "Charles De Ketelaere",
+      "minute": "9",
+      "type": "Goal"
+    }
+  ]
 }
