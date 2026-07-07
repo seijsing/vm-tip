@@ -1912,6 +1912,12 @@
       "scorer": "Charles De Ketelaere",
       "minute": "9",
       "type": "Goal"
+    },
+    {
+      "code": "USA",
+      "scorer": "Malik Tillman",
+      "minute": "31",
+      "type": "Goal - Free-kick"
     }
   ]
 }
