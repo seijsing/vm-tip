@@ -1,6 +1,15 @@
 {
-  "updated": "2026-07-07T08:00:55.156Z",
+  "updated": "2026-07-07T09:41:18.940Z",
   "matches": [
+    {
+      "home": "United States",
+      "away": "Belgium",
+      "homeScore": 1,
+      "awayScore": 4,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-07-07T00:00:00Z"
+    },
     {
       "home": "Argentina",
       "away": "Egypt",
@@ -8,8 +17,7 @@
       "awayScore": null,
       "status": "TIMED",
       "minute": null,
-      "utcDate": "2026-07-07T16:00Z",
-      "stage": "Åttondelsfinal"
+      "utcDate": "2026-07-07T16:00:00Z"
     },
     {
       "home": "Switzerland",
@@ -18,8 +26,7 @@
       "awayScore": null,
       "status": "TIMED",
       "minute": null,
-      "utcDate": "2026-07-07T20:00Z",
-      "stage": "Åttondelsfinal"
+      "utcDate": "2026-07-07T20:00:00Z"
     }
   ]
 }
