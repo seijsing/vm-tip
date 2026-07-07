@@ -1930,6 +1930,12 @@
       "scorer": "Hans Vanaken",
       "minute": "57",
       "type": "Goal"
+    },
+    {
+      "code": "BEL",
+      "scorer": "Romelu Lukaku",
+      "minute": "90+3",
+      "type": "Goal"
     }
   ]
 }
