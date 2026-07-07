@@ -1,6 +1,16 @@
 {
-  "updated": "2026-07-07T18:06:18.941Z",
+  "updated": "2026-07-07T20:00:52.620Z",
   "matches": [
+    {
+      "home": "Switzerland",
+      "away": "Colombia",
+      "homeScore": 0,
+      "awayScore": 0,
+      "status": "LIVE",
+      "minute": "1",
+      "utcDate": "2026-07-07T20:00Z",
+      "stage": "Åttondelsfinal"
+    },
     {
       "home": "Argentina",
       "away": "Egypt",
@@ -9,16 +19,6 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-07-07T16:00Z",
-      "stage": "Åttondelsfinal"
-    },
-    {
-      "home": "Switzerland",
-      "away": "Colombia",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-07-07T20:00Z",
       "stage": "Åttondelsfinal"
     }
   ]
