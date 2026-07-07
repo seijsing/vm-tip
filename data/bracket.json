@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T22:20:37.496Z",
+  "updated": "2026-07-07T22:52:17.378Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -302,9 +302,9 @@
       "stage": "Kvartsfinal",
       "utcDate": "2026-07-12T01:00Z",
       "home": "Argentina",
-      "away": "Round of 16 8 Winner",
+      "away": "Switzerland",
       "homeCode": "ARG",
-      "awayCode": null,
+      "awayCode": "SWZ",
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null
