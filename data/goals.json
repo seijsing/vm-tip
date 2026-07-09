@@ -2014,5 +2014,12 @@
       "type": "Penalty - Scored"
     }
   ],
-  "FRA|MAR": []
+  "FRA|MAR": [
+    {
+      "code": "FRA",
+      "scorer": "Kylian Mbappé",
+      "minute": "60",
+      "type": "Goal"
+    }
+  ]
 }
