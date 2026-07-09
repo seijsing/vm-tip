@@ -2020,6 +2020,12 @@
       "scorer": "Kylian Mbappé",
       "minute": "60",
       "type": "Goal"
+    },
+    {
+      "code": "FRA",
+      "scorer": "Ousmane Dembélé",
+      "minute": "66",
+      "type": "Goal"
     }
   ]
 }

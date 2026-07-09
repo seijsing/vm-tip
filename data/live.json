@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-09T21:29:15.874Z",
+  "updated": "2026-07-09T21:30:49.344Z",
   "matches": [
     {
       "home": "France",
       "away": "Morocco",
-      "homeScore": 1,
+      "homeScore": 2,
       "awayScore": 0,
       "status": "LIVE",
-      "minute": "65",
+      "minute": "66",
       "utcDate": "2026-07-09T20:00Z",
       "stage": "Kvartsfinal"
     }
