@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-10T19:31:15.782Z",
+  "updated": "2026-07-10T19:42:23.863Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -285,7 +285,7 @@
       "awayCode": "BEL",
       "status": "LIVE",
       "homeScore": 1,
-      "awayScore": 0
+      "awayScore": 1
     },
     {
       "stage": "Kvartsfinal",

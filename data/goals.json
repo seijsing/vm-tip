@@ -2034,6 +2034,12 @@
       "scorer": "Fabián Ruiz",
       "minute": "30",
       "type": "Goal"
+    },
+    {
+      "code": "BEL",
+      "scorer": "Charles De Ketelaere",
+      "minute": "41",
+      "type": "Goal - Header"
     }
   ]
 }
