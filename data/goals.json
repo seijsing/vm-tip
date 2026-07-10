@@ -2028,5 +2028,12 @@
       "type": "Goal"
     }
   ],
-  "BEL|SPA": []
+  "BEL|SPA": [
+    {
+      "code": "SPA",
+      "scorer": "Fabián Ruiz",
+      "minute": "30",
+      "type": "Goal"
+    }
+  ]
 }
