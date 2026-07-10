@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-10T20:52:21.102Z",
+  "updated": "2026-07-10T20:53:18.977Z",
   "matches": [
     {
       "home": "Spain",
@@ -7,7 +7,7 @@
       "homeScore": 2,
       "awayScore": 1,
       "status": "LIVE",
-      "minute": "90",
+      "minute": "90+1",
       "utcDate": "2026-07-10T19:00Z",
       "stage": "Kvartsfinal"
     }
