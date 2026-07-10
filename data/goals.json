@@ -2040,6 +2040,12 @@
       "scorer": "Charles De Ketelaere",
       "minute": "41",
       "type": "Goal - Header"
+    },
+    {
+      "code": "SPA",
+      "scorer": "Mikel Merino",
+      "minute": "88",
+      "type": "Goal"
     }
   ]
 }
