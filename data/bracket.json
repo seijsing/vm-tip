@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-10T19:02:22.980Z",
+  "updated": "2026-07-10T19:31:15.782Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -284,7 +284,7 @@
       "homeCode": "SPA",
       "awayCode": "BEL",
       "status": "LIVE",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 0
     },
     {
