@@ -2060,6 +2060,12 @@
       "scorer": "Jude Bellingham",
       "minute": "45+2",
       "type": "Goal"
+    },
+    {
+      "code": "NOR",
+      "scorer": "Torbjørn Heggem",
+      "minute": "55",
+      "type": "Goal"
     }
   ]
 }
