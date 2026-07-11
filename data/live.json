@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-11T22:19:17.227Z",
+  "updated": "2026-07-11T22:20:37.522Z",
   "matches": [
     {
       "home": "Norway",
       "away": "England",
-      "homeScore": 2,
+      "homeScore": 1,
       "awayScore": 1,
       "status": "LIVE",
-      "minute": "56",
+      "minute": "58",
       "utcDate": "2026-07-11T21:00Z",
       "stage": "Kvartsfinal"
     },
