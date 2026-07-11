@@ -2060,6 +2060,12 @@
       "scorer": "Jude Bellingham",
       "minute": "45+2",
       "type": "Goal"
+    },
+    {
+      "code": "ENG",
+      "scorer": "Jude Bellingham",
+      "minute": "93",
+      "type": "Goal"
     }
   ]
 }
