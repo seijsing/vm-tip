@@ -2048,5 +2048,12 @@
       "type": "Goal"
     }
   ],
-  "ENG|NOR": []
+  "ENG|NOR": [
+    {
+      "code": "NOR",
+      "scorer": "Andreas Schjelderup",
+      "minute": "36",
+      "type": "Goal"
+    }
+  ]
 }
