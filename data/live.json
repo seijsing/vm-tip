@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11T05:00:57.758Z",
+  "updated": "2026-07-11T09:07:14.966Z",
   "matches": [
     {
       "home": "Norway",
@@ -8,18 +8,7 @@
       "awayScore": null,
       "status": "TIMED",
       "minute": null,
-      "utcDate": "2026-07-11T21:00Z",
-      "stage": "Kvartsfinal"
-    },
-    {
-      "home": "Argentina",
-      "away": "Switzerland",
-      "homeScore": null,
-      "awayScore": null,
-      "status": "TIMED",
-      "minute": null,
-      "utcDate": "2026-07-12T01:00Z",
-      "stage": "Kvartsfinal"
+      "utcDate": "2026-07-11T21:00:00Z"
     }
   ]
 }
