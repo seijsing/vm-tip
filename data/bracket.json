@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T02:07:18.508Z",
+  "updated": "2026-07-12T02:29:18.719Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -307,7 +307,7 @@
       "awayCode": "SWZ",
       "status": "LIVE",
       "homeScore": 1,
-      "awayScore": 0
+      "awayScore": 1
     },
     {
       "stage": "Semifinal",
