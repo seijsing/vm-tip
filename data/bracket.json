@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T03:45:30.346Z",
+  "updated": "2026-07-12T03:46:21.111Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -324,9 +324,9 @@
       "stage": "Semifinal",
       "utcDate": "2026-07-15T19:00Z",
       "home": "England",
-      "away": "Quarterfinal 4 Winner",
+      "away": "Argentina",
       "homeCode": "ENG",
-      "awayCode": null,
+      "awayCode": "ARG",
       "status": "TIMED",
       "homeScore": null,
       "awayScore": null
