@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-12T03:23:14.577Z",
+  "updated": "2026-07-12T03:26:18.294Z",
   "matches": [
     {
       "home": "Argentina",
       "away": "Switzerland",
       "homeScore": 1,
       "awayScore": 1,
-      "status": "PAUSED",
-      "minute": null,
+      "status": "LIVE",
+      "minute": "106",
       "utcDate": "2026-07-12T01:00Z",
       "stage": "Kvartsfinal"
     },
