@@ -1,16 +1,6 @@
 {
-  "updated": "2026-07-12T03:44:20.341Z",
+  "updated": "2026-07-12T03:45:30.346Z",
   "matches": [
-    {
-      "home": "Argentina",
-      "away": "Switzerland",
-      "homeScore": 3,
-      "awayScore": 1,
-      "status": "LIVE",
-      "minute": "120+4",
-      "utcDate": "2026-07-12T01:00Z",
-      "stage": "Kvartsfinal"
-    },
     {
       "home": "Norway",
       "away": "England",
@@ -19,6 +9,16 @@
       "status": "FINISHED",
       "minute": null,
       "utcDate": "2026-07-11T21:00Z",
+      "stage": "Kvartsfinal"
+    },
+    {
+      "home": "Argentina",
+      "away": "Switzerland",
+      "homeScore": 3,
+      "awayScore": 1,
+      "status": "FINISHED",
+      "minute": null,
+      "utcDate": "2026-07-12T01:00Z",
       "stage": "Kvartsfinal"
     }
   ]
