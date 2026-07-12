@@ -2068,5 +2068,12 @@
       "type": "Goal"
     }
   ],
-  "ARG|SWZ": []
+  "ARG|SWZ": [
+    {
+      "code": "ARG",
+      "scorer": "Alexis Mac Allister",
+      "minute": "10",
+      "type": "Goal - Header"
+    }
+  ]
 }
