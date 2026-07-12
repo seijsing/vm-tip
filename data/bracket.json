@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11T23:48:17.226Z",
+  "updated": "2026-07-12T01:02:24.490Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -305,9 +305,9 @@
       "away": "Switzerland",
       "homeCode": "ARG",
       "awayCode": "SWZ",
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "LIVE",
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "stage": "Semifinal",
