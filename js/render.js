@@ -525,7 +525,26 @@ export function renderPerson(container, person, data, onBack) {
     ])
   );
 
-  const rows = matches.map((m) => {
+  // Bonus-tips (slutspel/skyttekung) högst upp.
+  const bonus = person.bonus.filter((b) => /Brons|Silver|Guld|Skyttekung/i.test(b.label) && b.value);
+  if (bonus.length) {
+    container.appendChild(el("h4", { class: "bonus-h", text: "Slutspelstips" }));
+    container.appendChild(
+      el("div", { class: "bonus" }, bonus.map((b) =>
+        el("div", { class: "bonus-item" }, [
+          el("span", { class: "bk", text: b.label }),
+          el("span", { class: "bv", text: b.value }),
+        ])
+      ))
+    );
+  }
+
+  // Vidare-tips per grupp
+  appendAdvanceSection(container, person, data.advanceGroups);
+
+  // Spelade gruppspelsmatcher, senaste överst.
+  const played = matches.filter((m) => m.result);
+  const rows = [...played].reverse().map((m) => {
     const tip = person.tips[m.col];
     const res = m.result;
     let cls = "";
@@ -537,30 +556,16 @@ export function renderPerson(container, person, data, onBack) {
       el("td", { class: "res", text: res || "" }),
     ]);
   });
-  container.appendChild(
-    el("table", { class: "tbl person" }, [
-      el("thead", {}, el("tr", {}, [
-        el("th", { text: "Datum" }), el("th", { text: "Match" }),
-        el("th", { text: "Tips" }), el("th", { text: "Resultat" }),
-      ])),
-      el("tbody", {}, rows),
-    ])
-  );
-
-  // Vidare-tips per grupp
-  appendAdvanceSection(container, person, data.advanceGroups);
-
-  // Bonus-tips (slutspel/skyttekung)
-  const bonus = person.bonus.filter((b) => /Brons|Silver|Guld|Skyttekung/i.test(b.label) && b.value);
-  if (bonus.length) {
-    container.appendChild(el("h4", { class: "bonus-h", text: "Slutspelstips" }));
+  if (rows.length) {
+    container.appendChild(el("h4", { class: "bonus-h", text: "Spelade gruppspelsmatcher" }));
     container.appendChild(
-      el("div", { class: "bonus" }, bonus.map((b) =>
-        el("div", { class: "bonus-item" }, [
-          el("span", { class: "bk", text: b.label }),
-          el("span", { class: "bv", text: b.value }),
-        ])
-      ))
+      el("table", { class: "tbl person" }, [
+        el("thead", {}, el("tr", {}, [
+          el("th", { text: "Datum" }), el("th", { text: "Match" }),
+          el("th", { text: "Tips" }), el("th", { text: "Resultat" }),
+        ])),
+        el("tbody", {}, rows),
+      ])
     );
   }
 }
