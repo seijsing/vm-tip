@@ -2100,6 +2100,12 @@
       "scorer": "Mikel Oyarzabal",
       "minute": "22",
       "type": "Penalty - Scored"
+    },
+    {
+      "code": "SPA",
+      "scorer": "Pedro Porro",
+      "minute": "58",
+      "type": "Goal"
     }
   ]
 }
