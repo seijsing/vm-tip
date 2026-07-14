@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-14T19:52:17.137Z",
+  "updated": "2026-07-14T20:08:18.423Z",
   "matches": [
     {
       "home": "France",
       "away": "Spain",
       "homeScore": 0,
       "awayScore": 1,
-      "status": "PAUSED",
-      "minute": null,
+      "status": "LIVE",
+      "minute": "46",
       "utcDate": "2026-07-14T19:00Z",
       "stage": "Semifinal"
     }
