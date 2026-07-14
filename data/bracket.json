@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T21:01:05.622Z",
+  "updated": "2026-07-14T21:34:23.410Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -334,9 +334,9 @@
     {
       "stage": "Bronsmatch",
       "utcDate": "2026-07-18T21:00Z",
-      "home": "Semifinal 1 Loser",
+      "home": "France",
       "away": "Semifinal 2 Loser",
-      "homeCode": null,
+      "homeCode": "FRA",
       "awayCode": null,
       "status": "TIMED",
       "homeScore": null,
@@ -345,9 +345,9 @@
     {
       "stage": "Final",
       "utcDate": "2026-07-19T19:00Z",
-      "home": "Semifinal 1 Winner",
+      "home": "Spain",
       "away": "Semifinal 2 Winner",
-      "homeCode": null,
+      "homeCode": "SPA",
       "awayCode": null,
       "status": "TIMED",
       "homeScore": null,
