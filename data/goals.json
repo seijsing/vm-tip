@@ -2108,5 +2108,12 @@
       "type": "Goal"
     }
   ],
-  "ARG|ENG": []
+  "ARG|ENG": [
+    {
+      "code": "ENG",
+      "scorer": "Anthony Gordon",
+      "minute": "55",
+      "type": "Goal"
+    }
+  ]
 }
