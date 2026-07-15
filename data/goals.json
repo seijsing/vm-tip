@@ -2120,6 +2120,12 @@
       "scorer": "Enzo Fernández",
       "minute": "85",
       "type": "Goal"
+    },
+    {
+      "code": "ARG",
+      "scorer": "Lautaro Martínez",
+      "minute": "90+2",
+      "type": "Goal - Header"
     }
   ]
 }

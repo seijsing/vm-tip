@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-15T20:52:18.275Z",
+  "updated": "2026-07-15T20:53:15.175Z",
   "matches": [
     {
       "home": "England",
       "away": "Argentina",
       "homeScore": 1,
-      "awayScore": 1,
+      "awayScore": 2,
       "status": "LIVE",
-      "minute": "90+1",
+      "minute": "90+2",
       "utcDate": "2026-07-15T19:00Z",
       "stage": "Semifinal"
     }
