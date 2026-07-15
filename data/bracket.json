@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T21:34:23.410Z",
+  "updated": "2026-07-15T19:01:15.989Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -327,9 +327,9 @@
       "away": "Argentina",
       "homeCode": "ENG",
       "awayCode": "ARG",
-      "status": "TIMED",
-      "homeScore": null,
-      "awayScore": null
+      "status": "LIVE",
+      "homeScore": 0,
+      "awayScore": 0
     },
     {
       "stage": "Bronsmatch",
