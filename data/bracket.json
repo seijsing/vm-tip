@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15T20:16:18.446Z",
+  "updated": "2026-07-15T20:47:15.786Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -329,7 +329,7 @@
       "awayCode": "ARG",
       "status": "LIVE",
       "homeScore": 1,
-      "awayScore": 0
+      "awayScore": 1
     },
     {
       "stage": "Bronsmatch",
