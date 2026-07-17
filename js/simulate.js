@@ -88,47 +88,46 @@ const OVERTAKE_RANGE = 3;
 
 // Skyttekung-scenarier: nuläget (delade ledare) + en kandidat per realistisk "ensam
 // ledare"-spelare i ett kvarvarande lag – OAVSETT om någon faktiskt tippat spelaren.
-// Scenarier som ger EXAKT samma mottagarkrets av tippare slås ihop (t.ex. "Mbappé &
-// Messi delar" == "Mbappé ensam" så länge ingen tippat Messi). Kandidater som ingen
-// alls tippat på slås ihop till ett enda "annan vinnare"-alternativ i stället för att
-// upprepas en gång per namn.
+// Scenarier som ger EXAKT samma mottagarkrets av tippare slås ihop, och etiketten
+// byggs uteslutande ur VILKA SPELARE MOTTAGARNA FAKTISKT TIPPAT (inte alla lagets
+// medaljörer i den underliggande fotbollsverkligheten) – annars blir t.ex. "Mbappé &
+// Messi delar" missvisande som "Mbappé eller Messi blir skyttekung" trots att ingen
+// tippat Messi. Kandidater som ingen alls tippat på slås ihop till ett enda
+// "annan vinnare"-alternativ i stället för att upprepas en gång per namn.
 function skyttekungScenarios(people, goalsMap, remainingCodes) {
   const all = scorerCounts(goalsMap);
   const maxGoals = all.length ? all[0].goals : 0;
   const leaders = all.filter((p) => p.goals === maxGoals);
 
   const raw = [
-    { players: leaders.map((l) => l.name),
-      matches: (tip) => leaders.some((l) => tipMatchesScorer(l.name, tip)) },
+    (tip) => leaders.some((l) => tipMatchesScorer(l.name, tip)),
   ];
   const candidates = all.filter((p) => remainingCodes.has(p.code) && p.goals >= maxGoals - OVERTAKE_RANGE);
-  for (const player of candidates) {
-    raw.push({ players: [player.name], matches: (t) => tipMatchesScorer(player.name, t) });
-  }
+  for (const player of candidates) raw.push((t) => tipMatchesScorer(player.name, t));
 
   const tips = people
     .map((p) => (p.bonus.find((x) => /Skyttekung/i.test(x.label))?.value || "").trim())
     .filter(Boolean);
 
-  const byKey = new Map(); // mottagarkrets (sorterad) -> { players, matches }
-  const noneGroups = [];
-  for (const s of raw) {
-    const beneficiaries = [...new Set(tips.filter((t) => s.matches(t)))].sort();
-    if (!beneficiaries.length) { noneGroups.push(s); continue; }
-    const key = beneficiaries.join("|");
-    if (byKey.has(key)) {
-      const merged = byKey.get(key);
-      merged.players = [...new Set([...merged.players, ...s.players])];
-    } else {
-      byKey.set(key, { players: [...s.players], matches: s.matches });
+  const byKey = new Map(); // mottagarkrets (sorterad) -> { matches, resolvedNames }
+  let hasEmpty = false;
+  for (const matches of raw) {
+    const beneficiaryTips = [...new Set(tips.filter((t) => matches(t)))];
+    if (!beneficiaryTips.length) { hasEmpty = true; continue; }
+    const key = beneficiaryTips.sort().join("|");
+    if (!byKey.has(key)) {
+      const resolvedNames = [...new Set(
+        beneficiaryTips.map((t) => all.find((p) => tipMatchesScorer(p.name, t))?.name).filter(Boolean)
+      )];
+      byKey.set(key, { matches, resolvedNames });
     }
   }
 
   const scenarios = [...byKey.values()].map((s) => ({
-    label: `${s.players.join(" eller ")} blir skyttekung`,
+    label: `${s.resolvedNames.join(" eller ")} blir skyttekung`,
     matches: s.matches,
   }));
-  if (noneGroups.length) {
+  if (hasEmpty) {
     scenarios.push({
       label: "Annan skytteligavinnare än vad någon tippat på",
       matches: () => false,
