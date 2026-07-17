@@ -586,6 +586,7 @@ body {
 .sim-winner-pts { margin-left: auto; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .sim-top5, .sim-rest { display: flex; flex-direction: column; gap: 3px; }
 .sim-rest { margin-top: 3px; }
+.sim-rest[hidden] { display: none; }
 .sim-row { display: grid; grid-template-columns: 18px 1fr auto; gap: 8px; font-size: 12.5px; color: var(--muted); }
 .sim-top5 .sim-row:first-child { color: var(--text); font-weight: 600; }
 .sim-rank { text-align: right; }
