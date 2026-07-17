@@ -2,7 +2,7 @@ import { CONFIG } from "./config.js";
 import { loadSheet } from "./sheets.js";
 import { fetchLive, matchLiveToSheet } from "./live.js";
 import { fetchGoalsMap, orientGoals, fetchBracket } from "./matchgoals.js";
-import { renderStandings, renderMatches, renderPerson, renderStats, renderHero, renderTippers, renderGoalscorers, renderAdvance } from "./render.js";
+import { renderStandings, renderMatches, renderPerson, renderStats, renderHero, renderTippers, renderGoalscorers, renderAdvance, renderSimulation } from "./render.js";
 
 const view = document.getElementById("view");
 const heroEl = document.getElementById("hero");
@@ -13,6 +13,7 @@ const state = {
   data: null,       // { matches, people, bonusCols }
   liveEnriched: [], // berikade live-matcher
   bracket: [],      // slutspelsträd (data/bracket.json)
+  goalsMap: new Map(), // data/goals.json, nyckel = sorterat lagkodspar
   active: "standings",
   selected: null,   // valt personnamn
 };
@@ -42,6 +43,8 @@ function render() {
     }
     case "advance":
       renderAdvance(view, data, state.bracket); break;
+    case "sim":
+      renderSimulation(view, data, state.bracket, state.goalsMap); break;
     case "tippers":
       renderTippers(view, data.people, selectPerson); break;
     case "scorers":
@@ -66,6 +69,7 @@ async function refresh() {
     }
     state.data = data;
     state.bracket = bracket;
+    state.goalsMap = goalsMap;
     state.liveEnriched = matchLiveToSheet(live.matches, data.matches);
     // Syntetiska slutspelsmatcher (ej i arket) får också målskyttar.
     for (const l of state.liveEnriched) if (l.match.synthetic) l.match.goals = orientGoals(l.match, goalsMap);

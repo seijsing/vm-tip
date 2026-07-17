@@ -1,6 +1,7 @@
 import { whoTipped } from "./live.js";
 import { flagEmoji, codeFromSv, teamSv } from "./config.js";
 import { fetchGoalscorers } from "./goalscorers.js";
+import { buildSimulation } from "./simulate.js";
 
 // Liten DOM-hjälpare.
 function el(tag, props = {}, children = []) {
@@ -680,6 +681,85 @@ export function renderAdvance(container, data, bracket) {
     const { advanced } = advancementState(advanceGroups);
     for (const g of advanceGroups) container.appendChild(advanceCard(g, people, advanced));
   }
+}
+
+/* ---------- Simulering: final + bronsmatch + skytteliga ---------- */
+export function renderSimulation(container, data, bracket, goalsMap) {
+  clear(container);
+  const sim = bracket && goalsMap ? buildSimulation(data, bracket, goalsMap) : null;
+  if (!sim) {
+    container.appendChild(el("p", { class: "muted",
+      text: "Simuleringen aktiveras när både finalen och bronsmatchen har kända lag (dvs. båda semifinalerna är avgjorda)." }));
+    return;
+  }
+
+  const { final, bronze, skScenarios, outcomes } = sim;
+  container.appendChild(el("h3", { class: "section-h", text: "🔮 Simulering: vem vinner tippet?" }));
+  container.appendChild(el("p", { class: "muted" },
+    `Endast finalen (${teamSv(final.homeCode)}–${teamSv(final.awayCode)}) och matchen om tredjepris ` +
+    `(${teamSv(bronze.homeCode)}–${teamSv(bronze.awayCode)}) återstår. Nedan: vem som vinner tippet för varje ` +
+    `kombination av mästare, bronsmedaljör och skyttekung.`
+  ));
+
+  for (const sk of skScenarios) {
+    container.appendChild(el("h4", { class: "bonus-h", text: `⚽ ${sk.label}` }));
+    const grid = el("div", { class: "sim-grid" });
+    for (const bronzeWinner of [bronze.homeCode, bronze.awayCode]) {
+      for (const finalWinner of [final.homeCode, final.awayCode]) {
+        const o = outcomes.find((x) =>
+          x.finalWinner === finalWinner && x.bronzeWinner === bronzeWinner && x.skyttekung === sk.label);
+        grid.appendChild(simCell(o));
+      }
+    }
+    container.appendChild(grid);
+  }
+}
+
+function simRow(r, rank) {
+  return el("div", { class: "sim-row" }, [
+    el("span", { class: "sim-rank", text: String(rank) }),
+    el("span", { class: "sim-name", text: r.name }),
+    el("span", { class: "sim-pts", text: `${r.points} p` }),
+  ]);
+}
+
+function simCell(o) {
+  const top = o.rows.slice(0, 5);
+  const rest = o.rows.slice(5);
+
+  const restEl = el("div", { class: "sim-rest" }, rest.map((r, i) => simRow(r, i + 6)));
+  restEl.hidden = true;
+
+  const toggle = rest.length
+    ? el("button", { class: "sim-more", text: `Visa alla ${o.rows.length} ›` })
+    : null;
+  if (toggle) {
+    toggle.addEventListener("click", () => {
+      const open = !restEl.hidden;
+      restEl.hidden = open;
+      toggle.textContent = open ? `Visa alla ${o.rows.length} ›` : "Dölj ‹";
+      toggle.classList.toggle("open", !open);
+    });
+  }
+
+  return el("div", { class: "sim-cell" }, [
+    el("div", { class: "sim-cell-h" }, [
+      el("span", { class: "sim-flag", text: flagEmoji(o.finalWinner) }),
+      el("span", { text: `${teamSv(o.finalWinner)} mästare` }),
+    ]),
+    el("div", { class: "sim-cell-h" }, [
+      el("span", { class: "sim-flag", text: flagEmoji(o.bronzeWinner) }),
+      el("span", { text: `${teamSv(o.bronzeWinner)} brons` }),
+    ]),
+    el("div", { class: "sim-winner" }, [
+      el("span", { class: "sim-crown", text: "🏆" }),
+      el("span", { class: "sim-winner-name", text: o.winners.join(" & ") }),
+      el("span", { class: "sim-winner-pts", text: `${o.winnerPoints} p` }),
+    ]),
+    el("div", { class: "sim-top5" }, top.map((r, i) => simRow(r, i + 1))),
+    restEl,
+    toggle,
+  ].filter(Boolean));
 }
 
 function advanceCard(g, people, advanced) {

@@ -566,6 +566,37 @@ body {
 .ko-when { font-size: 12px; color: var(--muted); white-space: nowrap; flex-shrink: 0; }
 .ko-when.ko-live { color: var(--live); font-weight: 700; }
 
+/* Simulering */
+.sim-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+  margin-bottom: 18px;
+}
+.sim-cell {
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: 12px; padding: 12px 14px;
+}
+.sim-cell-h { display: flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--muted); font-weight: 600; }
+.sim-flag { font-size: 15px; line-height: 1; }
+.sim-winner {
+  display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap;
+  margin: 8px 0 6px; padding: 8px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+.sim-crown { font-size: 15px; }
+.sim-winner-name { font-weight: 700; color: var(--accent); }
+.sim-winner-pts { margin-left: auto; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.sim-top5, .sim-rest { display: flex; flex-direction: column; gap: 3px; }
+.sim-rest { margin-top: 3px; }
+.sim-row { display: grid; grid-template-columns: 18px 1fr auto; gap: 8px; font-size: 12.5px; color: var(--muted); }
+.sim-top5 .sim-row:first-child { color: var(--text); font-weight: 600; }
+.sim-rank { text-align: right; }
+.sim-pts { font-variant-numeric: tabular-nums; }
+.sim-more {
+  display: block; width: 100%; margin-top: 8px; padding: 6px 0;
+  background: none; border: none; border-top: 1px solid var(--line);
+  color: var(--accent-2); font-size: 12.5px; font-weight: 600; cursor: pointer; text-align: center;
+}
+.sim-more:hover { color: var(--accent); }
+
 /* Footer */
 .foot {
   position: fixed; bottom: 0; left: 0; right: 0; text-align: center;
@@ -622,4 +653,7 @@ body {
   .adv-chip { font-size: 12px; padding: 3px 9px 3px 7px; }
   .adv-flag { font-size: 14px; }
   .adv-card-title { font-size: 14px; }
+
+  /* Simulering: stapla cellerna på smal skärm */
+  .sim-grid { grid-template-columns: 1fr; }
 }
