@@ -2176,6 +2176,12 @@
       "scorer": "Bukayo Saka",
       "minute": "87",
       "type": "Penalty - Scored"
+    },
+    {
+      "code": "FRA",
+      "scorer": "Ousmane Dembélé",
+      "minute": "90+6",
+      "type": "Goal"
     }
   ]
 }
