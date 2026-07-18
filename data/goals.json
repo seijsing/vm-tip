@@ -2158,6 +2158,12 @@
       "scorer": "Kylian Mbappé",
       "minute": "48",
       "type": "Goal"
+    },
+    {
+      "code": "FRA",
+      "scorer": "Bradley Barcola",
+      "minute": "54",
+      "type": "Goal"
     }
   ]
 }
