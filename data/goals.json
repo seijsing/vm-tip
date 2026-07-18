@@ -2134,6 +2134,12 @@
       "scorer": "Declan Rice",
       "minute": "3",
       "type": "Goal"
+    },
+    {
+      "code": "ENG",
+      "scorer": "Ezri Konsa",
+      "minute": "18",
+      "type": "Goal - Header"
     }
   ]
 }
