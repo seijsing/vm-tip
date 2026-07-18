@@ -2170,6 +2170,12 @@
       "scorer": "Kylian Mbappé",
       "minute": "66",
       "type": "Goal"
+    },
+    {
+      "code": "ENG",
+      "scorer": "Bukayo Saka",
+      "minute": "87",
+      "type": "Penalty - Scored"
     }
   ]
 }
