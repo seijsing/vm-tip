@@ -2128,5 +2128,12 @@
       "type": "Goal - Header"
     }
   ],
-  "ENG|FRA": []
+  "ENG|FRA": [
+    {
+      "code": "ENG",
+      "scorer": "Declan Rice",
+      "minute": "3",
+      "type": "Goal"
+    }
+  ]
 }
