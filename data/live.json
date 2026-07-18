@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-18T01:00:48.992Z",
+  "updated": "2026-07-18T18:33:17.340Z",
   "matches": [
     {
       "home": "France",
@@ -8,8 +8,7 @@
       "awayScore": null,
       "status": "TIMED",
       "minute": null,
-      "utcDate": "2026-07-18T21:00Z",
-      "stage": "Bronsmatch"
+      "utcDate": "2026-07-18T21:00:00Z"
     }
   ]
 }
