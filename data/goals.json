@@ -2152,6 +2152,12 @@
       "scorer": "Bukayo Saka",
       "minute": "45+1",
       "type": "Goal"
+    },
+    {
+      "code": "FRA",
+      "scorer": "Kylian Mbappé",
+      "minute": "48",
+      "type": "Goal"
     }
   ]
 }
