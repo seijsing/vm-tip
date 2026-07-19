@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-19T21:40:31.177Z",
+  "updated": "2026-07-19T21:43:19.408Z",
   "matches": [
     {
       "stage": "Sextondelsfinal",
@@ -349,8 +349,8 @@
       "away": "Argentina",
       "homeCode": "SPA",
       "awayCode": "ARG",
-      "status": "PAUSED",
-      "homeScore": 0,
+      "status": "LIVE",
+      "homeScore": 1,
       "awayScore": 0
     }
   ]

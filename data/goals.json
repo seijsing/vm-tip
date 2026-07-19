@@ -2190,5 +2190,12 @@
       "type": "Goal"
     }
   ],
-  "ARG|SPA": []
+  "ARG|SPA": [
+    {
+      "code": "SPA",
+      "scorer": "Ferran Torres",
+      "minute": "106",
+      "type": "Goal"
+    }
+  ]
 }

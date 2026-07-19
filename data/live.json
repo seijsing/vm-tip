@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-19T21:40:31.177Z",
+  "updated": "2026-07-19T21:43:19.408Z",
   "matches": [
     {
       "home": "Spain",
       "away": "Argentina",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 0,
-      "status": "PAUSED",
-      "minute": null,
+      "status": "LIVE",
+      "minute": "107",
       "utcDate": "2026-07-19T19:00Z",
       "stage": "Final"
     }
